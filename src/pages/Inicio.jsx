@@ -1,7 +1,11 @@
+import Presentacion from "../components/Presentacion";
+
 const Inicio = () => {
   return (
     <>
-        <h1>Contenido</h1>
+        <div className=" flex justify-center">
+            <Presentacion/>
+        </div>
     </>
   )
 }

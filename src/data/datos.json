@@ -1,0 +1,82 @@
+{
+    "datosExperiencia": [
+        {
+            "Empresa" : "Fundiciones Rice",
+            "Puesto" : "Gerente de gestión de calidad",
+            "FechaInicio" : "Marzo 2022",
+            "FechaFin": "Actualidad",
+            "Funciones": [
+                "Creación, implementación y mantenimiento del sistema de gestión de calidad.",
+                "Planificación y ejecución de audiorías y evaluaciones internas y externas para verificar el cumplimiento de estándares y procedimientos de calidad.",
+                "Identificación de problemas y desarrollo de soluciones efectivas.",
+                "Desarrollo de programas de formación y capacitación para los empleados.",
+                "Recopilación y análisis de datos para monitorear el desempeño de procesos y productos, y elaboración de informes.",
+                "Trabajo en equipo con otros departamentos y comunicación clara y efectiva de expectativas y requerimientos de calidad."
+            ]
+        },
+        {
+            "Empresa" : "Fundiciones Rice",
+            "Puesto" : "Coordinador de Investigación y Desarrollo",
+            "FechaInicio" : "Junio 2015",
+            "FechaFin": "Marzo 2022",
+            "Funciones": [
+                "Diseño, planificación y ejecución de proyectos de I+D de nuevos productos y tecnologías.",
+                "Identificación de oportunidades de mejora e innovación en procesos y productos existentes, y liderazgo en la implementación de soluciones.",
+                "Desarrollo de especificaciones técnicas y estándares para nuevos productos y procesos, y aseguramiento de su cumplimiento.",
+                "Coordinación de equipos multidisciplinarios de trabajo para la efectiva ejecución de proyectos.",
+                "Investigación y evaluación de tecnologías emergentes y tendencias de mercado para identificar oportunidades de desarrollo de nuevos productos y servicios.",
+                "Interacción con proveedores, clientes y otras partes interesadas para asegurar el alineamiento de proyectos con sus necesidades y expectativas.",
+                "Participación en la redacción y presentación de propuestas de I+D para obtener financiamiento externo.",
+                "Monitoreo y evaluación del desempeño de proyectos y equipos,  yreporte de resultados y avances a la alta dirección.",
+                "Contribución a la generación de patentes y otros tipos de propiedad intelectual relacionados con los proyectos de I+D"
+            ]
+        }
+    ],
+    "datosCursos":[
+        {"Nombre":"Crear una página web moderna desde cero con HTML y CSS", "Fecha":"2023", "Instructor":"UDEMY"},
+        {"Nombre":"Python sin fronteras: HTML, CSS, Flask y MySQL", "Fecha":"2023", "Instructor":"UDEMY"},
+        {"Nombre":"Ultrasonido Industrial Nivel II Limitado para medir espesores", "Fecha":"2018", "Instructor":"Capacitación y PND de México"},
+        {"Nombre":"Herramientas de Moldes", "Fecha":"2018", "Instructor":"SolidServicios"},
+        {"Nombre":"Programación de máquinas CNC con códigos G y M", "Fecha":"2017", "Instructor":"Universidad Politécnica de Sinaloa"},
+        {"Nombre":"Programación básica IRC5", "Fecha":"2017", "Instructor":"ABB Robótica México"},
+        {"Nombre":"RobotStudio Basic", "Fecha":"2017", "Instructor":"ABB Robótica México"},
+        {"Nombre":"Programación Avanzada IRC5", "Fecha":"2017", "Instructor":"ABB Robótica México"},
+        {"Nombre":"Introducción a la metalurgia de aleaciones de cobre para fundición", "Fecha":"2017", "Instructor":"Centro de Ingeniería y Desarrollo Industrial"},
+        {"Nombre":"Desarrollo de talento gerencial", "Fecha":"2017", "Instructor":"Centro Empresarial de Mazatlán"},
+        {"Nombre":"Fundamentos de diseño de sistemas de alimentación y sistema de colada para Cobre y sus aleaciones", "Fecha":"2017", "Instructor":"Sociedad Mexicana de Fundidores"},
+        {"Nombre":"Interpretación de la norma ISO 9001:2015", "Fecha":"2017", "Instructor":"Calidad de Verdad"}
+    ],
+    "datosSkills":[
+        "Solidworks",
+        "Excel",
+        "VBA",
+        "MySQL",
+        "HTML",
+        "CSS",
+        "Python",
+        "Flask",
+        "Solidcast",
+        "SprutCAM",
+        "AutoCAD",
+        "Paquetería Office",
+        "LabView",
+        "Matlab"
+    ],
+    "datosSoftskills":[
+        "Comunicación efectiva",
+        "Trabajo en equipo",
+        "Flexibilidad",
+        "Adaptabilidad",
+        "Resolución de problemas",
+        "Liderazgo",
+        "Gestión del tiempo",
+        "Pensamiento crítico",
+        "Creatividad",
+        "Innovación",
+        "Empatía",
+        "Respeto",
+        "Aprendizaje continuo"
+    ],
+    "datosProyectos": []
+
+}

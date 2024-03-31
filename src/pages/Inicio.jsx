@@ -15,7 +15,7 @@ const Inicio = () => {
         <div className=" flex flex-col items-center">
             <Presentacion/>
             <Acerca/>
-            <Skills/>
+            <Skills datosSkills={datosSkills} datosSoftskills={datosSoftskills}/>
             <Experiencia datosExperiencia={datosExperiencia}/>
             <Proyectos/>
             <Contacto/>

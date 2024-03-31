@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import fileDownload from 'js-file-download';
 
-import linkedinSVG from '../assets/linkedin.svg'
-import githubSVG from '../assets/github.svg'
-import curriculumVitaeSVG from '../assets/curriculum-vitae.svg'
+import linkedinSVG from '../assets/icons/linkedin.svg'
+import githubSVG from '../assets/icons/github.svg'
+import curriculumVitaeSVG from '../assets/icons/curriculum-vitae.svg'
 
 const RedesSociales = () => {
   const size = 20;

@@ -8,7 +8,7 @@ import Contacto from "../components/Contacto";
 import datos from '../data/datos.json'
 
 const Inicio = () => {
-  const { datosCursos, datosExperiencia, datosSkills, datosSoftskills} = datos
+  const { datosCursos, datosExperiencia, datosSkills, datosSoftskills, datosProyectos} = datos
 
   return (
     <>
@@ -17,7 +17,7 @@ const Inicio = () => {
             <Acerca/>
             <Skills datosSkills={datosSkills} datosSoftskills={datosSoftskills}/>
             <Experiencia datosExperiencia={datosExperiencia}/>
-            <Proyectos/>
+            <Proyectos datosProyectos={datosProyectos}/>
             <Contacto/>
 
 

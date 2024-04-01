@@ -77,6 +77,15 @@
         ["Respeto", "respeto.svg"],
         ["Aprendizaje continuo", "aprendizaje.svg"]
     ],
-    "datosProyectos": []
+    "datosProyectos": [
+        {
+            "Nombre":"Proyecto 1",
+            "Descripcion":"Descripcion Proyecto 1"
+        },
+        {
+            "Nombre":"Proyecto 2",
+            "Descripcion":"Descripcion Proyecto 2"
+        }
+    ]
 
 }

@@ -31,9 +31,9 @@ const Skills = ({datosSkills, datosSoftskills}) => {
       <div className="container bg-gray-200 w-3/4 ml5 mt-5 mb-5 border rounded">
           <div className=" m-5">
               <h1>Skills</h1>
-              <div className="flex flex-wrap mb-2">
+              <div className="flex flex-wrap gap-2">
                   {datosSkills.map((skill, i) => (
-                      <button key={i} className="flex border border-gray-600 py-1 px-2 mt-2 mr-2 bg-gradient-to-r from-gray-300 to-gray-500 rounded font-bold hover:from-slate-400 hover:to-gray-600" onClick={()=>openModal("skill",i)}>
+                      <button key={i} className="flex bg-gray-100  ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100" onClick={()=>openModal("skill",i)}>
                           <img className=" mr-1" src={logosSkills[i]} alt="" width="20px" />
                           {skill[0]}
                       </button>  
@@ -42,9 +42,9 @@ const Skills = ({datosSkills, datosSoftskills}) => {
               
 
               <h1>Softskills</h1>
-              <div className="flex flex-wrap mb-2">
+              <div className="flex flex-wrap gap-2">
                   {datosSoftskills.map((skill, i) => (
-                      <button key={i} className="flex border border-gray-600 py-1 px-2 mt-2 mr-2 bg-gradient-to-r from-gray-300 to-gray-500 rounded font-bold hover:from-slate-400 hover:to-gray-600" onClick={()=>openModal("softskill",i)}>
+                      <button key={i} className="flex bg-gray-100  ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100" onClick={()=>openModal("softskill",i)}>
                           <img className=" mr-1" src={logosSoftskills[i]} alt="" width="20px" />
                           {skill[0]}
                       </button>

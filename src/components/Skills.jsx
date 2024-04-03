@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Modal from "./Modal";
 import useContexto from '../hook/useContexto';
+import ProgressBar from "./ProgressBar";
 
 const Skills = ({datosSkills, datosSoftskills}) => {
 
@@ -10,7 +11,7 @@ const Skills = ({datosSkills, datosSoftskills}) => {
     const importLogosSkills = async (array, i) => {
         const logoImports = await Promise.all(
             array.map(async (item) => {
-            const url = `../assets/icons/${item[1]}`
+            const url = `../assets/icons/${item.Logo}`
             const importedLogo = await import(url /* @vite-ignore */);
             return importedLogo.default;
           })
@@ -27,14 +28,17 @@ const Skills = ({datosSkills, datosSoftskills}) => {
   return (
     <>
      { isOpen && (<Modal/>)}
+     
         
-
         <h1 className=" text-2xl font-bold">Hardskills</h1>
         <div className="container bg-gray-200 w-3/4 mb-5 border rounded p-5 flex flex-wrap gap-2">
             {datosSkills.map((skill, i) => (
-                <button key={i} className="flex bg-gray-100  ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100" onClick={()=>openModal("skill",i)}>
-                    <img className=" mr-1" src={logosSkills[i]} alt="" width="20px" />
-                    {skill[0]}
+                <button key={i} className="flex flex-col bg-gray-100  ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100" onClick={()=>openModal("skill",i)}>
+                    <div className="flex">
+                        <img className=" mr-1" src={logosSkills[i]} alt="" width="20px" />
+                        {skill.Skill}
+                    </div>
+                    <ProgressBar dominio={skill.Dominio}/>    
                 </button>  
             ))}
         </div>
@@ -45,7 +49,7 @@ const Skills = ({datosSkills, datosSoftskills}) => {
                 {datosSoftskills.map((skill, i) => (
                     <button key={i} className="flex bg-gray-100  ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100" onClick={()=>openModal("softskill",i)}>
                         <img className=" mr-1" src={logosSoftskills[i]} alt="" width="20px" />
-                        {skill[0]}
+                        {skill.Softskill}
                     </button>
                 ))}
         </div>

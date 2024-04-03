@@ -47,36 +47,161 @@
         {"Nombre":"Interpretación de la norma ISO 9001:2015", "Fecha":"2017", "Instructor":"Calidad de Verdad"}
     ],
     "datosSkills":[
-        ["Solidworks", "solidworks.svg"],
-        ["Excel", "excel.svg"],
-        ["VBA", "vba.svg"],
-        ["MySQL", "mysql.svg"],
-        ["HTML", "html.svg"],
-        ["CSS", "css.svg"],
-        ["Python", "python.svg"],
-        ["Flask", "flask.svg"],
-        ["Solidcast", "solidcast.svg"],
-        ["SprutCAM", "sprutcam.svg"],
-        ["AutoCAD", "autocad.svg"],
-        ["Office", "office.svg"],
-        ["LabView", "labview.svg"],
-        ["Matlab", "matlab.svg"]
+        {
+            "Skill": "Solidworks", 
+            "Logo": "solidworks.svg",
+            "Descripcion": "",
+            "Dominio":"5"
+        },
+        {
+            "Skill": "Excel", 
+            "Logo": "excel.svg",
+            "Descripcion": "",
+            "Dominio":"5"
+        },
+        {
+            "Skill": "VBA", 
+            "Logo": "vba.svg",
+            "Descripcion": "",
+            "Dominio":"3"
+        },
+        {
+            "Skill": "MySQL", 
+            "Logo": "mysql.svg",
+            "Descripcion": "",
+            "Dominio":"2"
+        },
+        {
+            "Skill": "HTML", 
+            "Logo": "html.svg",
+            "Descripcion": "",
+            "Dominio":"3"
+        },
+        {
+            "Skill": "CSS", 
+            "Logo": "css.svg",
+            "Descripcion": "",
+            "Dominio":"3"
+        },
+        {
+            "Skill": "Python", 
+            "Logo": "python.svg",
+            "Descripcion": "",
+            "Dominio":"2"
+        },
+        {
+            "Skill": "Flask", 
+            "Logo": "flask.svg",
+            "Descripcion": "",
+            "Dominio":"2"
+        },
+        {
+            "Skill": "Solidcast", 
+            "Logo": "solidcast.svg",
+            "Descripcion": "",
+            "Dominio":"4"
+        },
+        {
+            "Skill": "SprutCAM", 
+            "Logo": "sprutcam.svg",
+            "Descripcion": "",
+            "Dominio":"3"
+        },
+        {
+            "Skill": "AutoCAD", 
+            "Logo": "autocad.svg",
+            "Descripcion": "",
+            "Dominio":"2"
+        },
+        {
+            "Skill": "Office", 
+            "Logo": "office.svg",
+            "Descripcion": "",
+            "Dominio":"5"
+        },
+        {
+            "Skill": "LabView", 
+            "Logo": "labview.svg",
+            "Descripcion": "",
+            "Dominio":"2"
+        },
+        {
+            "Skill": "Matlab", 
+            "Logo": "matlab.svg",
+            "Descripcion": "",
+            "Dominio":"2"
+        }
     ],
-    "datosSoftskills":[
-        ["Comunicación efectiva","comunicacionEfectiva.svg"],
-        ["Trabajo en equipo", "trabajoEquipo.svg"],
-        ["Flexibilidad", "flexibilidad.svg"],
-        ["Adaptabilidad", "adaptabilidad.svg"],
-        ["Resolución de problemas", "resolucionProblemas.svg"],
-        ["Liderazgo", "liderazgo.svg"],
-        ["Gestión del tiempo", "gestionTiempo.svg"],
-        ["Pensamiento crítico", "pensamientoCritico.svg"],
-        ["Creatividad", "creatividad.svg"],
-        ["Innovación", "innovacion.svg"],
-        ["Empatía", "empatia.svg"],
-        ["Respeto", "respeto.svg"],
-        ["Aprendizaje continuo", "aprendizaje.svg"]
+    "datosSoftskills": [
+        { 
+            "Softskill": "Comunicación efectiva", 
+            "Logo": "comunicacionEfectiva.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Trabajo en equipo", 
+            "Logo": "trabajoEquipo.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Flexibilidad", 
+            "Logo": "flexibilidad.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Adaptabilidad", 
+            "Logo": "adaptabilidad.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Resolución de problemas", 
+            "Logo": "resolucionProblemas.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Liderazgo", 
+            "Logo": "liderazgo.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Gestión del tiempo", 
+            "Logo": "gestionTiempo.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Pensamiento crítico", 
+            "Logo": "pensamientoCritico.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Creatividad", 
+            "Logo": "creatividad.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Innovación", 
+            "Logo": "innovacion.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Empatía", 
+            "Logo": "empatia.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Respeto", 
+            "Logo": "respeto.svg", 
+            "Descripcion": "" 
+        },
+        { 
+            "Softskill": "Aprendizaje continuo", 
+            "Logo": "aprendizaje.svg", 
+            "Descripcion": "" 
+        }
     ],
+
+
+
     "datosProyectos": [
         {
             "Nombre":"Proyecto 1",

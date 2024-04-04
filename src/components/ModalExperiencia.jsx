@@ -8,7 +8,7 @@ const ModalExperiencia = ({id}) => {
 
   return (
     <>
-      <div>
+      <div className=' p-5'>
           <p><strong>Puesto:</strong> {Puesto}</p>
           <p><strong>Fecha de Inicio:</strong> {FechaInicio}</p>
           <p><strong>Fecha de Fin:</strong> {FechaFin}</p>

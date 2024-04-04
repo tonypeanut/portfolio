@@ -20,7 +20,7 @@ const Modal = () => {
     return (
       <>
             <div id="fuera" className=" fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center" onClick={handleClick} >
-                <div id="modal" className=" bg-white p-5 rounded flex flex-col justify-center items-center gap-5 relative">
+                <div id="modal" className=" card card-side shadow-xl bg-white flex flex-col justify-center items-center gap-5 relative">
                     { tipo === 'experiencia' && (<ModalExperiencia id={id}/>)}
                     { tipo === 'formulario' && (<ModalFormulario/>)}
                     { tipo === 'proyectos' && (<ModalProyectos id={id}/>)}

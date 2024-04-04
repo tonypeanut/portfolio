@@ -31,31 +31,34 @@ const ModalFormulario = () => {
 
   return (
     <>
-      <RedesSociales/>
-      <h1 className=" text-3xl font-bold">Contactame!</h1>
+      <div className=' p-5'>
+          <RedesSociales/>
+          <h1 className=" text-3xl font-bold text-center">Contactame!</h1>
 
-      <form onSubmit={handleSubmit}>
-          <div className=" mt-3">
-              <input type="text" id="nombre" placeholder="Nombre" className=" border rounded p-1 w-full" value={nombre} onChange={e=>setNombre(e.target.value)}/>
-          </div>
+          <form onSubmit={handleSubmit} className=' mb-5'>
+              <div className=" mt-3">
+                  <input type="text" id="nombre" placeholder="Nombre" className=" border rounded p-1 w-full" value={nombre} onChange={e=>setNombre(e.target.value)}/>
+              </div>
 
-          <div className=" mt-3">
-              <input type="email" id="correo" placeholder="Correo" className=" border rounded p-1 w-full" value={email} onChange={e=>setEmail(e.target.value)}/>
-          </div>
+              <div className=" mt-3">
+                  <input type="email" id="correo" placeholder="Correo" className=" border rounded p-1 w-full" value={email} onChange={e=>setEmail(e.target.value)}/>
+              </div>
 
-          <div className=" mt-3">
-              <input type="text" id="asunto" placeholder="Asunto" className=" border rounded p-1 w-full" value={asunto} onChange={e=>setAsunto(e.target.value)}/>
-          </div>
+              <div className=" mt-3">
+                  <input type="text" id="asunto" placeholder="Asunto" className=" border rounded p-1 w-full" value={asunto} onChange={e=>setAsunto(e.target.value)}/>
+              </div>
 
-          <div className=" mt-3 flex flex-col">
-              <textarea id="mensaje" placeholder="Mensaje" className=" border rounded p-1" value={mensaje} onChange={e=>setMensaje(e.target.value)}/>
-          </div>
+              <div className=" mt-3 flex flex-col">
+                  <textarea id="mensaje" placeholder="Mensaje" className=" border rounded p-1" value={mensaje} onChange={e=>setMensaje(e.target.value)}/>
+              </div>
 
-          <button className=" bg-gray-400 p-2 rounded-xl hover:bg-gray-500 w-full mt-3">Enviar</button>
+              <button className=" bg-gray-400 p-2 rounded-xl hover:bg-gray-500 w-full mt-3">Enviar</button>
 
-      </form>
+          </form>
 
-      {msg && <Alerta alerta={alerta}/>}
+          {msg && <Alerta alerta={alerta}/>}
+
+      </div>
     </>
   )
 }

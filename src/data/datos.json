@@ -48,88 +48,112 @@
     ],
     "datosSkills":[
         {
-            "Skill": "Solidworks", 
+            "Skill": "Solidworks",
             "Logo": "solidworks.svg",
-            "Descripcion": "",
-            "Dominio":"5"
+            "Descripcion": "Solidworks es un software de diseño asistido por computadora (CAD) utilizado principalmente para el diseño y modelado de piezas y ensamblajes en 3D.",
+            "Dominio": "5"
         },
         {
-            "Skill": "Excel", 
+            "Skill": "Excel",
             "Logo": "excel.svg",
-            "Descripcion": "",
-            "Dominio":"5"
+            "Descripcion": "Excel es una aplicación de hojas de cálculo desarrollada por Microsoft que se utiliza para realizar cálculos, análisis de datos, gráficos y más.",
+            "Dominio": "5"
         },
         {
-            "Skill": "VBA", 
+            "Skill": "VBA",
             "Logo": "vba.svg",
-            "Descripcion": "",
-            "Dominio":"3"
+            "Descripcion": "VBA (Visual Basic for Applications) es un lenguaje de programación utilizado para automatizar tareas y manipular datos en aplicaciones de Microsoft Office, como Excel.",
+            "Dominio": "3"
         },
         {
-            "Skill": "MySQL", 
+            "Skill": "MySQL",
             "Logo": "mysql.svg",
-            "Descripcion": "",
-            "Dominio":"2"
+            "Descripcion": "MySQL es un sistema de gestión de bases de datos relacional de código abierto ampliamente utilizado para el desarrollo de aplicaciones web y empresariales.",
+            "Dominio": "2"
         },
         {
-            "Skill": "HTML", 
+            "Skill": "HTML",
             "Logo": "html.svg",
-            "Descripcion": "",
-            "Dominio":"3"
+            "Descripcion": "HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y diseñar páginas web.",
+            "Dominio": "3"
         },
         {
-            "Skill": "CSS", 
+            "Skill": "CSS",
             "Logo": "css.svg",
-            "Descripcion": "",
-            "Dominio":"3"
+            "Descripcion": "CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para definir el diseño y la presentación de documentos HTML.",
+            "Dominio": "3"
         },
         {
-            "Skill": "Python", 
+            "Skill": "Python",
             "Logo": "python.svg",
-            "Descripcion": "",
-            "Dominio":"2"
+            "Descripcion": "Python es un lenguaje de programación de alto nivel, interpretado y de propósito general, conocido por su sintaxis sencilla y legible.",
+            "Dominio": "2"
         },
         {
-            "Skill": "Flask", 
+            "Skill": "Flask",
             "Logo": "flask.svg",
-            "Descripcion": "",
-            "Dominio":"2"
+            "Descripcion": "Flask es un micro-framework de Python utilizado para construir aplicaciones web rápidas y escalables.",
+            "Dominio": "2"
         },
         {
-            "Skill": "Solidcast", 
+            "Skill": "Solidcast",
             "Logo": "solidcast.svg",
-            "Descripcion": "",
-            "Dominio":"4"
+            "Descripcion": "Solidcast es un software de simulación de fundición utilizado para predecir y optimizar el proceso de fabricación de piezas fundidas.",
+            "Dominio": "4"
         },
         {
-            "Skill": "SprutCAM", 
+            "Skill": "SprutCAM",
             "Logo": "sprutcam.svg",
-            "Descripcion": "",
-            "Dominio":"3"
+            "Descripcion": "SprutCAM es un software de fabricación asistida por computadora (CAM) utilizado para generar rutas de herramientas y programas de mecanizado para máquinas CNC.",
+            "Dominio": "3"
         },
         {
-            "Skill": "AutoCAD", 
+            "Skill": "AutoCAD",
             "Logo": "autocad.svg",
-            "Descripcion": "",
-            "Dominio":"2"
+            "Descripcion": "AutoCAD es un software de diseño asistido por computadora (CAD) utilizado para la creación de dibujos técnicos en 2D y modelos en 3D.",
+            "Dominio": "2"
         },
         {
-            "Skill": "Office", 
+            "Skill": "Office",
             "Logo": "office.svg",
-            "Descripcion": "",
-            "Dominio":"5"
+            "Descripcion": "Office es un conjunto de aplicaciones de productividad de Microsoft que incluye programas como Word, Excel, PowerPoint y Outlook.",
+            "Dominio": "5"
         },
         {
-            "Skill": "LabView", 
+            "Skill": "LabView",
             "Logo": "labview.svg",
-            "Descripcion": "",
-            "Dominio":"2"
+            "Descripcion": "LabView es un entorno de desarrollo de software y hardware utilizado para la adquisición de datos, control de instrumentos y automatización de pruebas.",
+            "Dominio": "2"
         },
         {
-            "Skill": "Matlab", 
+            "Skill": "Matlab",
             "Logo": "matlab.svg",
-            "Descripcion": "",
-            "Dominio":"2"
+            "Descripcion": "Matlab es un entorno de computación numérica y programación utilizado para el análisis de datos, modelado matemático y desarrollo de algoritmos.",
+            "Dominio": "2"
+        },
+        {
+            "Skill": "NodeJs",
+            "Logo": "nodejs.svg",
+            "Descripcion": "Node.js es un entorno de ejecución de JavaScript en el lado del servidor, diseñado para desarrollar aplicaciones web escalables y rápidas.",
+            "Dominio": "2"
+        },
+        {
+            "Skill": "ReactJs",
+            "Logo": "reactjs.svg",
+            "Descripcion": "React es una biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas y reutilizables. Se destaca por su enfoque declarativo y su capacidad para renderizar eficientemente el DOM a través de su Virtual DOM.",
+            "Dominio": "2"
+        },
+        {
+            "Skill": "VueJs",
+            "Logo": "vuejs.svg",
+            "Descripcion": "Vue.js es un marco progresivo de JavaScript para construir interfaces de usuario interactivas y reactivas. Se centra en la creación de componentes reutilizables y la gestión eficiente del estado de la aplicación, con una curva de aprendizaje suave y flexibilidad.",
+            "Dominio": "2"
+        },
+        {
+            "Skill": "PugJs",
+            "Logo": "pugjs.svg",
+            "Descripcion": "Pug.js es un motor de plantillas HTML basado en JavaScript, diseñado para simplificar la escritura de código HTML mediante una sintaxis más limpia y concisa. Se enfoca en permitir la creación de estructuras de HTML de manera eficiente utilizando sangrías y abreviaturas, lo que facilita la creación de vistas en aplicaciones web.",
+            "Dominio": "2"
         }
     ],
     "datosSoftskills": [
@@ -204,12 +228,124 @@
 
     "datosProyectos": [
         {
-            "Nombre":"Proyecto 1",
-            "Descripcion":"Descripcion Proyecto 1"
+            "Nombre":"Portafolio",
+            "Descripcion":"Es mi portafolio que recopila información acerca de mi y los proyectos que he desarrollado.",
+            "Deployment": "",
+            "Github": "https://github.com/tonypeanut/portfolio.git",
+            "Etiquetas": [
+                "React", "Javascript", "tailwind"
+            ],
+            "Imagenes": [
+                ""
+            ]
         },
         {
-            "Nombre":"Proyecto 2",
-            "Descripcion":"Descripcion Proyecto 2"
+            "Nombre":"Administrador de Veterinaria FullStack",
+            "Descripcion":"Un administrador de pacientes de veterinaria y de veterinarios. Cuenta con Frontend y Backend.",
+            "Deployment": "https://apv-frontend-i5jqgq5gs-antonios-projects-5614fdc2.vercel.app/",
+            "Github": "https://github.com/tonypeanut/administradorPacientesVeterinariaFullStack.git",
+            "Etiquetas": [
+                "React", "Javascript", "TailwindCSS"
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Nombre":"Cotizador de Préstamos Vue",
+            "Descripcion":"Un pequeño cotizador de prestamos realizado con Vuejs",
+            "Deployment": "https://tonypeanut-cotizador-prestamos-vue.netlify.app/",
+            "Github": "https://github.com/tonypeanut/cotizadorPrestamosVue",
+            "Etiquetas": [
+                "Javascript", "Vue"
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Nombre":"Cotizador de Préstamos React",
+            "Descripcion":"Un pequeño cotizador de prestamos realizado con Reactjs",
+            "Deployment": "https://tonypeanut-cotizador-prestamos-react.netlify.app/",
+            "Github": "https://github.com/tonypeanut/cotizadorPrestamosReact.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Nombre":"Agencia de Viajes",
+            "Descripcion":"Proyecto de una agencia de viajes, que muestra información sobre destinos vacacionales.",
+            "Deployment": "https://agenciaviajesnode-2em1.onrender.com/",
+            "Github": "https://github.com/tonypeanut/agenciaViajesNode.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Nombre":"Administrador de Pacientes de Veterinaria",
+            "Descripcion":"Un pequeño gestor de citas de pacientes de veterinaria.",
+            "Deployment": "https://main--tonypeanut-gestorveterinaria.netlify.app/",
+            "Github": "https://github.com/tonypeanut/administrarPacientes.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Nombre":"",
+            "Descripcion":"",
+            "Deployment": "",
+            "Github": "",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Nombre":"",
+            "Descripcion":"",
+            "Deployment": "",
+            "Github": "",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Nombre":"",
+            "Descripcion":"",
+            "Deployment": "",
+            "Github": "",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Nombre":"",
+            "Descripcion":"",
+            "Deployment": "",
+            "Github": "",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
         }
     ]
 

@@ -8,7 +8,7 @@ const Proyectos = ({datosProyectos}) => {
     <>
       { isOpen && (<Modal/>)}
       <h1 className="text-2xl font-bold">Proyectos</h1>
-      <div className="container bg-gray-200 w-3/4 mb-5 border rounded flex flex-col md:flex-row p-5 gap-5 text-left">
+      <div className="container bg-gray-200 w-3/4 mb-5 border rounded flex flex-col md:flex-row p-5 gap-5 text-left flex-wrap">
             {datosProyectos.map((proyecto, i) => (
               <div key={i} className="bg-gray-100 border rounded-lg p-5 shadow-lg hover:bg-cyan-100" >
                   <p><strong>Proyecto:</strong> {proyecto.Nombre}</p>

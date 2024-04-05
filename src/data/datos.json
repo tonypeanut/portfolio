@@ -224,10 +224,9 @@
         }
     ],
 
-
-
     "datosProyectos": [
         {
+            "Id": "25",
             "Nombre":"Portafolio",
             "Descripcion":"Es mi portafolio que recopila información acerca de mi y los proyectos que he desarrollado.",
             "Deployment": "",
@@ -240,6 +239,7 @@
             ]
         },
         {
+            "Id": "24",
             "Nombre":"Administrador de Veterinaria FullStack",
             "Descripcion":"Un administrador de pacientes de veterinaria y de veterinarios. Cuenta con Frontend y Backend.",
             "Deployment": "https://apv-frontend-i5jqgq5gs-antonios-projects-5614fdc2.vercel.app/",
@@ -252,6 +252,7 @@
             ]
         },
         {
+            "Id": "23",
             "Nombre":"Cotizador de Préstamos Vue",
             "Descripcion":"Un pequeño cotizador de prestamos realizado con Vuejs",
             "Deployment": "https://tonypeanut-cotizador-prestamos-vue.netlify.app/",
@@ -264,6 +265,7 @@
             ]
         },
         {
+            "Id": "22",
             "Nombre":"Cotizador de Préstamos React",
             "Descripcion":"Un pequeño cotizador de prestamos realizado con Reactjs",
             "Deployment": "https://tonypeanut-cotizador-prestamos-react.netlify.app/",
@@ -276,6 +278,7 @@
             ]
         },
         {
+            "Id": "21",
             "Nombre":"Agencia de Viajes",
             "Descripcion":"Proyecto de una agencia de viajes, que muestra información sobre destinos vacacionales.",
             "Deployment": "https://agenciaviajesnode-2em1.onrender.com/",
@@ -288,6 +291,7 @@
             ]
         },
         {
+            "Id": "20",
             "Nombre":"Administrador de Pacientes de Veterinaria",
             "Descripcion":"Un pequeño gestor de citas de pacientes de veterinaria.",
             "Deployment": "https://main--tonypeanut-gestorveterinaria.netlify.app/",
@@ -300,10 +304,11 @@
             ]
         },
         {
-            "Nombre":"",
-            "Descripcion":"",
-            "Deployment": "",
-            "Github": "",
+            "Id": "19",
+            "Nombre":"Gestor de clientes CRM",
+            "Descripcion":"Un gestor de clientes.",
+            "Deployment": "https://tonypeanut-crmrestasync.netlify.app/",
+            "Github": "https://github.com/tonypeanut/crmRestAsync.git",
             "Etiquetas": [
    
             ],
@@ -312,10 +317,11 @@
             ]
         },
         {
-            "Nombre":"",
-            "Descripcion":"",
-            "Deployment": "",
-            "Github": "",
+            "Id": "18",
+            "Nombre":"Cotizador de criptomonedas",
+            "Descripcion":"Un cotizador de criptomonedas",
+            "Deployment": "https://tonypeanut-criptomonedas.netlify.app/",
+            "Github": "https://github.com/tonypeanut/criptomonedas.git",
             "Etiquetas": [
    
             ],
@@ -324,10 +330,11 @@
             ]
         },
         {
-            "Nombre":"",
-            "Descripcion":"",
-            "Deployment": "",
-            "Github": "",
+            "Id": "17",
+            "Nombre":"Buscador de Imagenes",
+            "Descripcion":"Buscador de Imagenes",
+            "Deployment": "https://tonypeanut-buscadorimagenes.netlify.app/",
+            "Github": "https://github.com/tonypeanut/buscadorImagenes.git",
             "Etiquetas": [
    
             ],
@@ -336,10 +343,206 @@
             ]
         },
         {
-            "Nombre":"",
-            "Descripcion":"",
+            "Id": "16",
+            "Nombre":"Restaurante",
+            "Descripcion":"Restaurante",
+            "Deployment": "https://tonypeanut-restaurante.netlify.app/",
+            "Github": "https://github.com/tonypeanut/restaurante.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "15",
+            "Nombre":"Buscador de Recetas",
+            "Descripcion":"Buscador de Recetas",
+            "Deployment": "https://tonypeanut-buscador-recetas.netlify.app/",
+            "Github": "https://github.com/tonypeanut/buscadorRecetas.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "14",
+            "Nombre":"ClimaFetchAPI",
+            "Descripcion":"Consulta clima",
+            "Deployment": "https://tonypeanut-clima.netlify.app/",
+            "Github": "https://github.com/tonypeanut/climaFetchAPI.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "13",
+            "Nombre":"CRM Indexed DB",
+            "Descripcion":"crm indexed db",
+            "Deployment": "https://tonypeanut-crm-indexed-db.netlify.app/",
+            "Github": "https://github.com/tonypeanut/crmIndexedDB.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "12",
+            "Nombre":"Administrador de presupuesto",
+            "Descripcion":"Administrador de presupuesto",
+            "Deployment": "https://tonypeanut-administrdor-presupuesto.netlify.app/",
+            "Github": "https://github.com/tonypeanut/administrarPresupuesto.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "11",
+            "Nombre":"Cotizador Seguros de Auto",
+            "Descripcion":"cotizador seguros de auto",
+            "Deployment": "https://tonypeanut-cotizador-prototypes.netlify.app/",
+            "Github": "https://github.com/tonypeanut/cotizadorPrototypes.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "10",
+            "Nombre":"Carrito de compras",
+            "Descripcion":"Carrito de compras",
+            "Deployment": "https://tonypeanut-carrito-compras.netlify.app/",
+            "Github": "https://github.com/tonypeanut/carritoCompras.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "9",
+            "Nombre":"Almacenar textos",
+            "Descripcion":"Almacenar textos",
+            "Deployment": "https://tonypeanut-almacenar-textos.netlify.app/",
+            "Github": "https://github.com/tonypeanut/almacenarTextos.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "8",
+            "Nombre":"Buscador de autos",
+            "Descripcion":"buscador de autos",
+            "Deployment": "https://tonypeanut-buscador.netlify.app/",
+            "Github": "https://github.com/tonypeanut/buscador.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "7",
+            "Nombre":"Enviar email",
+            "Descripcion":"enviar email",
+            "Deployment": "https://tonypenaut-enviar-email.netlify.app/",
+            "Github": "https://github.com/tonypeanut/enviarEmail.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "6",
+            "Nombre":"Encriptador",
+            "Descripcion":"encriptador",
+            "Deployment": "https://tonypeanut.github.io/encriptador/",
+            "Github": "https://github.com/tonypeanut/encriptador.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "5",
+            "Nombre":"Gestor clientes",
+            "Descripcion":"Gestor clientes python",
             "Deployment": "",
-            "Github": "",
+            "Github": "https://github.com/tonypeanut/gestorClientes.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "4",
+            "Nombre":"Barberia Alura",
+            "Descripcion":"Barberia",
+            "Deployment": "https://tonypeanut-barberia.netlify.app/",
+            "Github": "https://github.com/tonypeanut/barberia.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "3",
+            "Nombre":"Mailer App",
+            "Descripcion":"Mailer App",
+            "Deployment": "",
+            "Github": "https://github.com/tonypeanut/mailerApp.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "2",
+            "Nombre":"Número Secreto",
+            "Descripcion":"numero secreto",
+            "Deployment": "https://tonypeanut-numero-secreto.netlify.app/",
+            "Github": "https://github.com/tonypeanut/numeroSecreto.git",
+            "Etiquetas": [
+   
+            ],
+            "Imagenes": [
+                ""
+            ]
+        },
+        {
+            "Id": "1",
+            "Nombre":"Lista de tareas",
+            "Descripcion":"lista de tareas",
+            "Deployment": "",
+            "Github": "https://github.com/tonypeanut/toDoList.git",
             "Etiquetas": [
    
             ],
@@ -349,4 +552,4 @@
         }
     ]
 
-}
+} 

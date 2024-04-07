@@ -2,26 +2,18 @@ import { useEffect, useState } from "react";
 import Modal from "./Modal";
 import useContexto from '../hook/useContexto';
 import ProgressBar from "./ProgressBar";
+import importarImagenes from "../helpers/importarImagenes";
 
 const Skills = ({datosSkills, datosSoftskills}) => {
 
     const [logosSkills, setLogosSkills] = useState([]);
     const [logosSoftskills, setLogosSoftskills] = useState([]);
+    const arrayImagenesSkills = datosSkills.map(elemento => elemento.Logo);
+    const arrayImagenesSoftskills = datosSoftskills.map(elemento => elemento.Logo);
 
-    const importLogosSkills = async (array, i) => {
-        const logoImports = await Promise.all(
-            array.map(async (item) => {
-            const url = `../assets/icons/${item.Logo}`
-            const importedLogo = await import(url /* @vite-ignore */);
-            return importedLogo.default;
-          })
-        );
-        if (i===1){setLogosSkills(logoImports);}
-        else if (i===2){setLogosSoftskills(logoImports);}
-    };
     // Se importan los logos de los Skills
-    useEffect(() => {importLogosSkills(datosSkills, 1);}, [datosSkills]);
-    useEffect(() => {importLogosSkills(datosSoftskills, 2);}, [datosSoftskills]);
+    useEffect(() => {importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");}, [datosSkills]);
+    useEffect(() => {importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");}, [datosSoftskills])
 
     const { isOpen, openModal } = useContexto();
 

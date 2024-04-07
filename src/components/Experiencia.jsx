@@ -9,9 +9,9 @@ const Experiencia = ({datosExperiencia}) => {
         { isOpen && (<Modal/>)}
 
         <h1  className="text-2xl font-bold">Experiencia laboral</h1>
-        <div className="container bg-gray-200 w-3/4 mb-5 border rounded flex flex-col md:flex-row p-5 gap-2 lg:gap-5">
+        <div className="container bg-gray-200 w-3/4 mb-5 border rounded flex flex-col md:flex-row p-5 gap-10 text-left flex-wrap justify-center">
             {datosExperiencia.map((experiencia, i) => (
-              <div key={i} className="bg-gray-100  ml5 mb-5 border rounded-lg p-5 shadow-lg hover:bg-cyan-100 text-left">
+              <div key={i} className="bg-gray-100 border rounded-lg p-5 shadow-lg hover:bg-cyan-100 w-72 flex flex-col justify-between">
                   <p><strong>Puesto:</strong> {experiencia.Puesto}</p>
                   <p><strong>Fecha de Inicio:</strong> {experiencia.FechaInicio}</p>
                   <p><strong>Fecha de Fin:</strong> {experiencia.FechaFin}</p>

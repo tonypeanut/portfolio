@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import useContexto from '../hook/useContexto';
 import ModalExperiencia from './ModalExperiencia';
 import ModalFormulario from './ModalFormulario';
@@ -17,10 +18,24 @@ const Modal = () => {
       }
     }
 
+    useEffect(() => {
+      document.addEventListener('keydown', handleKeyDown);
+  
+      return () => {
+        document.removeEventListener('keydown', handleKeyDown);
+      };
+    }, []);
+
+    const handleKeyDown = (e) => {
+      if (e.keyCode === 27) {
+        closeModal();
+      }
+    };
+
     return (
       <>
-            <div id="fuera" className=" fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center" onClick={handleClick} >
-                <div id="modal" className=" card card-side shadow-xl bg-white flex flex-col justify-center items-center gap-5 relative">
+            <div id="fuera" className=" fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center" onClick={handleClick}>
+                <div id="modal" className=" card shadow-xl bg-white flex flex-col justify-center items-center gap-5 relative w-full md:w-3/5 p-5">
                     { tipo === 'experiencia' && (<ModalExperiencia id={id}/>)}
                     { tipo === 'formulario' && (<ModalFormulario/>)}
                     { tipo === 'proyectos' && (<ModalProyectos id={id}/>)}

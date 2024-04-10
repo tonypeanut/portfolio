@@ -17,10 +17,8 @@ const Inicio = () => {
             <Acerca/>
             <Skills datosSkills={datosSkills} datosSoftskills={datosSoftskills}/>
             <Experiencia datosExperiencia={datosExperiencia}/>
-            <Proyectos datosProyectos={datosProyectos}/>
+            <Proyectos limit={6}/>
             <Contacto/>
-
-
         </div>
     </>
   )

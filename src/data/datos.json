@@ -51,13 +51,13 @@
             "Skill": "Solidworks",
             "Logo": "solidworks.svg",
             "Descripcion": "Solidworks es un software de diseño asistido por computadora (CAD) utilizado principalmente para el diseño y modelado de piezas y ensamblajes en 3D.",
-            "Dominio": "5"
+            "Dominio": "4"
         },
         {
             "Skill": "Excel",
             "Logo": "excel.svg",
             "Descripcion": "Excel es una aplicación de hojas de cálculo desarrollada por Microsoft que se utiliza para realizar cálculos, análisis de datos, gráficos y más.",
-            "Dominio": "5"
+            "Dominio": "4"
         },
         {
             "Skill": "VBA",
@@ -111,13 +111,13 @@
             "Skill": "AutoCAD",
             "Logo": "autocad.svg",
             "Descripcion": "AutoCAD es un software de diseño asistido por computadora (CAD) utilizado para la creación de dibujos técnicos en 2D y modelos en 3D.",
-            "Dominio": "2"
+            "Dominio": "3"
         },
         {
             "Skill": "Office",
             "Logo": "office.svg",
             "Descripcion": "Office es un conjunto de aplicaciones de productividad de Microsoft que incluye programas como Word, Excel, PowerPoint y Outlook.",
-            "Dominio": "5"
+            "Dominio": "4"
         },
         {
             "Skill": "LabView",
@@ -141,18 +141,30 @@
             "Skill": "ReactJs",
             "Logo": "reactjs.svg",
             "Descripcion": "React es una biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas y reutilizables. Se destaca por su enfoque declarativo y su capacidad para renderizar eficientemente el DOM a través de su Virtual DOM.",
-            "Dominio": "2"
+            "Dominio": "3"
         },
         {
             "Skill": "VueJs",
             "Logo": "vuejs.svg",
             "Descripcion": "Vue.js es un marco progresivo de JavaScript para construir interfaces de usuario interactivas y reactivas. Se centra en la creación de componentes reutilizables y la gestión eficiente del estado de la aplicación, con una curva de aprendizaje suave y flexibilidad.",
-            "Dominio": "2"
+            "Dominio": "1"
         },
         {
             "Skill": "PugJs",
             "Logo": "pugjs.svg",
             "Descripcion": "Pug.js es un motor de plantillas HTML basado en JavaScript, diseñado para simplificar la escritura de código HTML mediante una sintaxis más limpia y concisa. Se enfoca en permitir la creación de estructuras de HTML de manera eficiente utilizando sangrías y abreviaturas, lo que facilita la creación de vistas en aplicaciones web.",
+            "Dominio": "1"
+        },
+        {
+            "Skill": "tailwindCSS",
+            "Logo": "tailwindcss.svg",
+            "Descripcion": "Tailwind CSS es un marco de trabajo (framework) de desarrollo front-end para la creación de interfaces de usuario en aplicaciones web.",
+            "Dominio": "3"
+        },
+        {
+            "Skill": "bootstrap",
+            "Logo": "bootstrap.svg",
+            "Descripcion": "Bootstrap CSS es un popular marco de trabajo (framework) front-end diseñado para facilitar el desarrollo web. ",
             "Dominio": "2"
         }
     ],

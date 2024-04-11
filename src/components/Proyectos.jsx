@@ -24,7 +24,7 @@ const Proyectos = ({limit}) => {
   return (
     <>
       { isOpen && (<Modal/>)}
-      <h1 className="text-2xl font-bold">Proyectos</h1>
+      <h1 id="proyectos" className="text-2xl font-bold">Proyectos</h1>
       <div className="container bg-gray-200 w-3/4 mb-5 border rounded  p-5  text-left">
             <div className="flex flex-col md:flex-row gap-10 flex-wrap justify-center">
                 {proyectos.map((proyecto, i) => (

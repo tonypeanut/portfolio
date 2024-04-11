@@ -5,10 +5,15 @@ import Experiencia from "../components/Experiencia";
 import Proyectos from "../components/Proyectos";
 import Contacto from "../components/Contacto";
 
-import datos from '../data/datos.json'
+import datos from '../data/datos.json';
+
+import useContexto from '../hook/useContexto';
 
 const Inicio = () => {
-  const { datosCursos, datosExperiencia, datosSkills, datosSoftskills, datosProyectos} = datos
+  const { datosExperiencia, datosSkills, datosSoftskills } = datos
+  const { menu, setMenu } = useContexto();
+
+  setMenu(["menu", "acerca", "skills", "experiencia", "proyectos", "contacto", "otro menú"])
 
   return (
     <>

@@ -22,7 +22,7 @@ const Skills = ({datosSkills, datosSoftskills}) => {
      { isOpen && (<Modal/>)}
      
         
-        <h1 className=" text-2xl font-bold">Hardskills</h1>
+        <h1 id="skills" className=" text-2xl font-bold">Hardskills</h1>
         <div className="container bg-gray-200 w-3/4 mb-5 border rounded p-5 flex flex-wrap gap-2">
             {datosSkills.map((skill, i) => (
                 <button key={i} className="flex flex-col bg-gray-100  ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100" onClick={()=>openModal("skill",i)}>

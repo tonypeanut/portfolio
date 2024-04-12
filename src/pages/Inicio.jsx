@@ -6,12 +6,12 @@ import Experiencia from "../components/Experiencia";
 import Proyectos from "../components/Proyectos";
 import Contacto from "../components/Contacto";
 
-import datos from '../data/datos.json';
-
 import useContexto from '../hook/useContexto';
-import { useFetcher } from "react-router-dom";
+
+import { getDatos } from '../data/datos.js';
 
 const Inicio = () => {
+  const datos = getDatos();
   const { datosExperiencia, datosSkills, datosSoftskills } = datos
   const { setMenu } = useContexto();
 

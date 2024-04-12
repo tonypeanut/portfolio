@@ -1,7 +1,8 @@
-import datos from '../data/datos.json'
+import { getDatos } from '../data/datos.js'
 import check from '../assets/icons/check.svg'
 
 const ModalExperiencia = ({id}) => {
+  const datos = getDatos();
   const { datosExperiencia } = datos;
 
   const { Empresa, Puesto, FechaInicio, FechaFin, Funciones } = datosExperiencia[parseInt(id)];

@@ -1,14 +1,10 @@
-const importarImagenes = async (arrayImagenes, setImagenes, urlBase) => {
+import { getImageURL } from "../utils/image-utils.js"
 
-    function getImageURL(name){
-        return new URL(`${urlBase}${name}`, import.meta.url);
-    }
-
-    const imagenesImportadas = await Promise.all(
-        arrayImagenes.map(async (imagen) => {
-            return getImageURL(imagen);    
+const importarImagenes = (arrayImagenes, setImagenes, urlBase) => {
+    const imagenesImportadas = arrayImagenes.map(
+        imagen => {return getImageURL(imagen, urlBase)
         })
-    );
+
     setImagenes(imagenesImportadas);
 };
 

@@ -5,9 +5,10 @@ import deploySVG from '../assets/icons/deploy.svg';
 import githubSVG from '../assets/icons/github.svg';
 import importarImagenes from "../helpers/importarImagenes";
 import { Link } from "react-router-dom";
-import datos from '../data/datos.json';
+import { getDatos } from '../data/datos.js';
 
 const Proyectos = ({limit}) => {
+  const datos = getDatos();
   const { isOpen, openModal } = useContexto();
   const [ imagenes, setImagenes ] = useState([]);
   const { datosProyectos} = datos

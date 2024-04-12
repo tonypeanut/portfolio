@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import datos from '../data/datos.json'
+import { getDatos } from '../data/datos.js'
 import ProgressBar from "./ProgressBar";
 
 const ModalSkills = ({id}) => {
+  const datos = getDatos();
   const { datosSkills } = datos;
   const { Skill, Logo, Dominio, Descripcion } = datosSkills[id];
   const [ logoSkill, setLogoSkill ] = useState(null);

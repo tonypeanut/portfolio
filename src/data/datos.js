@@ -1,4 +1,4 @@
-{
+const datos = {
     "datosExperiencia": [
         {
             "Empresa" : "Fundiciones Rice",
@@ -606,5 +606,8 @@
             "Imagenes": [""]
         }
     ]
+}
 
-} 
+const getDatos = () => { return datos;}
+
+export { getDatos };

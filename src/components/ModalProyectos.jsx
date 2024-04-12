@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import datos from '../data/datos.json';
+import { getDatos } from '../data/datos.js';
 import deploySVG from '../assets/icons/deploy.svg';
 import githubSVG from '../assets/icons/github.svg';
 import importarImagenes from "../helpers/importarImagenes";
@@ -8,6 +8,7 @@ import previous from '../assets/icons/previous.svg'
 import Spinner from './spinner';
 
 const ModalProyectos = ({id}) => {
+  const datos = getDatos();
   const { datosProyectos } = datos;
   const { Nombre, Descripcion, Deployment, Github, Etiquetas, Imagenes } = datosProyectos[id]
   const [ imagenesImportadas, setImagenesImportadas ] = useState([]);

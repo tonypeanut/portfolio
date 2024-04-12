@@ -1,17 +1,15 @@
 const importarImagenes = async (arrayImagenes, setImagenes, urlBase) => {
+
+    function getImageURL(name){
+        return new URL(`${urlBase}${name}`, import.meta.url);
+    }
+
     const imagenesImportadas = await Promise.all(
         arrayImagenes.map(async (imagen) => {
-        const url = `${urlBase}${imagen}`
-        if (imagen) {
-            const imagenImportada = await import(url /* @vite-ignore */);
-            return imagenImportada.default;
-        }
-        return "";
-        
-      })
+            return getImageURL(imagen);    
+        })
     );
     setImagenes(imagenesImportadas);
-
 };
 
 export default importarImagenes;

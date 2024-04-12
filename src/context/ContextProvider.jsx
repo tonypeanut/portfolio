@@ -6,7 +6,7 @@ const ContextProvider = ({children}) => {
     const [isOpen, setIsOpen] = useState(false);
     const [tipo, setTipo] = useState("");
     const [id, setId] = useState("");
-    const [menu, setMenu] = useState(["menu", "acerca", "skills", "experiencia", "proyectos", "contacto"])
+    const [menu, setMenu] = useState([])
 
     const openModal = (tipo, id)=> {
         setIsOpen(true);
@@ -18,7 +18,6 @@ const ContextProvider = ({children}) => {
         setTipo("");
         setId(0);
     } 
-
 
     return (
         <Contexto.Provider value={{isOpen, tipo, id, openModal, closeModal, menu, setMenu}}>

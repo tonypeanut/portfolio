@@ -12,8 +12,8 @@ const Skills = ({datosSkills, datosSoftskills}) => {
     const arrayImagenesSoftskills = datosSoftskills.map(elemento => elemento.Logo);
 
     // Se importan los logos de los Skills
-    useEffect(() => {importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");}, [datosSkills]);
-    useEffect(() => {importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");}, [datosSoftskills])
+    useEffect(() => {importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");}, []);
+    useEffect(() => {importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");}, [])
 
     const { isOpen, openModal } = useContexto();
 

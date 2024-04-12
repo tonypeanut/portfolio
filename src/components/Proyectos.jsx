@@ -19,7 +19,11 @@ const Proyectos = ({limit}) => {
 
   const arrayImagenes = proyectos.map(elemento => elemento.Imagenes[0]);
   
-  useEffect(() => {importarImagenes(arrayImagenes, setImagenes, "../assets/images/");}, [proyectos]);
+  useEffect(() => {importarImagenes(arrayImagenes, setImagenes, "../assets/images/");}, []);
+
+  const handleLinkClick = () => {
+    window.scrollTo(0,0);
+  }
 
   return (
     <>
@@ -44,7 +48,7 @@ const Proyectos = ({limit}) => {
                   </div>
                 ))}
             </div>
-            { limit && <div className="flex justify-center mt-3"><Link to="/proyectos" className="p-2 rounded-xl from-cyan-300 to-cyan-500 hover:from-cyan-400 hover:to-cyan-600 bg-gradient-to-br font-bold">Más proyectos</Link></div>}
+            { limit && <div className="flex justify-center mt-3"><Link to="/proyectos" className="p-2 rounded-xl from-cyan-300 to-cyan-500 hover:from-cyan-400 hover:to-cyan-600 bg-gradient-to-br font-bold" onClick={handleLinkClick}>Más proyectos</Link></div>}
       </div>
   </>
   )

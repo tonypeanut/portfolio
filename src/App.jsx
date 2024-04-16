@@ -8,11 +8,6 @@ import TodosProyectos from './pages/TodosProyectos';
 import { ContextProvider } from './context/ContextProvider';
 
 function App() {
-    const iconFiles = import.meta.glob('./assets/icons/*.svg');
-    const imageFiles = import.meta.glob('./assets/images/*.png');
-    console.log(iconFiles);
-    console.log(imageFiles);
-
     return (
         <BrowserRouter>
                 <ContextProvider>

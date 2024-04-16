@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getDatos } from '../data/datos.js'
 import ProgressBar from "./ProgressBar";
+import importarImagenes from "../helpers/importarImagenes";
 
 const ModalSkills = ({id}) => {
   const datos = getDatos();
@@ -8,15 +9,7 @@ const ModalSkills = ({id}) => {
   const { Skill, Logo, Dominio, Descripcion } = datosSkills[id];
   const [ logoSkill, setLogoSkill ] = useState(null);
 
-  const importLogo = async (logo) => {
-    const url = `../assets/icons/${logo}`;
-    const importedLogo = await import(url /* @vite-ignore */);
-    setLogoSkill(importedLogo.default)
-  };
-
-  useEffect(() => {importLogo(Logo);}, [Logo]);
-
-  
+  useEffect(() => {importarImagenes([Logo], setLogoSkill, "../assets/icons/");}, []);
 
 
   return (

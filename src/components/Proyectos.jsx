@@ -30,10 +30,10 @@ const Proyectos = ({limit}) => {
     <>
       { isOpen && (<Modal/>)}
       <h1 id="proyectos" className="text-2xl font-bold">Proyectos</h1>
-      <div className="container bg-gray-200 w-3/4 mb-5 border rounded  p-5  text-left">
+      <div className="container bg-gray-200 w-3/5 mb-5 border rounded  p-5  text-left">
             <div className="flex flex-col md:flex-row gap-10 flex-wrap justify-center">
                 {proyectos.map((proyecto, i) => (
-                  <div key={i} className="bg-gray-100 border rounded-lg p-5 shadow-lg hover:bg-cyan-100 w-72 flex flex-col justify-between">
+                  <div key={i} className="bg-gray-100 border rounded-lg p-5 shadow-lg hover:bg-cyan-100 w-52 flex flex-col justify-between">
                       {imagenes[i] && <img className="cursor-pointer hover:brightness-105 " src={imagenes[i]} alt={`imagen${i}`} onClick={()=>openModal("proyectos",i)}  />}
                       <h2 className=" text-2xl font-bold mt-2">{proyecto.Nombre}</h2>
                       <p>{proyecto.Descripcion}</p>

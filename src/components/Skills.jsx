@@ -15,12 +15,21 @@ const Skills = ({datosSkills, datosSoftskills}) => {
     useEffect(() => {importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");}, []);
     useEffect(() => {importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");}, [])
 
-    const { isOpen, openModal, icons } = useContexto();
+    const { isOpen, openModal, iconFiles } = useContexto();
+
+    const arregloIconos = Object.keys(iconFiles);
+    console.log(arregloIconos)
+
+    const url = new URL(arregloIconos[0], import.meta.url).href;
+
+    console.log(url);
+
+
 
   return (
     <>
      { isOpen && (<Modal/>)}
-        
+        <img src={url} alt="1" />
         <h1 id="skills" className=" text-2xl font-bold">Hardskills</h1>
         <div className="container bg-gray-200 w-3/5 mb-5 border rounded p-5 flex flex-wrap gap-2">
             {datosSkills.map((skill, i) => (

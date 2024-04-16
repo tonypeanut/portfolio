@@ -12,9 +12,6 @@ const ContextProvider = ({children}) => {
     const iconFiles = import.meta.glob('../assets/icons/*.svg');
     const imageFiles = import.meta.glob('../assets/images/*.png');
 
-    console.log(iconFiles)
-    console.log(imageFiles)
-
 
     const openModal = (tipo, id)=> {
         setIsOpen(true);
@@ -28,7 +25,7 @@ const ContextProvider = ({children}) => {
     } 
 
     return (
-        <Contexto.Provider value={{isOpen, tipo, id, openModal, closeModal, menu, setMenu, icons}}>
+        <Contexto.Provider value={{isOpen, tipo, id, openModal, closeModal, menu, setMenu, iconFiles}}>
             {children}
         </Contexto.Provider>
     )

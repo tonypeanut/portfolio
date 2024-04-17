@@ -7,11 +7,6 @@ const ContextProvider = ({children}) => {
     const [tipo, setTipo] = useState("");
     const [id, setId] = useState("");
     const [menu, setMenu] = useState([]);
-    const [icons, setIcons] = useState([]);
-
-    const iconFiles = import.meta.glob('../assets/icons/*.svg');
-    const imageFiles = import.meta.glob('../assets/images/*.png');
-
 
     const openModal = (tipo, id)=> {
         setIsOpen(true);
@@ -25,7 +20,7 @@ const ContextProvider = ({children}) => {
     } 
 
     return (
-        <Contexto.Provider value={{isOpen, tipo, id, openModal, closeModal, menu, setMenu, iconFiles}}>
+        <Contexto.Provider value={{isOpen, tipo, id, openModal, closeModal, menu, setMenu}}>
             {children}
         </Contexto.Provider>
     )

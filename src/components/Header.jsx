@@ -9,9 +9,9 @@ import logoSVG from "../assets/icons/logo.svg"
 const Header = () => {
   return (
 
-    <div className="bg-gray-500 text-white justify-between items-center tablet:flex">
+    <div className="bg-gray-500 text-white justify-between items-center flex">
         <div className=" text-center">
-            <Link to="/" className='flex'>
+            <Link to="/" className='flex cellphone:flex'>
                 <img src={logoSVG} alt="logo" width="25px" />
                 <h1 className="  text-xl font-bold">TonyPeanut</h1>
             </Link>

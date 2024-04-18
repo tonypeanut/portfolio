@@ -4,12 +4,12 @@ import Navigation from "./Navigation";
 import MenuDesplegable from "./MenuDesplegable";
 import RedesSociales from "./RedesSociales";
 
-import logoSVG from "../assets/icons/logo.svg"
+import logoSVG from "../assets/icons/logo.svg";
 
 const Header = () => {
   return (
 
-    <div className="bg-gray-500 text-white justify-between items-center flex">
+    <div className="bg-gray-500 text-white justify-between flex">
         <div className=" text-center">
             <Link to="/" className='flex cellphone:flex'>
                 <img src={logoSVG} alt="logo" width="25px" />
@@ -22,7 +22,7 @@ const Header = () => {
             <Navigation/>
         </div>
 
-        <div className=" tablet:hidden cellphone:flex">
+        <div className=" tablet:hidden cellphone:flex h-16 w-24 text-center">
             <MenuDesplegable/>
         </div>
 

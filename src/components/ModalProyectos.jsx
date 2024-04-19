@@ -5,7 +5,8 @@ import githubSVG from '../assets/icons/github.svg';
 import importarImagenes from "../helpers/importarImagenes";
 import next from '../assets/icons/next.svg';
 import previous from '../assets/icons/previous.svg'
-import Spinner from './spinner';
+
+import MostrarImagen from './MostrarImagen.jsx';
 
 const ModalProyectos = ({id}) => {
   const datos = getDatos();
@@ -22,15 +23,14 @@ const ModalProyectos = ({id}) => {
   return (
     <>
             <div className=" w-full relative">
-                {!imagenesImportadas[currentImageIndex] && <Spinner/>}
-                <img src={imagenesImportadas[currentImageIndex]} alt={`Imagen ${currentImageIndex + 1}`} className={`rounded-3xl shadow-2xl ${!imagenesImportadas[currentImageIndex] ? 'hidden' : 'block'}`}/>
+                <MostrarImagen imagen={imagenesImportadas[currentImageIndex]} nombre={currentImageIndex} clases={"rounded-3xl shadow-2xl"}/>
                 <div className={`absolute w-full flex justify-between h-full top-0 ${!imagenesImportadas[1] ? 'hidden' : 'block'}`}>
                     <button onClick={prevImage} className="hover:bg-cyan-300 hover:opacity-30 w-28">
                         <img src={previous} alt="<" className='w-10'/>
                     </button>
 
-                    <button onClick={nextImage} className='hover:bg-cyan-300 hover:opacity-30 w-28 flex justify-end'>
-                        <img src={next} alt=">" className=" w-10" />
+                    <button onClick={nextImage} className='hover:bg-cyan-300 hover:opacity-30 w-28'>
+                        <img src={next} alt=">" className=" w-10 float-right" />
                     </button>
                 </div>
                 

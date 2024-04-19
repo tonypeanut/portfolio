@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getDatos } from '../data/datos.js'
 import ProgressBar from "./ProgressBar";
 import importarImagenes from "../helpers/importarImagenes";
+import MostrarImagen from './MostrarImagen.jsx';
 
 const ModalSkills = ({id}) => {
   const datos = getDatos();
@@ -15,13 +16,13 @@ const ModalSkills = ({id}) => {
   return (
     <>
           <div className="flex">
-                <img src={logoSkill} className=' w-1/3' alt="Logo"/>
-                <div className="card-body">
-                      <h2 className="card-title">{Skill}</h2>
-                      <p>{Descripcion}</p>
-                      
-                      <ProgressBar dominio={Dominio} alto="h-5" mostrarDominio={true}/>
-                </div>
+                  <MostrarImagen imagen={logoSkill} nombre={Skill} clases="w-1/3"/>
+                  <div className="card-body">
+                        <h2 className="card-title">{Skill}</h2>
+                        <p>{Descripcion}</p>
+                        
+                        <ProgressBar dominio={Dominio} alto="h-5" mostrarDominio={true}/>
+                  </div>
                 
           </div>
     </>

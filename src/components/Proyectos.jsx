@@ -6,6 +6,7 @@ import githubSVG from '../assets/icons/github.svg';
 import importarImagenes from "../helpers/importarImagenes";
 import { Link } from "react-router-dom";
 import { getDatos } from '../data/datos.js';
+import MostrarImagen from './MostrarImagen.jsx';
 
 const Proyectos = ({limit}) => {
   const datos = getDatos();
@@ -34,7 +35,7 @@ const Proyectos = ({limit}) => {
             <div className="flex flex-col md:flex-row gap-10 flex-wrap justify-center">
                 {proyectos.map((proyecto, i) => (
                   <div key={i} className="bg-gray-100 border rounded-lg p-5 shadow-lg hover:bg-cyan-100 w-full flex flex-col justify-between laptop:w-52">
-                      {imagenes[i] && <img className="cursor-pointer hover:brightness-105 " src={imagenes[i]} alt={`imagen${i}`} onClick={()=>openModal("proyectos",i)}  />}
+                      <MostrarImagen imagen={imagenes[i]} nombre={`imagen${i}`} clases="cursor-pointer hover:brightness-105" onClick={()=>openModal("proyectos",i)}/>
                       <h2 className=" text-2xl font-bold mt-2">{proyecto.Nombre}</h2>
                       <p>{proyecto.Descripcion}</p>
                       <div>

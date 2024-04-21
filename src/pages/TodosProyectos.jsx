@@ -5,7 +5,7 @@ import useContexto from "../hook/useContexto";
 const TodosProyectos = () => {
   const { setMenu } = useContexto();
 
-  useEffect( () => {setMenu(["inicio", "contacto"])}, []);
+  useEffect( () => {setMenu(["inicio", "contacto-"])}, []);
 
   return (
     <>

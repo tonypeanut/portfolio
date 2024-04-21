@@ -2,7 +2,7 @@ const datos = {
     "datosExperiencia": [
         {
             "Empresa" : "Fundiciones Rice",
-            "Puesto" : "Gerente de gestión de calidad",
+            "Puesto" : "Gerente de Gestion de Calidad",
             "FechaInicio" : "Marzo 2022",
             "FechaFin": "Actualidad",
             "Funciones": [
@@ -10,25 +10,37 @@ const datos = {
                 "Planificación y ejecución de audiorías y evaluaciones internas y externas para verificar el cumplimiento de estándares y procedimientos de calidad.",
                 "Identificación de problemas y desarrollo de soluciones efectivas.",
                 "Desarrollo de programas de formación y capacitación para los empleados.",
-                "Recopilación y análisis de datos para monitorear el desempeño de procesos y productos, y elaboración de informes.",
-                "Trabajo en equipo con otros departamentos y comunicación clara y efectiva de expectativas y requerimientos de calidad."
+                "Recopilación, análisis de datos y diseño de KPIs para monitorear el desempeño de procesos y productos",
+                "Fomento del trabajo en equipo con otros departamentos, junto con una comunicación clara y efectiva de las expectativas y requisitos de calidad.",
+                "Automatizar la generación informes."
             ]
         },
         {
             "Empresa" : "Fundiciones Rice",
-            "Puesto" : "Coordinador de Investigación y Desarrollo",
-            "FechaInicio" : "Junio 2015",
+            "Puesto" : "Gerente de Investigación y Desarrollo",
+            "FechaInicio" : "Junio 2017",
             "FechaFin": "Marzo 2022",
             "Funciones": [
-                "Diseño, planificación y ejecución de proyectos de I+D de nuevos productos y tecnologías.",
-                "Identificación de oportunidades de mejora e innovación en procesos y productos existentes, y liderazgo en la implementación de soluciones.",
-                "Desarrollo de especificaciones técnicas y estándares para nuevos productos y procesos, y aseguramiento de su cumplimiento.",
-                "Coordinación de equipos multidisciplinarios de trabajo para la efectiva ejecución de proyectos.",
-                "Investigación y evaluación de tecnologías emergentes y tendencias de mercado para identificar oportunidades de desarrollo de nuevos productos y servicios.",
-                "Interacción con proveedores, clientes y otras partes interesadas para asegurar el alineamiento de proyectos con sus necesidades y expectativas.",
-                "Participación en la redacción y presentación de propuestas de I+D para obtener financiamiento externo.",
-                "Monitoreo y evaluación del desempeño de proyectos y equipos,  yreporte de resultados y avances a la alta dirección.",
-                "Contribución a la generación de patentes y otros tipos de propiedad intelectual relacionados con los proyectos de I+D"
+                "Identificar oportunidades de mejora e innovación en procesos.",
+                "Preparación de Proyectos Tecnológicos acorde a NMX-GT-002-IMNC-2008.",
+                "Elaboracion de presupuestos y planeación de proyectos de mejora.",
+                "Gestión de plataformas de apoyo gubernamentales para la ejecución de proyectos.",
+                "Modelado tridimensional y generación de planos.",
+                "Gestión de la ejecución de proyectos de mejora en coordinación con equipos multidisciplinarios.",
+                "Monitoreo tecnológico.",
+            ]
+        },
+        {
+            "Empresa" : "Fundiciones Rice",
+            "Puesto" : "Ingeniero de Proyectos",
+            "FechaInicio" : "Junio 2015",
+            "FechaFin": "Junio 2017",
+            "Funciones": [
+                "Identificar oportunidades de mejora e innovció en procesos.",
+                "Preparación de Proyectos Tecnológicos acorde a NMX-GT-002-IMNC-2008.",
+                "Elaboracion de presupuestos y planeación de proyectos de mejora.",
+                "Gestión de plataformas de apoyo gubernamentales para la ejecución de proyectos.",
+                "Modelado tridimensional y generación de planos."
             ]
         }
     ],
@@ -240,21 +252,22 @@ const datos = {
         {
             "Id": "25",
             "Nombre":"Portafolio",
-            "Descripcion":"Es mi portafolio que recopila información acerca de mi y los proyectos que he desarrollado.",
-            "Deployment": "",
+            "Descripcion":"Es mi portafolio desarrollado en React que recopila información acerca de mi y algunos de los proyectos que he desarrollado.",
+            "Deployment": "https://tonypeanut-portafolio.netlify.app/",
             "Github": "https://github.com/tonypeanut/portfolio.git",
             "Etiquetas": [
                 "React", "Javascript", "tailwind"
             ],
             "Imagenes": [
                 "25-01.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "24",
             "Nombre":"Administrador de Veterinaria FullStack",
-            "Descripcion":"Un administrador de pacientes de veterinaria y de veterinarios. Cuenta con Frontend y Backend.",
-            "Deployment": "https://apv-frontend-i5jqgq5gs-antonios-projects-5614fdc2.vercel.app/",
+            "Descripcion":"Sistema fullstack cuyo frontend está en React y backend con Nodejs. Es un gestor de pacientes de un veterinaria, donde el veterinario se puede registrar y dar de alta sus pacientes.",
+            "Deployment": "https://apv-frontend-psi-ten.vercel.app/",
             "Github": "https://github.com/tonypeanut/administradorPacientesVeterinariaFullStack.git",
             "Etiquetas": [
                 "React", "Javascript", "TailwindCSS"
@@ -263,12 +276,14 @@ const datos = {
                 "24-01.png",
                 "24-02.png",
                 "24-03.png"
-            ]
+            ],
+            "visible":"true",
+            "backend":"https://apv-backend-ijug.onrender.com/"
         },
         {
             "Id": "23",
             "Nombre":"Cotizador de Préstamos Vue",
-            "Descripcion":"Un pequeño cotizador de prestamos realizado con Vuejs",
+            "Descripcion":"Desarrollado con Vuejs. Cotizador de préstamos.",
             "Deployment": "https://tonypeanut-cotizador-prestamos-vue.netlify.app/",
             "Github": "https://github.com/tonypeanut/cotizadorPrestamosVue",
             "Etiquetas": [
@@ -278,7 +293,8 @@ const datos = {
                 "23-01.png",
                 "23-02.png",
                 "23-03.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "22",
@@ -292,12 +308,13 @@ const datos = {
             "Imagenes": [
                 "22-01.png",
                 "22-02.png"
-            ]
+            ],
+            "visible":"false"
         },
         {
             "Id": "21",
             "Nombre":"Agencia de Viajes",
-            "Descripcion":"Proyecto de una agencia de viajes, que muestra información sobre destinos vacacionales.",
+            "Descripcion":"Desarrollado con Nodejs. Agencia de viajes, que muestra información sobre destinos vacacionales. Permite agregar testimonios y almacenarlos en base de datos.",
             "Deployment": "https://agenciaviajesnode-2em1.onrender.com/",
             "Github": "https://github.com/tonypeanut/agenciaViajesNode.git",
             "Etiquetas": [
@@ -310,12 +327,13 @@ const datos = {
                 "21-04.png",
                 "21-05.png",
                 "21-06.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "20",
             "Nombre":"Administrador de Pacientes de Veterinaria",
-            "Descripcion":"Un pequeño gestor de citas de pacientes de veterinaria.",
+            "Descripcion":"Un pequeño gestor de citas de pacientes de veterinaria. Emplea IndexedDB.",
             "Deployment": "https://main--tonypeanut-gestorveterinaria.netlify.app/",
             "Github": "https://github.com/tonypeanut/administrarPacientes.git",
             "Etiquetas": [
@@ -327,7 +345,8 @@ const datos = {
                 "20-03.png",
                 "20-04.png",
                 "20-05.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "19",
@@ -341,12 +360,13 @@ const datos = {
             "Imagenes": [
                 "19-01.png",
                 "19-02.png"
-            ]
+            ],
+            "visible":"false"
         },
         {
             "Id": "18",
-            "Nombre":"Cotizador de criptomonedas",
-            "Descripcion":"Un cotizador de criptomonedas",
+            "Nombre":"Comparador de precios de criptomonedas",
+            "Descripcion":"Un cotizador de precios de criptomonedas que consume datos de la API cryptocompare.",
             "Deployment": "https://tonypeanut-criptomonedas.netlify.app/",
             "Github": "https://github.com/tonypeanut/criptomonedas.git",
             "Etiquetas": [
@@ -356,12 +376,13 @@ const datos = {
                 "18-01.png",
                 "18-02.png",
                 "18-03.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "17",
             "Nombre":"Buscador de Imagenes",
-            "Descripcion":"Buscador de Imagenes",
+            "Descripcion":"Buscador de Imagenes que consume datos de la API Pixabay.",
             "Deployment": "https://tonypeanut-buscadorimagenes.netlify.app/",
             "Github": "https://github.com/tonypeanut/buscadorImagenes.git",
             "Etiquetas": [
@@ -372,7 +393,8 @@ const datos = {
                 "17-02.png",
                 "17-03.png",
                 "17-04.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "16",
@@ -386,12 +408,13 @@ const datos = {
             "Imagenes": [
                 "16-01.png",
                 "16-02.png"
-            ]
+            ],
+            "visible":"false"
         },
         {
             "Id": "15",
             "Nombre":"Buscador de Recetas",
-            "Descripcion":"Buscador de Recetas",
+            "Descripcion":"Buscador de Recetas que consume datos de la API themealdb.",
             "Deployment": "https://tonypeanut-buscador-recetas.netlify.app/",
             "Github": "https://github.com/tonypeanut/buscadorRecetas.git",
             "Etiquetas": [
@@ -403,12 +426,13 @@ const datos = {
                 "15-03.png",
                 "15-04.png",
                 "15-05.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "14",
             "Nombre":"ClimaFetchAPI",
-            "Descripcion":"Consulta clima",
+            "Descripcion":"Consulta clima de diferentes ciudades del mundo consumiendo datos de la API openweathermap.",
             "Deployment": "https://tonypeanut-clima.netlify.app/",
             "Github": "https://github.com/tonypeanut/climaFetchAPI.git",
             "Etiquetas": [
@@ -418,7 +442,8 @@ const datos = {
                 "14-01.png",
                 "14-02.png",
                 "14-03.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "13",
@@ -433,12 +458,13 @@ const datos = {
                 "13-01.png",
                 "13-02.png",
                 "13-03.png"
-            ]
+            ],
+            "visible":"false"
         },
         {
             "Id": "12",
             "Nombre":"Administrador de presupuesto",
-            "Descripcion":"Administrador de presupuesto",
+            "Descripcion":"Permite administrar un presupuesto y registrar gastos.",
             "Deployment": "https://tonypeanut-administrdor-presupuesto.netlify.app/",
             "Github": "https://github.com/tonypeanut/administrarPresupuesto.git",
             "Etiquetas": [
@@ -449,12 +475,13 @@ const datos = {
                 "12-02.png",
                 "12-03.png",
                 "12-04.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "11",
             "Nombre":"Cotizador Seguros de Auto",
-            "Descripcion":"cotizador seguros de auto",
+            "Descripcion":"Permite cotizar seguros de autos en base a año, marca y tipo de seguro.",
             "Deployment": "https://tonypeanut-cotizador-prototypes.netlify.app/",
             "Github": "https://github.com/tonypeanut/cotizadorPrototypes.git",
             "Etiquetas": [
@@ -465,12 +492,13 @@ const datos = {
                 "11-02.png",
                 "11-03.png",
                 "11-04.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "10",
             "Nombre":"Carrito de compras",
-            "Descripcion":"Carrito de compras",
+            "Descripcion":"Simula una pagina de compra de cursos, permite agregar elementos a un carrito de compras utilizando el DOM.",
             "Deployment": "https://tonypeanut-carrito-compras.netlify.app/",
             "Github": "https://github.com/tonypeanut/carritoCompras.git",
             "Etiquetas": [
@@ -480,12 +508,13 @@ const datos = {
                 "10-01.png",
                 "10-02.png",
                 "10-03.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "9",
             "Nombre":"Almacenar textos",
-            "Descripcion":"Almacenar textos",
+            "Descripcion":"Permite almacenar textos utilizando localstorage.",
             "Deployment": "https://tonypeanut-almacenar-textos.netlify.app/",
             "Github": "https://github.com/tonypeanut/almacenarTextos.git",
             "Etiquetas": [
@@ -494,12 +523,13 @@ const datos = {
             "Imagenes": [
                 "9-01.png",
                 "9-02.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "8",
             "Nombre":"Buscador de autos",
-            "Descripcion":"buscador de autos",
+            "Descripcion":"Filtrar autos de una lista en base a sus caracteristicas.",
             "Deployment": "https://tonypeanut-buscador.netlify.app/",
             "Github": "https://github.com/tonypeanut/buscador.git",
             "Etiquetas": [
@@ -509,12 +539,13 @@ const datos = {
                 "8-01.png",
                 "8-02.png",
                 "8-03.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "7",
             "Nombre":"Enviar email",
-            "Descripcion":"enviar email",
+            "Descripcion":"Validación de un formulario para el envío de un email.",
             "Deployment": "https://tonypenaut-enviar-email.netlify.app/",
             "Github": "https://github.com/tonypeanut/enviarEmail.git",
             "Etiquetas": [
@@ -524,12 +555,13 @@ const datos = {
                 "7-01.png",
                 "7-02.png",
                 "7-03.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "6",
             "Nombre":"Encriptador",
-            "Descripcion":"encriptador",
+            "Descripcion":"Encriptador de textos como parte de los desafios del programa Oracle Next Educatio G6.",
             "Deployment": "https://tonypeanut.github.io/encriptador/",
             "Github": "https://github.com/tonypeanut/encriptador.git",
             "Etiquetas": [
@@ -539,7 +571,8 @@ const datos = {
                 "6-01.png",
                 "6-02.png",
                 "6-03.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "5",
@@ -552,12 +585,13 @@ const datos = {
             ],
             "Imagenes": [
                 ""
-            ]
+            ],
+            "visible":"false"
         },
         {
             "Id": "4",
             "Nombre":"Barberia Alura",
-            "Descripcion":"Barberia",
+            "Descripcion":"Página Web estática de una barbería llamada Barbería Alura.",
             "Deployment": "https://tonypeanut-barberia.netlify.app/",
             "Github": "https://github.com/tonypeanut/barberia.git",
             "Etiquetas": [
@@ -567,7 +601,8 @@ const datos = {
                 "4-01.png",
                 "4-02.png",
                 "4-03.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "3",
@@ -578,12 +613,13 @@ const datos = {
             "Etiquetas": [
    
             ],
-            "Imagenes": [""]
+            "Imagenes": [""],
+            "visible":"false"
         },
         {
             "Id": "2",
             "Nombre":"Número Secreto",
-            "Descripcion":"numero secreto",
+            "Descripcion":"Juego del número secreto. Tienes que adivinar un número aleatorio secreto en base a las pistas.",
             "Deployment": "https://tonypeanut-numero-secreto.netlify.app/",
             "Github": "https://github.com/tonypeanut/numeroSecreto.git",
             "Etiquetas": [
@@ -592,7 +628,8 @@ const datos = {
             "Imagenes": [
                 "2-01.png",
                 "2-02.png"
-            ]
+            ],
+            "visible":"true"
         },
         {
             "Id": "1",
@@ -603,7 +640,8 @@ const datos = {
             "Etiquetas": [
    
             ],
-            "Imagenes": [""]
+            "Imagenes": [""],
+            "visible":"false"
         }
     ]
 }

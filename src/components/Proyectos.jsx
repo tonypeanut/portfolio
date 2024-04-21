@@ -16,8 +16,10 @@ const Proyectos = ({limit}) => {
   
   let proyectos;
 
-  if (limit) { proyectos = datosProyectos.slice(0,parseInt(limit)) }
-  else { proyectos = [...datosProyectos]}
+  const proyectosVisiles = datosProyectos.filter(elemento => elemento.visible === "true");
+
+  if (limit) { proyectos = proyectosVisiles.slice(0,parseInt(limit)) }
+  else { proyectos = [...proyectosVisiles]}
 
   const arrayImagenes = proyectos.map(elemento => elemento.Imagenes[0]);
   
@@ -27,6 +29,8 @@ const Proyectos = ({limit}) => {
     window.scrollTo(0,0);
   }
 
+  console.log(imagenes)
+
   return (
     <>
       { isOpen && (<Modal/>)}
@@ -35,7 +39,7 @@ const Proyectos = ({limit}) => {
             <div className="flex flex-col md:flex-row gap-10 flex-wrap justify-center">
                 {proyectos.map((proyecto, i) => (
                   <div key={i} className="bg-gray-100 border rounded-lg p-5 shadow-lg hover:bg-cyan-100 w-full flex flex-col justify-between laptop:w-52">
-                      <MostrarImagen imagen={imagenes[i]} nombre={`imagen${i}`} clases="cursor-pointer hover:brightness-105" onClick={()=>openModal("proyectos",i)}/>
+                      <MostrarImagen imagen={imagenes[i]} nombre={`imagen${i}`} clases=" tablet:w-full cursor-pointer hover:brightness-105" onClick={()=>openModal("proyectos",i)}/>                      
                       <h2 className=" text-2xl font-bold mt-2">{proyecto.Nombre}</h2>
                       <p>{proyecto.Descripcion}</p>
                       <div>
@@ -47,6 +51,7 @@ const Proyectos = ({limit}) => {
                               <button className="p-2 rounded-xl from-gray-200 to-gray-400 hover:from-gray-300 hover:to-gray-500 bg-gradient-to-br" onClick={()=>openModal("proyectos",i)}>Más información..</button>
                           </div>
                       </div>
+                      
                   </div>
                 ))}
             </div>

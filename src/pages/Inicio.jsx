@@ -15,7 +15,7 @@ const Inicio = () => {
   const { datosExperiencia, datosSkills, datosSoftskills } = datos
   const { setMenu } = useContexto();
 
-  useEffect( () => {setMenu(["inicio", "acerca", "skills", "experiencia", "proyectos", "contacto"])}, []);
+  useEffect( () => {setMenu(["inicio", "acerca", "skills", "experiencia", "proyectos", "contacto-"])}, []);
   
   return (
     <>
@@ -25,7 +25,7 @@ const Inicio = () => {
             <Skills datosSkills={datosSkills} datosSoftskills={datosSoftskills}/>
             <Experiencia datosExperiencia={datosExperiencia}/>
             <Proyectos limit={6}/>
-            <Contacto/>
+            {/*<Contacto/>*/}
         </div>
     </>
   )

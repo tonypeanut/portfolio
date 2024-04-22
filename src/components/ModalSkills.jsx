@@ -8,15 +8,14 @@ const ModalSkills = ({id}) => {
   const datos = getDatos();
   const { datosSkills } = datos;
   const { Skill, Logo, Dominio, Descripcion } = datosSkills[id];
-  const [ logoSkill, setLogoSkill ] = useState(null);
+  const [ logoSkill, setLogoSkill ] = useState([]);
 
   useEffect(() => {importarImagenes([Logo], setLogoSkill, "../assets/icons/");}, []);
-
 
   return (
     <>
           <div className="flex">
-                  <MostrarImagen imagen={logoSkill} nombre={Skill} clases="w-1/3"/>
+                  {logoSkill[0] && <MostrarImagen imagen={logoSkill[0]} nombre={Skill} clases="w-1/3"/>}
                   <div className="card-body">
                         <h2 className="card-title">{Skill}</h2>
                         <p>{Descripcion}</p>

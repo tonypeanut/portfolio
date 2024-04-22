@@ -11,11 +11,11 @@ import MostrarImagen from './MostrarImagen.jsx';
 const ModalProyectos = ({id}) => {
   const datos = getDatos();
   const { datosProyectos } = datos;
-  const { Nombre, Descripcion, Deployment, Github, Etiquetas, Imagenes } = datosProyectos[id]
+  const { Nombre, Descripcion, Deployment, Github, Imagenes } = datosProyectos.find(elemento => elemento.Id === id);
   const [ imagenesImportadas, setImagenesImportadas ] = useState([]);
   const [ currentImageIndex, setCurrentImageIndex ] = useState(0);
 
-  useEffect(() => {importarImagenes(Imagenes, setImagenesImportadas, "../assets/images/");}, [Imagenes]);
+  useEffect(() => {importarImagenes(Imagenes, setImagenesImportadas, "../assets/images/");}, []);
 
   const nextImage = () => { setCurrentImageIndex((currentImageIndex + 1) % imagenesImportadas.length);};
   const prevImage = () => { setCurrentImageIndex((currentImageIndex - 1 + imagenesImportadas.length) % imagenesImportadas.length);};

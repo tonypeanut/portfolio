@@ -11,31 +11,24 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
 
-
   useEffect(() => {
-    if (datosSkills) {
-      const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo).filter(Boolean);
-      importarImagenes(arrayImagenesSkills, (images) => {
-        setLogosSkills(images);
-      }, "../assets/icons/");
-    }
+    const arrayImagenesSkills = datosSkills.map(elemento => elemento.Logo);
+    importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
   }, [datosSkills]);
 
   useEffect(() => {
-    if (datosSoftskills) {
-      const arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo).filter(Boolean);
-      importarImagenes(arrayImagenesSoftskills, (images) => {
-        setLogosSoftskills(images);
-      }, "../assets/icons/");
-    }
+    const arrayImagenesSoftskills = datosSoftskills.map(elemento => elemento.Logo);
+    importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/")
   }, [datosSoftskills]);
 
 
   return (
     <>
       {isOpen && <Modal datosSkills={datosSkills} />}
+
       <h1 id="skills" className="text-2xl font-bold">{t('skills.title-1')}</h1>
       <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
+
         {(datosSkills).map((skill, i) => (
           <button
             key={i}
@@ -46,7 +39,7 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
               {logosSkills[i] ? (
                 <img
                   className="mr-1"
-                  src={`${logosSkills[i]}?timestamp=${new Date().getTime()}`}
+                  src={`${logosSkills[i]}`}
                   alt={skill?.Skill || 'Skill'}
                   width="20px"
                 />
@@ -70,7 +63,7 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
             {logosSoftskills[i] ? (
               <img
                 className="mr-1"
-                src={`${logosSoftskills[i]}?timestamp=${new Date().getTime()}`}
+                src={`${logosSoftskills[i]}`}
                 alt={skill?.Softskill || 'Softskill'}
                 width="20px"
               />
@@ -86,3 +79,4 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
 };
 
 export default Skills;
+

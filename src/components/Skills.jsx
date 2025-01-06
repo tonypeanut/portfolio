@@ -11,17 +11,26 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
 
+  const loadImagesWithRetry = (arrayImagenes, setLogos, path) => {
+    importarImagenes(arrayImagenes, setLogos, path);
+    setTimeout(() => {
+      if (arrayImagenes.length > 0 && !setLogos.length) {
+        importarImagenes(arrayImagenes, setLogos, path); // Reintentar carga si necesario
+      }
+    }, 500); // Reintenta después de 500ms
+  };
+
   useEffect(() => {
     if (Array.isArray(datosSkills) && datosSkills.length > 0) {
       const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo || null).filter(Boolean);
-      importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
+      loadImagesWithRetry(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
     }
   }, [datosSkills]);
 
   useEffect(() => {
     if (Array.isArray(datosSoftskills) && datosSoftskills.length > 0) {
       const arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo || null).filter(Boolean);
-      importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");
+      loadImagesWithRetry(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");
     }
   }, [datosSoftskills]);
 

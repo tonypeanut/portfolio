@@ -8,22 +8,42 @@ import { useTranslation } from 'react-i18next';
 const Skills = ({ datosSkills, datosSoftskills }) => {
   const [logosSkills, setLogosSkills] = useState([]);
   const [logosSoftskills, setLogosSoftskills] = useState([]);
+  const [isImagesLoaded, setIsImagesLoaded] = useState(false); // Estado de carga de imágenes
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
 
+  // Cargar imágenes de skills
   useEffect(() => {
     if (Array.isArray(datosSkills) && datosSkills.length > 0) {
       const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo || null).filter(Boolean);
-      importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
+      importarImagenes(arrayImagenesSkills, (images) => {
+        setLogosSkills(images);
+        // Verificar si todas las imágenes están cargadas
+        if (images.length === arrayImagenesSkills.length) {
+          setIsImagesLoaded(true); // Marcar que las imágenes están cargadas
+        }
+      }, "../assets/icons/");
     }
   }, [datosSkills]);
 
+  // Cargar imágenes de softskills
   useEffect(() => {
     if (Array.isArray(datosSoftskills) && datosSoftskills.length > 0) {
       const arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo || null).filter(Boolean);
-      importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");
+      importarImagenes(arrayImagenesSoftskills, (images) => {
+        setLogosSoftskills(images);
+        // Verificar si todas las imágenes están cargadas
+        if (images.length === arrayImagenesSoftskills.length) {
+          setIsImagesLoaded(true); // Marcar que las imágenes están cargadas
+        }
+      }, "../assets/icons/");
     }
   }, [datosSoftskills]);
+
+  if (!isImagesLoaded) {
+    // Mientras las imágenes no estén cargadas, no renderizamos nada
+    return <div>Loading...</div>; // Aquí puedes poner un spinner o un mensaje de "Cargando"
+  }
 
   return (
     <>
@@ -37,7 +57,6 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
             onClick={() => openModal("skill", i)}
           >
             <div className="flex">
-              {/* Verificar si la imagen está cargada antes de mostrarla */}
               {logosSkills[i] ? (
                 <img
                   className="mr-1"
@@ -62,7 +81,6 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
             key={i}
             className="flex bg-gray-100 ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100"
           >
-            {/* Verificar si la imagen está cargada antes de mostrarla */}
             {logosSoftskills[i] ? (
               <img
                 className="mr-1"

@@ -11,26 +11,17 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
 
-  const loadImagesWithRetry = (arrayImagenes, setLogos, path) => {
-    importarImagenes(arrayImagenes, setLogos, path);
-    setTimeout(() => {
-      if (arrayImagenes.length > 0 && !setLogos.length) {
-        importarImagenes(arrayImagenes, setLogos, path); // Reintentar carga si necesario
-      }
-    }, 500); // Reintenta después de 500ms
-  };
-
   useEffect(() => {
     if (Array.isArray(datosSkills) && datosSkills.length > 0) {
       const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo || null).filter(Boolean);
-      loadImagesWithRetry(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
+      importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
     }
   }, [datosSkills]);
 
   useEffect(() => {
     if (Array.isArray(datosSoftskills) && datosSoftskills.length > 0) {
       const arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo || null).filter(Boolean);
-      loadImagesWithRetry(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");
+      importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");
     }
   }, [datosSoftskills]);
 
@@ -46,13 +37,16 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
             onClick={() => openModal("skill", i)}
           >
             <div className="flex">
-              {logosSkills[i] && (
+              {/* Verificar si la imagen está cargada antes de mostrarla */}
+              {logosSkills[i] ? (
                 <img
                   className="mr-1"
                   src={logosSkills[i]}
                   alt={skill?.Skill || 'Skill'}
                   width="20px"
                 />
+              ) : (
+                <div className="mr-1 w-5 h-5 bg-gray-300" /> // Placeholder mientras la imagen no esté cargada
               )}
               {skill?.Skill || 'Skill'}
             </div>
@@ -68,13 +62,16 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
             key={i}
             className="flex bg-gray-100 ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100"
           >
-            {logosSoftskills[i] && (
+            {/* Verificar si la imagen está cargada antes de mostrarla */}
+            {logosSoftskills[i] ? (
               <img
                 className="mr-1"
                 src={logosSoftskills[i]}
                 alt={skill?.Softskill || 'Softskill'}
                 width="20px"
               />
+            ) : (
+              <div className="mr-1 w-5 h-5 bg-gray-300" /> // Placeholder mientras la imagen no esté cargada
             )}
             {skill?.Softskill || 'Softskill'}
           </div>

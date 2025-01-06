@@ -8,7 +8,8 @@ import { useTranslation } from 'react-i18next';
 const Skills = ({ datosSkills, datosSoftskills }) => {
   const [logosSkills, setLogosSkills] = useState([]);
   const [logosSoftskills, setLogosSoftskills] = useState([]);
-  const [isImagesLoaded, setIsImagesLoaded] = useState(false); // Estado de carga de imágenes
+  const [skillsImagesLoaded, setSkillsImagesLoaded] = useState(false);
+  const [softSkillsImagesLoaded, setSoftSkillsImagesLoaded] = useState(false);
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
 
@@ -18,10 +19,7 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
       const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo || null).filter(Boolean);
       importarImagenes(arrayImagenesSkills, (images) => {
         setLogosSkills(images);
-        // Verificar si todas las imágenes están cargadas
-        if (images.length === arrayImagenesSkills.length) {
-          setIsImagesLoaded(true); // Marcar que las imágenes están cargadas
-        }
+        setSkillsImagesLoaded(true);
       }, "../assets/icons/");
     }
   }, [datosSkills]);
@@ -32,17 +30,16 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
       const arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo || null).filter(Boolean);
       importarImagenes(arrayImagenesSoftskills, (images) => {
         setLogosSoftskills(images);
-        // Verificar si todas las imágenes están cargadas
-        if (images.length === arrayImagenesSoftskills.length) {
-          setIsImagesLoaded(true); // Marcar que las imágenes están cargadas
-        }
+        setSoftSkillsImagesLoaded(true);
       }, "../assets/icons/");
     }
   }, [datosSoftskills]);
 
-  if (!isImagesLoaded) {
-    // Mientras las imágenes no estén cargadas, no renderizamos nada
-    return <div>Loading...</div>; // Aquí puedes poner un spinner o un mensaje de "Cargando"
+  // Verificar si todas las imágenes están cargadas
+  const allImagesLoaded = skillsImagesLoaded && softSkillsImagesLoaded;
+
+  if (!allImagesLoaded) {
+    return <div>Loading...</div>; // Mostrar mensaje de "Loading..." o un spinner
   }
 
   return (
@@ -60,7 +57,7 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
               {logosSkills[i] ? (
                 <img
                   className="mr-1"
-                  src={logosSkills[i]}
+                  src={`${logosSkills[i]}?timestamp=${new Date().getTime()}`}
                   alt={skill?.Skill || 'Skill'}
                   width="20px"
                 />
@@ -84,7 +81,7 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
             {logosSoftskills[i] ? (
               <img
                 className="mr-1"
-                src={logosSoftskills[i]}
+                src={`${logosSoftskills[i]}?timestamp=${new Date().getTime()}`}
                 alt={skill?.Softskill || 'Softskill'}
                 width="20px"
               />

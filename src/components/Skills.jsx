@@ -11,24 +11,22 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
 
-  
-
-  // Cargar imágenes de skills
-  useEffect(() => {
-    let arrayImagenesSkills = []
-    arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo).filter(Boolean);
-    importarImagenes(arrayImagenesSkills, (images) => {
-      setLogosSkills(images);
-    }, "../assets/icons/");
+    useEffect(() => {
+      if (datosSkills) {
+        const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo).filter(Boolean);
+        importarImagenes(arrayImagenesSkills, (images) => {
+          setLogosSkills(images);
+        }, "../assets/icons/");
+      }
   }, [datosSkills]);
 
-  // Cargar imágenes de softskills
   useEffect(() => {
-    let arrayImagenesSoftskills = []
-    arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo).filter(Boolean);
-    importarImagenes(arrayImagenesSoftskills, (images) => {
-      setLogosSoftskills(images);
-    }, "../assets/icons/");
+    if (datosSoftskills) {
+      const arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo).filter(Boolean);
+      importarImagenes(arrayImagenesSoftskills, (images) => {
+        setLogosSoftskills(images);
+      }, "../assets/icons/");
+    }
   }, [datosSoftskills]);
 
   return (

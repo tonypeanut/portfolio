@@ -13,9 +13,9 @@ const Proyectos = ({ limit, datosProyectos }) => {
   const [imagenes, setImagenes] = useState([]);
   const { t } = useTranslation(); 
 
-  let proyectos;
+  let proyectos = [];
 
-  const proyectosVisibles = datosProyectos.filter(
+  const proyectosVisibles = (datosProyectos || []).filter(
     (elemento) => elemento.visible === "true"
   );
 
@@ -25,11 +25,20 @@ const Proyectos = ({ limit, datosProyectos }) => {
     proyectos = [...proyectosVisibles];
   }
 
-  const arrayImagenes = proyectos.map((elemento) => elemento.Imagenes[0]);
+  const arrayImagenes = proyectos.map((elemento) => {
+    if (elemento.Imagenes && elemento.Imagenes.length > 0) {
+      return elemento.Imagenes[0];
+    }
+    return null; 
+  }).filter(imagen => imagen !== null);
+
 
   useEffect(() => {
-    importarImagenes(arrayImagenes, setImagenes, "../assets/images/");
-  }, []);
+    if (arrayImagenes.length > 0) {
+      importarImagenes(arrayImagenes, setImagenes, "../assets/images/");
+    }
+  }, [arrayImagenes]);
+
 
   const handleLinkClick = () => {
     window.scrollTo(0, 0);

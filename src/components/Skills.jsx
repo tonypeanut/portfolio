@@ -11,13 +11,14 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
 
-    useEffect(() => {
-      if (datosSkills) {
-        const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo).filter(Boolean);
-        importarImagenes(arrayImagenesSkills, (images) => {
-          setLogosSkills(images);
-        }, "../assets/icons/");
-      }
+
+  useEffect(() => {
+    if (datosSkills) {
+      const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo).filter(Boolean);
+      importarImagenes(arrayImagenesSkills, (images) => {
+        setLogosSkills(images);
+      }, "../assets/icons/");
+    }
   }, [datosSkills]);
 
   useEffect(() => {
@@ -29,12 +30,13 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
     }
   }, [datosSoftskills]);
 
+
   return (
     <>
       {isOpen && <Modal datosSkills={datosSkills} />}
       <h1 id="skills" className="text-2xl font-bold">{t('skills.title-1')}</h1>
       <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
-        {(datosSkills || []).map((skill, i) => (
+        {(datosSkills).map((skill, i) => (
           <button
             key={i}
             className="flex flex-col bg-gray-100 ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100"
@@ -60,7 +62,7 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
 
       <h1 className="text-2xl font-bold">{t('skills.title-2')}</h1>
       <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
-        {(datosSoftskills || []).map((skill, i) => (
+        {(datosSoftskills).map((skill, i) => (
           <div
             key={i}
             className="flex bg-gray-100 ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100"

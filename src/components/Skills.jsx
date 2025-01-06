@@ -13,22 +13,18 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
 
   // Cargar imágenes de skills
   useEffect(() => {
-    if (Array.isArray(datosSkills) && datosSkills.length > 0) {
-      const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo || null).filter(Boolean);
-      importarImagenes(arrayImagenesSkills, (images) => {
-        setLogosSkills(images);
-      }, "../assets/icons/");
-    }
+    const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo || null).filter(Boolean);
+    importarImagenes(arrayImagenesSkills, (images) => {
+      setLogosSkills(images);
+    }, "../assets/icons/");
   }, [datosSkills]);
 
   // Cargar imágenes de softskills
   useEffect(() => {
-    if (Array.isArray(datosSoftskills) && datosSoftskills.length > 0) {
-      const arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo || null).filter(Boolean);
-      importarImagenes(arrayImagenesSoftskills, (images) => {
-        setLogosSoftskills(images);
-      }, "../assets/icons/");
-    }
+    const arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo || null).filter(Boolean);
+    importarImagenes(arrayImagenesSoftskills, (images) => {
+      setLogosSoftskills(images);
+    }, "../assets/icons/");
   }, [datosSoftskills]);
 
   return (

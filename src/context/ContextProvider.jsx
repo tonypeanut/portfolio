@@ -20,7 +20,7 @@ const ContextProvider = ({children}) => {
     } 
 
     return (
-        <Contexto.Provider value={{isOpen, tipo, id, openModal, closeModal, menu, setMenu}}>
+        <Contexto.Provider value={{isOpen, tipo, id, openModal, closeModal, menu, setMenu }}>
             {children}
         </Contexto.Provider>
     )

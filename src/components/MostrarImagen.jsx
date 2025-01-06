@@ -1,24 +1,34 @@
 import React from 'react'
 import Spinner from './spinner';
 
-const MostrarImagen = ({imagen, nombre, clases, onClick}) => {
-  let nombreImagen = null
+const MostrarImagen = ({ imagen, nombre, clases, onClick }) => {
+  let nombreImagen = null;
 
-  if (imagen){
+  if (imagen) {
     const ultimoDiagonal = imagen.lastIndexOf("/");
     nombreImagen = imagen.substring(ultimoDiagonal + 1);
   }
 
   return (
     <>
-        {nombreImagen && (<>
-            
-          {!imagen && <Spinner/>}
-          <img src={imagen} alt={`Imagen ${nombre}`} className={` ${!imagen ? 'hidden' : 'block'} ${clases}`} onClick={onClick}/>
-            
-        </>)}
+      {nombreImagen && (
+        <>
+          {!imagen && <Spinner />}
+          <img
+            src={imagen}
+            alt={`Imagen ${nombre}`}
+            className={` ${!imagen ? 'hidden' : 'block'} ${clases}`}
+            onClick={onClick}
+            style={{
+              maxWidth: '80%', 
+              maxHeight: '400px', 
+              objectFit: 'contain', 
+            }}
+          />
+        </>
+      )}
     </>
-  )
+  );
 }
 
-export default MostrarImagen
+export default MostrarImagen;

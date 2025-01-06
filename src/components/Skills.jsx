@@ -3,52 +3,80 @@ import Modal from "./Modal";
 import useContexto from '../hook/useContexto';
 import ProgressBar from "./ProgressBar";
 import importarImagenes from "../helpers/importarImagenes";
+import { useTranslation } from 'react-i18next';
 
-const Skills = ({datosSkills, datosSoftskills}) => {
+const Skills = ({ datosSkills, datosSoftskills }) => {
+  const [logosSkills, setLogosSkills] = useState([]);
+  const [logosSoftskills, setLogosSoftskills] = useState([]);
 
-    const [logosSkills, setLogosSkills] = useState([]);
-    const [logosSoftskills, setLogosSoftskills] = useState([]);
-    const arrayImagenesSkills = datosSkills.map(elemento => elemento.Logo);
-    const arrayImagenesSoftskills = datosSoftskills.map(elemento => elemento.Logo);
+  const { isOpen, openModal } = useContexto();
 
-    // Se importan los logos de los Skills
-    useEffect(() => {importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");}, []);
-    useEffect(() => {importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");}, [])
+  const { t } = useTranslation(); 
 
-    const { isOpen, openModal } = useContexto();
+  useEffect(() => {
+    if (datosSkills?.length) {
+      const arrayImagenesSkills = datosSkills.map((elemento) => elemento.Logo);
+      importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
+    }
+  }, [datosSkills]);
+
+  useEffect(() => {
+    if (datosSoftskills?.length) {
+      const arrayImagenesSoftskills = datosSoftskills.map(
+        (elemento) => elemento.Logo
+      );
+      importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");
+    }
+  }, [datosSoftskills]);
 
   return (
     <>
-     { isOpen && (<Modal/>)}
-        <h1 id="skills" className=" text-2xl font-bold">Hardskills</h1>
-        <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
-            {datosSkills.map((skill, i) => (
-                <button key={i} className="flex flex-col bg-gray-100  ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100" onClick={()=>openModal("skill",i)}>
-                    <div className="flex">
-                        <img className=" mr-1" src={logosSkills[i]} alt="" width="20px" />
-                        {skill.Skill}
-                    </div>
-                    <ProgressBar dominio={skill.Dominio}/>
-                </button>  
-            ))}
-        </div>
-              
+      {isOpen && <Modal datosSkills={datosSkills} />}
+      <h1 id="skills" className="text-2xl font-bold">{t('skills.title-1')}</h1>
+      <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
+        {datosSkills.map((skill, i) => (
+          <button
+            key={i}
+            className="flex flex-col bg-gray-100 ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100"
+            onClick={() => openModal("skill", i)}
+          >
+            <div className="flex">
+              {logosSkills[i] && (
+                <img
+                  className="mr-1"
+                  src={logosSkills[i]}
+                  alt={skill.Skill}
+                  width="20px"
+                />
+              )}
+              {skill.Skill}
+            </div>
+            <ProgressBar dominio={skill.Dominio} />
+          </button>
+        ))}
+      </div>
 
-        <h1 className=" text-2xl font-bold">Softskills</h1>
-        <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
-                {datosSoftskills.map((skill, i) => (
-                    <div key={i} className="flex bg-gray-100  ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100">
-                        <img className=" mr-1" src={logosSoftskills[i]} alt="" width="20px" />
-                        {skill.Softskill}
-                    </div>
-                ))}
-        </div>
-
-        
-        
-      
+      <h1 className="text-2xl font-bold">{t('skills.title-2')}</h1>
+      <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
+        {datosSoftskills.map((skill, i) => (
+          <div
+            key={i}
+            className="flex bg-gray-100 ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100"
+          >
+            {logosSoftskills[i] && (
+              <img
+                className="mr-1"
+                src={logosSoftskills[i]}
+                alt={skill.Softskill}
+                width="20px"
+              />
+            )}
+            {skill.Softskill}
+          </div>
+        ))}
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

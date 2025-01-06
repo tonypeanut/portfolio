@@ -1,54 +1,97 @@
-import { useEffect } from 'react';
-import useContexto from '../hook/useContexto';
-import ModalExperiencia from './ModalExperiencia';
-import ModalFormulario from './ModalFormulario';
-import ModalProyectos from './ModalProyectos';
-import ModalSkills from './ModalSkills';
+import { useEffect, useCallback } from "react";
+import useContexto from "../hook/useContexto";
+import ModalExperiencia from "./ModalExperiencia";
+import ModalFormulario from "./ModalFormulario";
+import ModalProyectos from "./ModalProyectos";
+import ModalSkills from "./ModalSkills";
 
-import closeIcon from '../assets/icons/close.svg';
+import closeIcon from "../assets/icons/close.svg";
 
+const Modal = ({ datosSkills, datosExperiencia, datosProyectos }) => {
+  const { closeModal, tipo, id } = useContexto();
 
-
-const Modal = () => {
-    const { closeModal, tipo, id } = useContexto();
-
-    const handleClick = (e) => {
-      if (e.target.id === "fuera"){
+  // Usar useCallback para evitar que la función cambie innecesariamente.
+  const handleKeyDown = useCallback(
+    (e) => {
+      if (e.key === "Escape") {
         closeModal();
       }
-    }
+    },
+    [closeModal]
+  );
 
-    useEffect(() => {
-      document.addEventListener('keydown', handleKeyDown);
-  
-      return () => {
-        document.removeEventListener('keydown', handleKeyDown);
-      };
-    }, []);
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown);
 
-    const handleKeyDown = (e) => {
-      if (e.keyCode === 27) {
-        closeModal();
-      }
+    // Limpiar el listener al desmontar
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
     };
+  }, [handleKeyDown]);
 
-    return (
-      <>
-            <div id="fuera" className=" fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center" onClick={handleClick}>
-                <div id="modal" className=" overflow-y-auto max-h-screen card shadow-xl bg-white flex flex-col justify-center items-center gap-5 relative w-full md:w-3/5 p-5">
-                    { tipo === 'experiencia' && (<ModalExperiencia id={id}/>)}
-                    { tipo === 'formulario' && (<ModalFormulario/>)}
-                    { tipo === 'proyectos' && (<ModalProyectos id={id}/>)}
-                    { tipo === 'skill' && (<ModalSkills tipo={tipo} id={id}/>)}
-                    { tipo === 'softskill' && (<ModalSkills tipo={tipo} id={id}/>)}
-                    <button className=" absolute top-2 right-2 border border-white hover:border-red-500 rounded-lg p-0.5 hover:bg-red-200" onClick={()=>closeModal()}>
-                        <img src={closeIcon} alt="Cerrar" width="10px"/>
-                    </button>
-                </div>
-            </div>
-      </>
-  
-    )
+  const handleCloseClick = (e) => {
+    if (e.target.id === "modal-background") {
+      closeModal();
+    }
+  };
+
+  // Condiciones para renderizar el contenido
+  const shouldRenderContent = () => {
+    switch (tipo) {
+      case "experiencia":
+        return datosExperiencia?.[id] !== undefined;
+      case "formulario":
+        // Puede agregar condiciones aquí si es necesario
+        return true;
+      case "proyectos":
+        // Solo renderizar si 'id' es válido (ejemplo de validación)
+        return datosProyectos?.[id-1] !== undefined;
+      case "skill":
+        // Solo renderizar si 'id' y 'datosSkills' son válidos
+        return datosSkills?.[id] !== undefined;
+      default:
+        return false; // En caso de un tipo no soportado, no se renderiza nada.
+    }
+  };
+
+  const renderContent = () => {
+    switch (tipo) {
+      case "experiencia":
+        return <ModalExperiencia id={id} datosExperiencia={datosExperiencia} />;
+      case "formulario":
+        return <ModalFormulario />;
+      case "proyectos":
+        return <ModalProyectos id={id} datosProyectos={datosProyectos} />;
+      case "skill":
+        return <ModalSkills id={id} datosSkills={datosSkills} />;
+      default:
+        return null;
+    }
+  };
+
+  // Si no se cumplen las condiciones, no renderizar el modal
+  if (!shouldRenderContent()) {
+    return null;
   }
-  
-  export default Modal
+
+  return (
+    <div
+      className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex justify-center items-center"
+      onClick={handleCloseClick}
+      id="modal-background"
+    >
+      <div className="bg-white p-5 rounded-lg shadow-xl relative">
+        {renderContent()}
+        <button
+          className="absolute top-2 right-2"
+          onClick={closeModal}
+          aria-label="Cerrar modal"
+        >
+          <img src={closeIcon} alt="Close" width="20px" />
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Modal;

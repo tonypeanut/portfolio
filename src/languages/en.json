@@ -1,0 +1,675 @@
+{
+    "translation": {
+      "about": {
+        "title": "About Me",
+        "description":
+          "I am a flexible and adaptable mind, always ready to take on new challenges. When I'm not immersed in projects, you'll find me diving into the exciting world of video games and the captivating stories of anime. I am passionate about problem-solving, always looking for innovative ways to overcome obstacles."
+      },
+      "presentation": {
+        "title": "Presentation",
+        "content-p1": "I have 8 years of experience in the metalworking and foundry sector. I possess strong skills in the design and manufacturing of mechanical components, in addition to being an effective problem-solver and a productive team collaborator.",
+        "content-p2": "Recently, I have directed my career toward the exciting world of web development and information technologies. I have invested time in mastering languages such as JavaScript, Python, HTML, CSS, and databases like MySQL and MongoDB.",
+        "content-p3": "My ability to learn quickly and face new challenges makes me a valuable asset for companies that value teamwork and technological innovation. I am excited about upcoming opportunities and eager to contribute to the success of innovative projects."
+      },
+      "skills":{
+        "title-1": "Hardskills",
+        "title-2": "Softskills"
+      },
+      "experience": {
+        "title": "Work Experience",
+        "field-1": "Position:",
+        "field-2": "Start Date:",
+        "field-3": "End Date:",
+        "field-4": "Company:",
+        "button": "More information..."
+      },
+      "projects": {
+        "title": "Projects",
+        "button-1": "More information...",
+        "button-2": "More projects"
+      },
+      "navigation": {
+        "inicio": "Home",
+        "acerca": "About",
+        "skills": "Skills",
+        "experiencia": "Experience",
+        "proyectos": "Projects",
+        "contacto": "Contact"
+      },
+      "contact": {
+        "button": "Contact Me!",
+        "title": "Contact Me!",
+        "input-1": "Name",
+        "input-2": "Email",
+        "input-3": "Subject",
+        "input-4": "Message",
+        "submit": "Send",
+        "msg": "Message sent successfully."
+      },
+      "cv": "https://drive.google.com/file/d/1TTIb8C2h-KRjnEt1OCWlWZYBbMTArz2S/view?usp=sharing",
+      "progress-bar": {
+        "title": "Proficiency Level:",
+        "level-1": "Beginner",
+        "level-2": "Basic",
+        "level-3": "Intermediate",
+        "level-4": "Advanced"
+      },
+      "datosExperiencia": [
+        {
+          "Empresa": "Fundiciones Rice",
+          "Puesto": "Quality Management Manager",
+          "FechaInicio": "March 2022",
+          "FechaFin": "Present",
+          "Funciones": [
+            "Creation, implementation, and maintenance of the quality management system.",
+            "Planning and execution of internal and external audits and evaluations to verify compliance with quality standards and procedures.",
+            "Identification of problems and development of effective solutions.",
+            "Development of training and education programs for employees.",
+            "Data collection, analysis, and KPI design to monitor the performance of processes and products.",
+            "Promotion of teamwork with other departments, along with clear and effective communication of quality expectations and requirements.",
+            "Automating report generation."
+          ]
+        },
+        {
+          "Empresa": "Fundiciones Rice",
+          "Puesto": "Research and Development Manager",
+          "FechaInicio": "June 2017",
+          "FechaFin": "March 2022",
+          "Funciones": [
+            "Identifying opportunities for improvement and innovation in processes.",
+            "Preparation of technological projects in accordance with NMX-GT-002-IMNC-2008.",
+            "Budget preparation and planning for improvement projects.",
+            "Management of government support platforms for project execution.",
+            "3D modeling and blueprint generation.",
+            "Management and execution of improvement projects in coordination with multidisciplinary teams.",
+            "Technology monitoring."
+          ]
+        },
+        {
+          "Empresa": "Fundiciones Rice",
+          "Puesto": "Project Engineer",
+          "FechaInicio": "June 2015",
+          "FechaFin": "June 2017",
+          "Funciones": [
+            "Identifying opportunities for improvement and innovation in processes.",
+            "Preparation of technological projects in accordance with NMX-GT-002-IMNC-2008.",
+            "Budget preparation and planning for improvement projects.",
+            "Management of government support platforms for project execution.",
+            "3D modeling and blueprint generation."
+          ]
+        }
+      ],
+      "datosCursos":[
+        {"Nombre":"Create a Modern Web Page from Scratch with HTML and CSS", "Fecha":"2023", "Instructor":"UDEMY"},
+        {"Nombre":"Python Without Borders: HTML, CSS, Flask, and MySQL", "Fecha":"2023", "Instructor":"UDEMY"},
+        {"Nombre":"Industrial Ultrasonics Level II Limited for Measuring Thicknesses", "Fecha":"2018", "Instructor":"Training and NDT of Mexico"},
+        {"Nombre":"Mold Tools", "Fecha":"2018", "Instructor":"SolidServicios"},
+        {"Nombre":"CNC Machine Programming with G and M Codes", "Fecha":"2017", "Instructor":"Polytechnic University of Sinaloa"},
+        {"Nombre":"Basic IRC5 Programming", "Fecha":"2017", "Instructor":"ABB Robotics Mexico"},
+        {"Nombre":"RobotStudio Basic", "Fecha":"2017", "Instructor":"ABB Robotics Mexico"},
+        {"Nombre":"Advanced IRC5 Programming", "Fecha":"2017", "Instructor":"ABB Robotics Mexico"},
+        {"Nombre":"Introduction to Copper Alloy Metallurgy for Foundry", "Fecha":"2017", "Instructor":"Engineering and Industrial Development Center"},
+        {"Nombre":"Development of Managerial Talent", "Fecha":"2017", "Instructor":"Mazatlán Business Center"},
+        {"Nombre":"Fundamentals of Feeding System Design and Casting System for Copper and its Alloys", "Fecha":"2017", "Instructor":"Mexican Foundry Society"},
+        {"Nombre":"Interpretation of ISO 9001:2015 Standard", "Fecha":"2017", "Instructor":"Calidad de Verdad"}
+      ],
+      "datosSkills":[
+        {
+          "Skill": "Solidworks",
+          "Logo": "solidworks.svg",
+          "Descripcion": "Solidworks is a computer-aided design (CAD) software primarily used for designing and modeling 3D parts and assemblies.",
+          "Dominio": "4"
+        },
+        {
+          "Skill": "Excel",
+          "Logo": "excel.svg",
+          "Descripcion": "Excel is a spreadsheet application developed by Microsoft used for performing calculations, data analysis, charts, and more.",
+          "Dominio": "4"
+        },
+        {
+          "Skill": "VBA",
+          "Logo": "vba.svg",
+          "Descripcion": "VBA (Visual Basic for Applications) is a programming language used to automate tasks and manipulate data in Microsoft Office applications like Excel.",
+          "Dominio": "3"
+        },
+        {
+          "Skill": "MySQL",
+          "Logo": "mysql.svg",
+          "Descripcion": "MySQL is an open-source relational database management system widely used for developing web and enterprise applications.",
+          "Dominio": "3"
+        },
+        {
+          "Skill": "HTML",
+          "Logo": "html.svg",
+          "Descripcion": "HTML (HyperText Markup Language) is the standard language used to create and design web pages.",
+          "Dominio": "3"
+        },
+        {
+          "Skill": "CSS",
+          "Logo": "css.svg",
+          "Descripcion": "CSS (Cascading Style Sheets) is a style sheet language used to define the layout and presentation of HTML documents.",
+          "Dominio": "3"
+        },
+        {
+          "Skill": "Python",
+          "Logo": "python.svg",
+          "Descripcion": "Python is a high-level, interpreted, general-purpose programming language known for its simple and readable syntax.",
+          "Dominio": "3"
+        },
+        {
+          "Skill": "Flask",
+          "Logo": "flask.svg",
+          "Descripcion": "Flask is a Python micro-framework used to build fast and scalable web applications.",
+          "Dominio": "3"
+        },
+        {
+          "Skill": "Solidcast",
+          "Logo": "solidcast.svg",
+          "Descripcion": "Solidcast is a casting simulation software used to predict and optimize the manufacturing process of cast parts.",
+          "Dominio": "4"
+        },
+        {
+          "Skill": "SprutCAM",
+          "Logo": "sprutcam.svg",
+          "Descripcion": "SprutCAM is a computer-aided manufacturing (CAM) software used to generate tool paths and machining programs for CNC machines.",
+          "Dominio": "3"
+        },
+        {
+          "Skill": "AutoCAD",
+          "Logo": "autocad.svg",
+          "Descripcion": "AutoCAD is a computer-aided design (CAD) software used for creating 2D technical drawings and 3D models.",
+          "Dominio": "3"
+        },
+        {
+          "Skill": "Office",
+          "Logo": "office.svg",
+          "Descripcion": "Office is a suite of productivity applications from Microsoft that includes programs like Word, Excel, PowerPoint, and Outlook.",
+          "Dominio": "4"
+        },
+        {
+          "Skill": "LabView",
+          "Logo": "labview.svg",
+          "Descripcion": "LabView is a software and hardware development environment used for data acquisition, instrument control, and test automation.",
+          "Dominio": "2"
+        },
+        {
+          "Skill": "Matlab",
+          "Logo": "matlab.svg",
+          "Descripcion": "Matlab is a numerical computing and programming environment used for data analysis, mathematical modeling, and algorithm development.",
+          "Dominio": "2"
+        },
+        {
+          "Skill": "NodeJs",
+          "Logo": "nodejs.svg",
+          "Descripcion": "Node.js is a server-side JavaScript runtime environment designed to develop scalable and fast web applications.",
+          "Dominio": "2"
+        },
+        {
+          "Skill": "ReactJs",
+          "Logo": "reactjs.svg",
+          "Descripcion": "React is a JavaScript library used to build interactive and reusable user interfaces. It is known for its declarative approach and ability to efficiently render the DOM through its Virtual DOM.",
+          "Dominio": "3"
+        },
+        {
+          "Skill": "VueJs",
+          "Logo": "vuejs.svg",
+          "Descripcion": "Vue.js is a progressive JavaScript framework for building interactive and reactive user interfaces. It focuses on creating reusable components and managing the application state efficiently, with a smooth learning curve and flexibility.",
+          "Dominio": "1"
+        },
+        {
+          "Skill": "PugJs",
+          "Logo": "pugjs.svg",
+          "Descripcion": "Pug.js is a JavaScript-based HTML templating engine designed to simplify writing HTML code with cleaner and more concise syntax. It focuses on creating HTML structures efficiently using indentation and abbreviations, facilitating the creation of views in web applications.",
+          "Dominio": "1"
+        },
+        {
+          "Skill": "tailwindCSS",
+          "Logo": "tailwindcss.svg",
+          "Descripcion": "Tailwind CSS is a front-end development framework for creating user interfaces in web applications.",
+          "Dominio": "3"
+        },
+        {
+          "Skill": "bootstrap",
+          "Logo": "bootstrap.svg",
+          "Descripcion": "Bootstrap CSS is a popular front-end framework designed to make web development easier.",
+          "Dominio": "1"
+        }
+      ],
+      "datosSoftskills": [
+        { 
+          "Softskill": "Effective Communication", 
+          "Logo": "comunicacionEfectiva.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Teamwork", 
+          "Logo": "trabajoEquipo.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Flexibility", 
+          "Logo": "flexibilidad.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Adaptability", 
+          "Logo": "adaptabilidad.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Problem Solving", 
+          "Logo": "resolucionProblemas.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Leadership", 
+          "Logo": "liderazgo.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Time Management", 
+          "Logo": "gestionTiempo.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Critical Thinking", 
+          "Logo": "pensamientoCritico.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Creativity", 
+          "Logo": "creatividad.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Innovation", 
+          "Logo": "innovacion.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Empathy", 
+          "Logo": "empatia.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Respect", 
+          "Logo": "respeto.svg", 
+          "Descripcion": "" 
+        },
+        { 
+          "Softskill": "Continuous Learning", 
+          "Logo": "aprendizaje.svg", 
+          "Descripcion": "" 
+        }
+      ],
+      "datosProyectos": [
+        {
+          "Id": "26",
+          "Nombre": "FullStack Notes",
+          "Descripcion": "Full-stack project with a Flask (Python) backend and a React (Javascript) frontend, allowing users to register and take personal notes. Notes can be created, edited, deleted, archived, unarchived, and categories can be added or removed. Includes functionality to filter notes by category.",
+          "Deployment": "https://fullstack-notes-frontend-5yxa.onrender.com/",
+          "Github": "https://github.com/tonypeanut/fullstack-notes-full.git",
+          "Etiquetas": [
+            "React", "Javascript", "Flask", "Python", "Fullstack"
+          ],
+          "Imagenes": [
+            "26-01.png",
+            "26-02.png",
+            "26-03.png",
+            "26-04.png",
+            "26-05.png"
+          ],
+          "visible": "true"
+        },
+        {
+          "Id": "25",
+          "Nombre": "Portfolio",
+          "Descripcion": "My portfolio developed in React that gathers information about me and some of the projects I have developed.",
+          "Deployment": "https://tonypeanut-portafolio.netlify.app/",
+          "Github": "https://github.com/tonypeanut/portfolio.git",
+          "Etiquetas": [
+            "React", "Javascript", "tailwind"
+          ],
+          "Imagenes": [
+            "25-01.png"
+          ],
+          "visible": "true"
+        },
+        {
+          "Id": "24",
+          "Nombre": "Veterinary Clinic FullStack Manager",
+          "Descripcion": "Full-stack system with a React frontend and Node.js backend. It is a patient management system for a veterinary clinic, where veterinarians can register and manage their patients.",
+          "Deployment": "https://apv-frontend-psi-ten.vercel.app/",
+          "Github": "https://github.com/tonypeanut/administradorPacientesVeterinariaFullStack.git",
+          "Etiquetas": [
+            "React", "Javascript", "TailwindCSS"
+          ],
+          "Imagenes": [
+            "24-01.png",
+            "24-02.png",
+            "24-03.png"
+          ],
+          "visible": "true",
+          "backend": "https://apv-backend-ijug.onrender.com/"
+        },
+        {
+          "Id": "23",
+          "Nombre": "Loan Calculator Vue",
+          "Descripcion": "Developed with Vue.js. Loan calculator.",
+          "Deployment": "https://tonypeanut-cotizador-prestamos-vue.netlify.app/",
+          "Github": "https://github.com/tonypeanut/cotizadorPrestamosVue",
+          "Etiquetas": [
+            "Javascript", "Vue"
+          ],
+          "Imagenes": [
+            "23-01.png",
+            "23-02.png",
+            "23-03.png"
+          ],
+          "visible": "true"
+        },
+        {
+          "Id": "22",
+          "Nombre": "Loan Calculator React",
+          "Descripcion": "A small loan calculator built with React.js.",
+          "Deployment": "https://tonypeanut-cotizador-prestamos-react.netlify.app/",
+          "Github": "https://github.com/tonypeanut/cotizadorPrestamosReact.git",
+          "Etiquetas": [],
+          "Imagenes": [
+            "22-01.png",
+            "22-02.png"
+          ],
+          "visible": "false"
+        },
+        {
+          "Id": "21",
+          "Nombre": "Travel Agency",
+          "Descripcion": "Developed with Node.js. A travel agency site that shows information about vacation destinations. Allows users to add testimonials and store them in a database.",
+          "Deployment": "https://agenciaviajesnode-2em1.onrender.com/",
+          "Github": "https://github.com/tonypeanut/agenciaViajesNode.git",
+          "Etiquetas": [],
+          "Imagenes": [
+            "21-01.png",
+            "21-02.png",
+            "21-03.png",
+            "21-04.png",
+            "21-05.png",
+            "21-06.png"
+          ],
+          "visible": "true"
+        },
+        {
+          "Id": "20",
+          "Nombre": "Veterinary Patient Manager",
+          "Descripcion": "A small veterinary patient appointment manager. Uses IndexedDB.",
+          "Deployment": "https://main--tonypeanut-gestorveterinaria.netlify.app/",
+          "Github": "https://github.com/tonypeanut/administrarPacientes.git",
+          "Etiquetas": [],
+          "Imagenes": [
+            "20-01.png",
+            "20-02.png",
+            "20-03.png",
+            "20-04.png",
+            "20-05.png"
+          ],
+          "visible": "true"
+        },
+        {
+          "Id": "19",
+          "Nombre": "CRM Client Manager",
+          "Descripcion": "A client management system.",
+          "Deployment": "https://tonypeanut-crmrestasync.netlify.app/",
+          "Github": "https://github.com/tonypeanut/crmRestAsync.git",
+          "Etiquetas": [],
+          "Imagenes": [
+            "19-01.png",
+            "19-02.png"
+          ],
+          "visible": "false"
+        },
+        {
+          "Id": "18",
+          "Nombre": "Cryptocurrency Price Comparator",
+          "Descripcion": "A cryptocurrency price comparator that consumes data from the cryptocompare API.",
+          "Deployment": "https://tonypeanut-criptomonedas.netlify.app/",
+          "Github": "https://github.com/tonypeanut/criptomonedas.git",
+          "Etiquetas": [],
+          "Imagenes": [
+            "18-01.png",
+            "18-02.png",
+            "18-03.png"
+          ],
+          "visible": "true"
+        },
+        {
+          "Id": "17",
+          "Nombre": "Image Finder",
+          "Descripcion": "Image search tool that consumes data from the Pixabay API.",
+          "Deployment": "https://tonypeanut-buscadorimagenes.netlify.app/",
+          "Github": "https://github.com/tonypeanut/buscadorImagenes.git",
+          "Etiquetas": [],
+          "Imagenes": [
+            "17-01.png",
+            "17-02.png",
+            "17-03.png",
+            "17-04.png"
+          ],
+          "visible": "true"
+        },
+        {
+          "Id": "16",
+          "Nombre": "Restaurant",
+          "Descripcion": "Restaurant site.",
+          "Deployment": "https://tonypeanut-restaurante.netlify.app/",
+          "Github": "https://github.com/tonypeanut/restaurante.git",
+          "Etiquetas": [],
+          "Imagenes": [
+            "16-01.png",
+            "16-02.png"
+          ],
+          "visible": "false"
+        },
+        {
+          "Id": "15",
+          "Nombre": "Recipe Finder",
+          "Descripcion": "Recipe finder that consumes data from the themealdb API.",
+          "Deployment": "https://tonypeanut-buscador-recetas.netlify.app/",
+          "Github": "https://github.com/tonypeanut/buscadorRecetas.git",
+          "Etiquetas": [],
+          "Imagenes": [
+            "15-01.png",
+            "15-02.png",
+            "15-03.png",
+            "15-04.png",
+            "15-05.png"
+          ],
+          "visible": "true"
+        },
+        {
+          "Id": "14",
+          "Nombre": "ClimaFetchAPI",
+          "Descripcion": "Check the weather in different cities around the world by consuming data from the openweathermap API.",
+          "Deployment": "https://tonypeanut-clima.netlify.app/",
+          "Github": "https://github.com/tonypeanut/climaFetchAPI.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "14-01.png",
+              "14-02.png",
+              "14-03.png"
+          ],
+          "visible": "true"
+      },
+      {
+          "Id": "13",
+          "Nombre": "CRM Indexed DB",
+          "Descripcion": "CRM indexed db",
+          "Deployment": "https://tonypeanut-crm-indexed-db.netlify.app/",
+          "Github": "https://github.com/tonypeanut/crmIndexedDB.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "13-01.png",
+              "13-02.png",
+              "13-03.png"
+          ],
+          "visible": "false"
+      },
+      {
+          "Id": "12",
+          "Nombre": "Budget Manager",
+          "Descripcion": "Allows you to manage a budget and record expenses.",
+          "Deployment": "https://tonypeanut-administrdor-presupuesto.netlify.app/",
+          "Github": "https://github.com/tonypeanut/administrarPresupuesto.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "12-01.png",
+              "12-02.png",
+              "12-03.png",
+              "12-04.png"
+          ],
+          "visible": "true"
+      },
+      {
+          "Id": "11",
+          "Nombre": "Car Insurance Quotation",
+          "Descripcion": "Allows you to quote car insurance based on year, brand, and type of insurance.",
+          "Deployment": "https://tonypeanut-cotizador-prototypes.netlify.app/",
+          "Github": "https://github.com/tonypeanut/cotizadorPrototypes.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "11-01.png",
+              "11-02.png",
+              "11-03.png",
+              "11-04.png"
+          ],
+          "visible": "true"
+      },
+      {
+          "Id": "10",
+          "Nombre": "Shopping Cart",
+          "Descripcion": "Simulates a course shopping page, allowing you to add items to a shopping cart using the DOM.",
+          "Deployment": "https://tonypeanut-carrito-compras.netlify.app/",
+          "Github": "https://github.com/tonypeanut/carritoCompras.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "10-01.png",
+              "10-02.png",
+              "10-03.png"
+          ],
+          "visible": "true"
+      },
+      {
+          "Id": "9",
+          "Nombre": "Store Texts",
+          "Descripcion": "Allows you to store texts using local storage.",
+          "Deployment": "https://tonypeanut-almacenar-textos.netlify.app/",
+          "Github": "https://github.com/tonypeanut/almacenarTextos.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "9-01.png",
+              "9-02.png"
+          ],
+          "visible": "true"
+      },
+      {
+          "Id": "8",
+          "Nombre": "Car Finder",
+          "Descripcion": "Filter cars from a list based on their characteristics.",
+          "Deployment": "https://tonypeanut-buscador.netlify.app/",
+          "Github": "https://github.com/tonypeanut/buscador.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "8-01.png",
+              "8-02.png",
+              "8-03.png"
+          ],
+          "visible": "true"
+      },
+      {
+          "Id": "7",
+          "Nombre": "Send Email",
+          "Descripcion": "Form validation for sending an email.",
+          "Deployment": "https://tonypenaut-enviar-email.netlify.app/",
+          "Github": "https://github.com/tonypeanut/enviarEmail.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "7-01.png",
+              "7-02.png",
+              "7-03.png"
+          ],
+          "visible": "true"
+      },
+      {
+          "Id": "6",
+          "Nombre": "Text Encryptor",
+          "Descripcion": "Text encryptor as part of the challenges in the Oracle Next Education G6 program.",
+          "Deployment": "https://tonypeanut.github.io/encriptador/",
+          "Github": "https://github.com/tonypeanut/encriptador.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "6-01.png",
+              "6-02.png",
+              "6-03.png"
+          ],
+          "visible": "true"
+      },
+      {
+          "Id": "5",
+          "Nombre": "Client Manager",
+          "Descripcion": "Python client manager",
+          "Deployment": "",
+          "Github": "https://github.com/tonypeanut/gestorClientes.git",
+          "Etiquetas": [],
+          "Imagenes": [""],
+          "visible": "false"
+      },
+      {
+          "Id": "4",
+          "Nombre": "Barberia Alura",
+          "Descripcion": "Static webpage of a barbershop called Barbería Alura.",
+          "Deployment": "https://tonypeanut-barberia.netlify.app/",
+          "Github": "https://github.com/tonypeanut/barberia.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "4-01.png",
+              "4-02.png",
+              "4-03.png"
+          ],
+          "visible": "true"
+      },
+      {
+          "Id": "3",
+          "Nombre": "Mailer App",
+          "Descripcion": "Mailer App",
+          "Deployment": "",
+          "Github": "https://github.com/tonypeanut/mailerApp.git",
+          "Etiquetas": [],
+          "Imagenes": [""],
+          "visible": "false"
+      },
+      {
+          "Id": "2",
+          "Nombre": "Secret Number",
+          "Descripcion": "Secret number game. You have to guess a random secret number based on the clues.",
+          "Deployment": "https://tonypeanut-numero-secreto.netlify.app/",
+          "Github": "https://github.com/tonypeanut/numeroSecreto.git",
+          "Etiquetas": [],
+          "Imagenes": [
+              "2-01.png",
+              "2-02.png"
+          ],
+          "visible": "true"
+      },
+      {
+          "Id": "1",
+          "Nombre": "To-Do List",
+          "Descripcion": "To-do list",
+          "Deployment": "",
+          "Github": "https://github.com/tonypeanut/toDoList.git",
+          "Etiquetas": [],
+          "Imagenes": [""],
+          "visible": "false"
+      }
+        
+      ]
+    }
+  }

@@ -4,9 +4,11 @@ import useContexto from '../hook/useContexto';
 import { useEffect } from "react";
 
 import menuSVG from "../assets/icons/menu.svg";
+import { useTranslation } from "react-i18next";
 
 const MenuDesplegable = () => {
   const { isOpen, openModal, menu } = useContexto();
+  const { t } = useTranslation(); 
   
   const mostrarMenu = menu.reduce((acc, valor) => {
      acc[valor] = valor;
@@ -32,12 +34,12 @@ const MenuDesplegable = () => {
         <details className="dropdown h-full w-24">
             <summary className="w-full h-full flex justify-center"><img className="menuSVG" src={menuSVG} alt="Menú" width="40px" /></summary>
             <ul className="dropdown-content z-[1] bg-cyan-400 w-24">
-                {mostrarMenu.inicio && <li><div className=" text-center p-1 w-full"><Link to="/">Inicio</Link></div></li>}
-                {mostrarMenu.acerca && <li><div className=" text-center p-1 w-full"><a href="#acerca">Acerca</a></div></li>}
-                {mostrarMenu.skills && <li><div className=" text-center p-1 w-full" ><a href="#skills">Skills</a></div></li>}
-                {mostrarMenu.experiencia && <li><div className=" text-center p-1 w-full"><a href="#experiencia">Experiencia</a></div></li>}
-                {mostrarMenu.proyectos && <li><div className=" text-center p-1 w-full"><a href="#proyectos">Proyectos</a></div></li>}
-                {mostrarMenu.contacto && <li><div className=" text-center p-1 w-full"><button onClick={()=>openModal("formulario")}>Contacto</button></div></li>}
+                {mostrarMenu.inicio && <li><div className=" text-center p-1 w-full"><Link to="/">{t('navigation.inicio')}</Link></div></li>}
+                {mostrarMenu.acerca && <li><div className=" text-center p-1 w-full"><a href="#acerca">{t('navigation.acerca')}</a></div></li>}
+                {mostrarMenu.skills && <li><div className=" text-center p-1 w-full" ><a href="#skills">{t('navigation.skills')}</a></div></li>}
+                {mostrarMenu.experiencia && <li><div className=" text-center p-1 w-full"><a href="#experiencia">{t('navigation.experiencia')}</a></div></li>}
+                {mostrarMenu.proyectos && <li><div className=" text-center p-1 w-full"><a href="#proyectos">{t('navigation.proyectos')}</a></div></li>}
+                {mostrarMenu.contacto && <li><div className=" text-center p-1 w-full"><button onClick={()=>openModal("formulario")}>{t('navigation.contacto')}</button></div></li>}
             </ul>
         </details>
     </>

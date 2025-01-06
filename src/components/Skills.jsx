@@ -8,8 +8,6 @@ import { useTranslation } from 'react-i18next';
 const Skills = ({ datosSkills, datosSoftskills }) => {
   const [logosSkills, setLogosSkills] = useState([]);
   const [logosSoftskills, setLogosSoftskills] = useState([]);
-  const [skillsImagesLoaded, setSkillsImagesLoaded] = useState(false);
-  const [softSkillsImagesLoaded, setSoftSkillsImagesLoaded] = useState(false);
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
 
@@ -19,7 +17,6 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
       const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo || null).filter(Boolean);
       importarImagenes(arrayImagenesSkills, (images) => {
         setLogosSkills(images);
-        setSkillsImagesLoaded(true);
       }, "../assets/icons/");
     }
   }, [datosSkills]);
@@ -30,17 +27,9 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
       const arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo || null).filter(Boolean);
       importarImagenes(arrayImagenesSoftskills, (images) => {
         setLogosSoftskills(images);
-        setSoftSkillsImagesLoaded(true);
       }, "../assets/icons/");
     }
   }, [datosSoftskills]);
-
-  // Verificar si todas las imágenes están cargadas
-  const allImagesLoaded = skillsImagesLoaded && softSkillsImagesLoaded;
-
-  if (!allImagesLoaded) {
-    return <div>Loading...</div>; // Mostrar mensaje de "Loading..." o un spinner
-  }
 
   return (
     <>

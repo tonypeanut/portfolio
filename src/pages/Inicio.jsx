@@ -64,12 +64,14 @@ const Inicio = () => {
 
   return (
     <div className="flex flex-col items-center">
+      {/*
       <Presentacion />
       <Acerca />
       <Skills datosSkills={datosSkills} datosSoftskills={datosSoftskills} />
       <Experiencia datosExperiencia={datosExperiencia} />
       <Proyectos limit={6} datosProyectos={datosProyectos} />
       <Contacto />
+      */}
     </div>
   );
 };

@@ -11,17 +11,6 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
 
-  useEffect(() => {
-    const arrayImagenesSkills = datosSkills.map(elemento => elemento.Logo);
-    importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
-  }, [datosSkills]);
-
-  useEffect(() => {
-    const arrayImagenesSoftskills = datosSoftskills.map(elemento => elemento.Logo);
-    importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/")
-  }, [datosSoftskills]);
-
-
   return (
     <>
       DEPURANDO EN PRODUCCIÓN

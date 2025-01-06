@@ -8,23 +8,19 @@ import { useTranslation } from 'react-i18next';
 const Skills = ({ datosSkills, datosSoftskills }) => {
   const [logosSkills, setLogosSkills] = useState([]);
   const [logosSoftskills, setLogosSoftskills] = useState([]);
-
   const { isOpen, openModal } = useContexto();
-
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   useEffect(() => {
-    if (datosSkills?.length) {
-      const arrayImagenesSkills = datosSkills.map((elemento) => elemento.Logo);
+    if (Array.isArray(datosSkills) && datosSkills.length > 0) {
+      const arrayImagenesSkills = datosSkills.map((elemento) => elemento?.Logo || null).filter(Boolean);
       importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
     }
   }, [datosSkills]);
 
   useEffect(() => {
-    if (datosSoftskills?.length) {
-      const arrayImagenesSoftskills = datosSoftskills.map(
-        (elemento) => elemento.Logo
-      );
+    if (Array.isArray(datosSoftskills) && datosSoftskills.length > 0) {
+      const arrayImagenesSoftskills = datosSoftskills.map((elemento) => elemento?.Logo || null).filter(Boolean);
       importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/");
     }
   }, [datosSoftskills]);
@@ -34,7 +30,7 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
       {isOpen && <Modal datosSkills={datosSkills} />}
       <h1 id="skills" className="text-2xl font-bold">{t('skills.title-1')}</h1>
       <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
-        {datosSkills.map((skill, i) => (
+        {(datosSkills || []).map((skill, i) => (
           <button
             key={i}
             className="flex flex-col bg-gray-100 ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100"
@@ -45,20 +41,20 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
                 <img
                   className="mr-1"
                   src={logosSkills[i]}
-                  alt={skill.Skill}
+                  alt={skill?.Skill || 'Skill'}
                   width="20px"
                 />
               )}
-              {skill.Skill}
+              {skill?.Skill || 'Skill'}
             </div>
-            <ProgressBar dominio={skill.Dominio} />
+            <ProgressBar dominio={skill?.Dominio || 0} />
           </button>
         ))}
       </div>
 
       <h1 className="text-2xl font-bold">{t('skills.title-2')}</h1>
       <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
-        {datosSoftskills.map((skill, i) => (
+        {(datosSoftskills || []).map((skill, i) => (
           <div
             key={i}
             className="flex bg-gray-100 ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100"
@@ -67,11 +63,11 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
               <img
                 className="mr-1"
                 src={logosSoftskills[i]}
-                alt={skill.Softskill}
+                alt={skill?.Softskill || 'Softskill'}
                 width="20px"
               />
             )}
-            {skill.Softskill}
+            {skill?.Softskill || 'Softskill'}
           </div>
         ))}
       </div>

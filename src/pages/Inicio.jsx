@@ -67,9 +67,9 @@ const Inicio = () => {
       
       <Presentacion />
       <Acerca />
-      {/*
-      <Skills datosSkills={datosSkills} datosSoftskills={datosSoftskills} />
       
+      <Skills datosSkills={datosSkills} datosSoftskills={datosSoftskills} />
+      {/*
       
       <Experiencia datosExperiencia={datosExperiencia} />
      

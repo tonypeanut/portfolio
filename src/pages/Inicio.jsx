@@ -67,16 +67,10 @@ const Inicio = () => {
       
       <Presentacion />
       <Acerca />
-      
       <Skills datosSkills={datosSkills} datosSoftskills={datosSoftskills} />
-      {/*
-      
       <Experiencia datosExperiencia={datosExperiencia} />
-     
       <Proyectos limit={6} datosProyectos={datosProyectos} />
-      */}
       <Contacto />
-      
       
     </div>
   );

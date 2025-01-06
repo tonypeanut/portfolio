@@ -10,6 +10,18 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   const [logosSoftskills, setLogosSoftskills] = useState([]);
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
+  const [arrayImagenesSkills, setArrayImagenesSkills] = useState([])
+  const [arrayImagenesSoftskills, setArrayImagenesSoftskills] = useState([])
+
+  useEffect(() => {
+    setArrayImagenesSkills(datosSkills.map(elemento => elemento.Logo));
+    importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
+  }, [datosSkills]);
+
+  useEffect(() => {
+    setArrayImagenesSoftskills(datosSoftskills.map(elemento => elemento.Logo));
+    importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/")
+  }, [datosSoftskills]);
 
   return (
     <>

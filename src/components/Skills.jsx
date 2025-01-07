@@ -15,11 +15,13 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   const arrayImagenesSoftskills = datosSoftskills.map(elemento => elemento.Logo)
 
   useEffect(() => {
-    importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
+    console.log(arrayImagenesSkills)
+    //importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
   }, [datosSkills]);
 
   useEffect(() => {
-    importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/")
+    console.log(arrayImagenesSoftskills)
+    //importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/")
   }, [datosSoftskills]);
 
   return (

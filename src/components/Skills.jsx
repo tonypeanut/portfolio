@@ -15,8 +15,8 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       const arrayImagenesSkills = datosSkills.map(elemento => elemento.Logo)
-      console.log(arrayImagenesSkills)
-      //importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
+      //console.log(arrayImagenesSkills)
+      importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
     }, 100);
     return () => clearTimeout(timeout);
   }, [datosSkills]);
@@ -25,14 +25,63 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
     const timeout = setTimeout(() => {
       const arrayImagenesSoftskills = datosSoftskills.map(elemento => elemento.Logo)
       console.log(arrayImagenesSoftskills)
-      //importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/")
+      importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/")
     }, 100);
     return () => clearTimeout(timeout);
   }, [datosSoftskills]);
 
   return (
     <>
-      DEPURANDO EN PRODUCCIÓN
+      {isOpen && <Modal datosSkills={datosSkills} />}
+
+      <h1 id="skills" className="text-2xl font-bold">{t('skills.title-1')}</h1>
+      <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
+
+        {(datosSkills).map((skill, i) => (
+          <button
+            key={i}
+            className="flex flex-col bg-gray-100 ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100"
+            onClick={() => openModal("skill", i)}
+          >
+            <div className="flex">
+              {logosSkills[i] ? (
+                <img
+                  className="mr-1"
+                  src={`${logosSkills[i]}`}
+                  alt={skill?.Skill || 'Skill'}
+                  width="20px"
+                />
+              ) : (
+                <div className="mr-1 w-5 h-5 bg-gray-300" /> // Placeholder mientras la imagen no esté cargada
+              )}
+              {skill?.Skill || 'Skill'}
+            </div>
+            <ProgressBar dominio={skill?.Dominio || 0} />
+          </button>
+        ))}
+      </div>
+
+      <h1 className="text-2xl font-bold">{t('skills.title-2')}</h1>
+      <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 flex flex-wrap gap-2">
+        {(datosSoftskills).map((skill, i) => (
+          <div
+            key={i}
+            className="flex bg-gray-100 ml5 border rounded-lg p-1 shadow-lg hover:bg-cyan-100"
+          >
+            {logosSoftskills[i] ? (
+              <img
+                className="mr-1"
+                src={`${logosSoftskills[i]}`}
+                alt={skill?.Softskill || 'Softskill'}
+                width="20px"
+              />
+            ) : (
+              <div className="mr-1 w-5 h-5 bg-gray-300" /> // Placeholder mientras la imagen no esté cargada
+            )}
+            {skill?.Softskill || 'Softskill'}
+          </div>
+        ))}
+      </div>
     </>
   );
 };

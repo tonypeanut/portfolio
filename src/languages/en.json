@@ -30,6 +30,7 @@
       },
       "navigation": {
         "inicio": "Home",
+        "presentacion": "Presentation",
         "acerca": "About",
         "skills": "Skills",
         "experiencia": "Experience",

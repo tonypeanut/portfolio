@@ -17,6 +17,7 @@ const Navigation = () => {
         { isOpen && (<Modal/>)}
         <nav className="font-semibold flex">
             {mostrarMenu.inicio && <Link to="/" className=" p-4 hover:bg-slate-600">{t('navigation.inicio')}</Link>}
+            {mostrarMenu.presentacion && <a href="#presentacion" className=" p-4 hover:bg-slate-600">{t('navigation.presentacion')}</a>}
             {mostrarMenu.acerca && <a href="#acerca" className=" p-4 hover:bg-slate-600">{t('navigation.acerca')}</a>}
             {mostrarMenu.skills && <a href="#skills" className=" p-4 hover:bg-slate-600">{t('navigation.skills')}</a>}
             {mostrarMenu.experiencia && <a href="#experiencia" className=" p-4 hover:bg-slate-600">{t('navigation.experiencia')}</a>}

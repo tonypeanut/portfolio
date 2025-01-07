@@ -13,7 +13,7 @@ const TodosProyectos = () => {
 
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect( () => {setMenu(["inicio", "contacto-"])}, []);
+  useEffect( () => {setMenu(["inicio", "contacto"])}, []);
 
   useEffect(() => {
     const loadTranslations = () => {

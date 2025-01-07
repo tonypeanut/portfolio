@@ -23,7 +23,7 @@ const Inicio = () => {
 
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect( () => {setMenu(["inicio", "acerca", "skills", "experiencia", "proyectos", "contacto-"])}, []);
+  useEffect( () => {setMenu(["presentacion", "acerca", "skills", "experiencia", "proyectos", "contacto"])}, []);
 
   useEffect(() => {
     const loadTranslations = () => {

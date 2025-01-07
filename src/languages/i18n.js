@@ -13,9 +13,13 @@ i18n
       en: enTranslation,
       es: esTranslation,
     },
-    fallbackLng: "es", // Idioma predeterminado si no se detecta
+    lng: 'en',
+    fallbackLng: "en", // Idioma predeterminado si no se detecta
     interpolation: {
       escapeValue: false, // React ya maneja la seguridad contra XSS
+    },
+    react: {
+      useSuspense: true, // Activar Suspense
     },
   });
 

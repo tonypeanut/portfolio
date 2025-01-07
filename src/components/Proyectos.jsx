@@ -13,34 +13,23 @@ const Proyectos = ({ limit, datosProyectos }) => {
   const [imagenes, setImagenes] = useState([]);
   const { t } = useTranslation(); 
 
-  if (typeof datosProyectos === 'undefined' || !Array.isArray(datosProyectos)) {
-    console.error("datosProyectos no es un array válido.");
-    return null; // No renderizar el componente si los datos son inválidos
-  }
+  let proyectos;
 
   const proyectosVisibles = datosProyectos.filter(
-    (elemento) => elemento && elemento.visible === "true"
+    (elemento) => elemento.visible === "true"
   );
 
-  let proyectos = [];
   if (limit) {
     proyectos = proyectosVisibles.slice(0, parseInt(limit));
   } else {
     proyectos = [...proyectosVisibles];
   }
 
-  const arrayImagenes = proyectos.map((elemento) => {
-    if (elemento.Imagenes && elemento.Imagenes.length > 0) {
-      return elemento.Imagenes[0];
-    }
-    return null;
-  }).filter(imagen => imagen !== null);
+  const arrayImagenes = proyectos.map((elemento) => elemento.Imagenes[0]);
 
   useEffect(() => {
-    if (arrayImagenes.length > 0) {
-      importarImagenes(arrayImagenes, setImagenes, "../assets/images/");
-    }
-  }, [arrayImagenes]);
+    importarImagenes(arrayImagenes, setImagenes, "../assets/images/");
+  }, []);
 
   const handleLinkClick = () => {
     window.scrollTo(0, 0);
@@ -59,7 +48,7 @@ const Proyectos = ({ limit, datosProyectos }) => {
               key={i}
               className="bg-gray-100 border rounded-lg p-5 shadow-lg hover:bg-cyan-100 flex flex-col justify-between h-full"
             >
-              <div className="flex justify-center mb-4">
+              <div className="flex justify-center mb-4"> {/* Centrado de la imagen */}
                 <MostrarImagen
                   imagen={imagenes[i]}
                   nombre={`imagen${i}`}
@@ -67,12 +56,12 @@ const Proyectos = ({ limit, datosProyectos }) => {
                 />
               </div>
               <h2 className="text-xl font-bold mb-2 text-center">
-                {proyecto.Nombre || 'N/A'}
+                {proyecto.Nombre}
               </h2>
-              <p className="text-sm mb-4">{proyecto.Descripcion || 'N/A'}</p>
+              <p className="text-sm mb-4">{proyecto.Descripcion}</p>
               <div className="mt-auto">
                 <div className="flex justify-center gap-3 mb-3">
-                  <a href={proyecto.Deployment || '#'} target="_blank" rel="noreferrer">
+                  <a href={proyecto.Deployment} target="_blank" rel="noreferrer">
                     <img
                       className="p-1 hover:shadow hover:shadow-cyan-400 hover:bg-cyan-400"
                       src={deploySVG}
@@ -80,7 +69,7 @@ const Proyectos = ({ limit, datosProyectos }) => {
                       width="40px"
                     />
                   </a>
-                  <a href={proyecto.Github || '#'} target="_blank" rel="noreferrer">
+                  <a href={proyecto.Github} target="_blank" rel="noreferrer">
                     <img
                       className="p-1 hover:shadow hover:shadow-cyan-400 hover:bg-cyan-400"
                       src={githubSVG}
@@ -92,7 +81,7 @@ const Proyectos = ({ limit, datosProyectos }) => {
                 <div className="flex justify-center">
                   <button
                     className="p-2 rounded-xl from-gray-200 to-gray-400 hover:from-gray-300 hover:to-gray-500 bg-gradient-to-br"
-                    onClick={() => openModal("proyectos", proyecto.Id || 0)}
+                    onClick={() => openModal("proyectos", proyecto.Id)}
                   >
                     {t('projects.button-1')}
                   </button>

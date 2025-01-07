@@ -10,7 +10,7 @@ import logoSVG from "../assets/icons/logo.svg";
 const Header = () => {
   return (
     <div>
-        <div className="bg-gray-500 text-white justify-between flex">
+        <div className="bg-gray-500 text-white justify-between flex fixed w-full">
             <div className=" text-center">
                 <Link to="/" className='flex cellphone:flex'>
                     <img src={logoSVG} alt="logo" width="25px" />

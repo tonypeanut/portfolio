@@ -47,8 +47,10 @@ const TodosProyectos = () => {
 
   return (
     <>
-        <div className=" flex flex-col items-center mt-4">
+        <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center md:mt-[60px]">
             <Proyectos datosProyectos={datosProyectos} />
+          </div>
         </div>
     </>
   )

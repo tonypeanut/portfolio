@@ -15,7 +15,6 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       const arrayImagenesSkills = datosSkills.map(elemento => elemento.Logo)
-      //console.log(arrayImagenesSkills)
       importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
     }, 100);
     return () => clearTimeout(timeout);
@@ -24,7 +23,6 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       const arrayImagenesSoftskills = datosSoftskills.map(elemento => elemento.Logo)
-      console.log(arrayImagenesSoftskills)
       importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/")
     }, 100);
     return () => clearTimeout(timeout);

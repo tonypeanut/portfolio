@@ -11,17 +11,23 @@ const Skills = ({ datosSkills, datosSoftskills }) => {
   const { isOpen, openModal } = useContexto();
   const { t } = useTranslation();
 
-  const arrayImagenesSkills = datosSkills.map(elemento => elemento.Logo)
-  const arrayImagenesSoftskills = datosSoftskills.map(elemento => elemento.Logo)
-
+  
   useEffect(() => {
-    console.log(arrayImagenesSkills)
-    //importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
+    const timeout = setTimeout(() => {
+      const arrayImagenesSkills = datosSkills.map(elemento => elemento.Logo)
+      console.log(arrayImagenesSkills)
+      //importarImagenes(arrayImagenesSkills, setLogosSkills, "../assets/icons/");
+    }, 100);
+    return () => clearTimeout(timeout);
   }, [datosSkills]);
 
   useEffect(() => {
-    console.log(arrayImagenesSoftskills)
-    //importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/")
+    const timeout = setTimeout(() => {
+      const arrayImagenesSoftskills = datosSoftskills.map(elemento => elemento.Logo)
+      console.log(arrayImagenesSoftskills)
+      //importarImagenes(arrayImagenesSoftskills, setLogosSoftskills, "../assets/icons/")
+    }, 100);
+    return () => clearTimeout(timeout);
   }, [datosSoftskills]);
 
   return (

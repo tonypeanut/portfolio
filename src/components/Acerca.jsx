@@ -5,8 +5,7 @@ const Acerca = () => {
 
   return (
     <>
-      <div id="acerca "></div>
-      <h1 className="text-2xl font-bold">{t('about.title')}</h1>
+      <h1 id="acerca" className="text-2xl font-bold">{t('about.title')}</h1>
       <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded">
         <div className="m-5">
           <p>{t('about.description')}</p>

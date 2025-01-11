@@ -6,9 +6,11 @@ import ModalProyectos from "./ModalProyectos";
 import ModalSkills from "./ModalSkills";
 
 import closeIcon from "../assets/icons/close.svg";
+import { useTheme } from '../context/ThemeProvider';
 
 const Modal = ({ datosSkills, datosExperiencia, datosProyectos }) => {
   const { closeModal, tipo, id } = useContexto();
+  const { theme } = useTheme(); 
 
   // Usar useCallback para evitar que la función cambie innecesariamente.
   const handleKeyDown = useCallback(
@@ -80,7 +82,7 @@ const Modal = ({ datosSkills, datosExperiencia, datosProyectos }) => {
       onClick={handleCloseClick}
       id="modal-background"
     >
-      <div className="bg-white p-5 rounded-lg shadow-xl relative">
+      <div className={`p-5 rounded-lg shadow-xl relative theme-${theme}:bg-${theme}-color-1 theme-${theme}:text-${theme}-text-1`}>
         {renderContent()}
         <button
           className="absolute top-2 right-2"

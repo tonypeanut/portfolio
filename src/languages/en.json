@@ -47,6 +47,9 @@
         "submit": "Send",
         "msg": "Message sent successfully."
       },
+      "temas":{
+        "descripcion": "Themes"
+      },
       "cv": "https://drive.google.com/file/d/1TTIb8C2h-KRjnEt1OCWlWZYBbMTArz2S/view?usp=sharing",
       "progress-bar": {
         "title": "Proficiency Level:",

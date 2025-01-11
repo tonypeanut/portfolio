@@ -7,11 +7,14 @@ import importarImagenes from "../helpers/importarImagenes";
 import { Link } from "react-router-dom";
 import MostrarImagen from "./MostrarImagen.jsx";
 import { useTranslation } from 'react-i18next';
+import { useTheme } from '../context/ThemeProvider';
 
 const Proyectos = ({ limit, datosProyectos }) => {
   const { isOpen, openModal } = useContexto();
   const [imagenes, setImagenes] = useState([]);
   const { t } = useTranslation(); 
+  const { theme } = useTheme(); 
+  
 
   let proyectos;
 
@@ -38,21 +41,21 @@ const Proyectos = ({ limit, datosProyectos }) => {
   return (
     <>
       {isOpen && <Modal datosProyectos={datosProyectos} />}
-      <h1 id="proyectos" className="text-2xl font-bold text-center mb-6">
+      <h1 id="proyectos" className={`text-2xl font-bold text-center mb-6 theme-${theme}:text-${theme}-text-1`}>
         {t('projects.title')}
       </h1>
-      <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded p-5 text-left">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className={`container tablet:w-3/5 w-full mb-5 border rounded p-5 text-left theme-${theme}:bg-${theme}-color-2`}>
+        <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 theme-${theme}:text-${theme}-text-1`}>
           {proyectos.map((proyecto, i) => (
             <div
               key={i}
-              className="bg-gray-100 border rounded-lg p-5 shadow-lg hover:bg-cyan-100 flex flex-col justify-between h-full"
+              className={`border rounded-lg p-5 shadow-lg flex flex-col justify-between h-full theme-${theme}:bg-${theme}-color-1`}
             >
-              <div className="flex justify-center mb-4"> {/* Centrado de la imagen */}
+              <div className="flex justify-center mb-4"> 
                 <MostrarImagen
                   imagen={imagenes[i]}
                   nombre={`imagen${i}`}
-                  clases="w-full h-32 object-cover rounded cursor-pointer hover:brightness-105"
+                  clases="w-full h-32 object-cover rounded"
                 />
               </div>
               <h2 className="text-xl font-bold mb-2 text-center">
@@ -63,7 +66,7 @@ const Proyectos = ({ limit, datosProyectos }) => {
                 <div className="flex justify-center gap-3 mb-3">
                   <a href={proyecto.Deployment} target="_blank" rel="noreferrer">
                     <img
-                      className="p-1 hover:shadow hover:shadow-cyan-400 hover:bg-cyan-400"
+                      className={`p-1 hover:theme-${theme}:bg-${theme}-color-4`}
                       src={deploySVG}
                       alt="deploy"
                       width="40px"
@@ -71,7 +74,7 @@ const Proyectos = ({ limit, datosProyectos }) => {
                   </a>
                   <a href={proyecto.Github} target="_blank" rel="noreferrer">
                     <img
-                      className="p-1 hover:shadow hover:shadow-cyan-400 hover:bg-cyan-400"
+                      className={`p-1 hover:theme-${theme}:bg-${theme}-color-4`}
                       src={githubSVG}
                       alt="github"
                       width="40px"
@@ -80,7 +83,7 @@ const Proyectos = ({ limit, datosProyectos }) => {
                 </div>
                 <div className="flex justify-center">
                   <button
-                    className="p-2 rounded-xl from-gray-200 to-gray-400 hover:from-gray-300 hover:to-gray-500 bg-gradient-to-br"
+                    className={`font-bold p-2 rounded-xl theme-${theme}:bg-${theme}-color-5 hover:theme-${theme}:bg-${theme}-color-6 theme-${theme}:text-${theme}-text-2`}
                     onClick={() => openModal("proyectos", proyecto.Id)}
                   >
                     {t('projects.button-1')}
@@ -94,7 +97,7 @@ const Proyectos = ({ limit, datosProyectos }) => {
           <div className="flex justify-center mt-3">
             <Link
               to="/proyectos"
-              className="p-2 rounded-xl from-cyan-300 to-cyan-500 hover:from-cyan-400 hover:to-cyan-600 bg-gradient-to-br font-bold"
+              className={`font-bold p-4 rounded-xl theme-${theme}:bg-${theme}-color-5 hover:theme-${theme}:bg-${theme}-color-6 theme-${theme}:text-${theme}-text-2`}
               onClick={handleLinkClick}
             >
               {t('projects.button-2')}

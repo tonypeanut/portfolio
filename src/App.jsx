@@ -20,7 +20,6 @@ function App() {
                 </ContextProvider>
         </BrowserRouter>
     )
-    }
-
+}
 export default App
 

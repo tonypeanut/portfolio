@@ -29,7 +29,7 @@ const ModalSkills = ({ id, datosSkills }) => {
   const { Skill, Dominio, Descripcion } = skillData;
 
   return (
-    <div className="flex">
+    <div className={`flex`}>
       {logoSkill[0] && (
         <MostrarImagen imagen={logoSkill[0]} nombre={Skill} clases="w-1/3" />
       )}

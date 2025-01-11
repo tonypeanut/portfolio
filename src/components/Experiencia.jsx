@@ -1,10 +1,12 @@
 import Modal from "./Modal";
 import useContexto from '../hook/useContexto';
 import { useTranslation } from 'react-i18next';
+import { useTheme } from '../context/ThemeProvider';
 
 const Experiencia = ({ datosExperiencia }) => {
     const { isOpen, openModal } = useContexto();
     const { t } = useTranslation();
+    const { theme } = useTheme(); 
 
     // Verificar que datosExperiencia es un array
     if (!Array.isArray(datosExperiencia)) {
@@ -22,16 +24,16 @@ const Experiencia = ({ datosExperiencia }) => {
         <>
             {isOpen && <Modal datosExperiencia={datosExperiencia} />}
 
-            <h1 id="experiencia" className="text-2xl font-bold">{t('experience.title')}</h1>
-            <div className="container bg-gray-200 tablet:w-3/5 w-full mb-5 border rounded flex flex-col md:flex-row p-5 gap-5 laptop:gap-10 text-left flex-wrap justify-center">
+            <h1 id="experiencia" className={`text-2xl font-bold theme-${theme}:text-${theme}-text-1`}>{t('experience.title')}</h1>
+            <div className={`container tablet:w-3/5 w-full mb-5 border rounded flex flex-col md:flex-row p-5 gap-5 laptop:gap-10 text-left flex-wrap justify-center theme-${theme}:bg-${theme}-color-2 theme-${theme}:text-${theme}-text-1`}>
                 {datosExperiencia.map((experiencia, i) => (
-                    <div key={i} className="bg-gray-100 border rounded-lg p-5 shadow-lg hover:bg-cyan-100 w-full flex flex-col justify-between laptop:w-72">
+                    <div key={i} className={`border rounded-lg p-5 shadow-lg w-full flex flex-col justify-between laptop:w-72 theme-${theme}:bg-${theme}-color-1`}>
                         <p><strong>{t('experience.field-1')}</strong> {experiencia.Puesto || 'N/A'}</p>
                         <p><strong>{t('experience.field-2')}</strong> {experiencia.FechaInicio || 'N/A'}</p>
                         <p><strong>{t('experience.field-3')}</strong> {experiencia.FechaFin || 'N/A'}</p>
                         <p><strong>{t('experience.field-4')}</strong> {experiencia.Empresa || 'N/A'}</p>
                         <div className="flex justify-center mt-2">
-                            <button className="p-2 rounded-xl from-gray-200 to-gray-400 hover:from-gray-300 hover:to-gray-500 bg-gradient-to-br" onClick={() => openModal("experiencia", i)}>
+                            <button className={`font-bold p-2 rounded-xl theme-${theme}:bg-${theme}-color-5 hover:theme-${theme}:bg-${theme}-color-6 theme-${theme}:text-${theme}-text-2`} onClick={() => openModal("experiencia", i)}>
                                 {t('experience.button')}
                             </button>
                         </div>

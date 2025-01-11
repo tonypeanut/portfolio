@@ -1,10 +1,15 @@
 import RedesSociales from "./RedesSociales";
+import { useTheme } from '../context/ThemeProvider';
 
-const Footer = () => (
-  <footer className="bg-gray-500 text-white text-center py-3">
-      <h1 className="text-xs text-gray-400">Antonio Valdez Aguayo</h1>
-      <RedesSociales />
-  </footer>
-);
+const Footer = () => {
+  const { theme } = useTheme();
+
+  return (
+    <footer className={`text-black text-center py-3 theme-${theme}:bg-${theme}-color-5`}>
+        <h1 className="text-xs text-black">Antonio Valdez Aguayo</h1>
+        <RedesSociales />
+    </footer>
+  )
+}
 
 export default Footer

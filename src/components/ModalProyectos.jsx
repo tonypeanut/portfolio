@@ -4,10 +4,12 @@ import githubSVG from '../assets/icons/github.svg';
 import importarImagenes from "../helpers/importarImagenes";
 import next from '../assets/icons/next.svg';
 import previous from '../assets/icons/previous.svg';
+import { useTheme } from '../context/ThemeProvider';
 
 const ModalProyectos = ({ id, datosProyectos }) => {
   // Verificar que exista el proyecto con el `id` proporcionado
   const proyecto = datosProyectos?.find(elemento => elemento.Id === id);
+  const { theme } = useTheme(); 
   
   if (!proyecto) {
     return <div className="text-center">Datos del proyecto no disponibles.</div>;
@@ -53,14 +55,14 @@ const ModalProyectos = ({ id, datosProyectos }) => {
 
   return (
     <div
-      className="w-full h-full max-w-3xl max-h-[90vh] p-6 bg-white rounded-xl shadow-lg overflow-y-auto"
+      className="w-full h-full max-w-3xl max-h-[90vh] p-6 rounded-xl overflow-y-auto"
       style={{ width: '600px', height: '550px' }}
     >
       <div className="relative flex flex-col justify-center items-center">
         <div className="h-80 w-full flex justify-center items-center relative">
           {isLoading || !imageLoaded ? (
-            <div className="absolute flex justify-center items-center h-80 w-full bg-gray-100">
-              <span className="text-lg font-semibold text-gray-500">Cargando imagen...</span>
+            <div className={`absolute flex justify-center items-center h-80 w-full theme-${theme}:bg-${theme}-color-1`}>
+              <span className={`text-lg font-semibold theme-${theme}:text-${theme}-text-1`}>Cargando imagen...</span>
             </div>
           ) : null}
           {imagenesImportadas.length > 0 && (
@@ -77,11 +79,11 @@ const ModalProyectos = ({ id, datosProyectos }) => {
             imagenesImportadas.length > 1 ? 'block' : 'hidden'
           }`}
         >
-          <button onClick={prevImage} className="hover:bg-cyan-300 hover:opacity-30 w-28">
+          <button onClick={prevImage} className={`hover:theme-${theme}:bg-${theme}-color-4 hover:opacity-30 w-28`}>
             <img src={previous} alt="<" className="w-10" />
           </button>
 
-          <button onClick={nextImage} className="hover:bg-cyan-300 hover:opacity-30 w-28">
+          <button onClick={nextImage} className={`hover:theme-${theme}:bg-${theme}-color-4  hover:opacity-30 w-28`}>
             <img src={next} alt=">" className="w-10 float-right" />
           </button>
         </div>
@@ -92,7 +94,9 @@ const ModalProyectos = ({ id, datosProyectos }) => {
             <span
               key={index}
               className={`w-4 h-4 rounded-full ${
-                index === currentImageIndex ? 'bg-cyan-500' : 'bg-gray-300'
+                index === currentImageIndex
+                  ? `theme-${theme}:bg-${theme}-color-6`
+                  : `theme-${theme}:bg-${theme}-color-3`
               }`}
             ></span>
           ))}
@@ -105,7 +109,7 @@ const ModalProyectos = ({ id, datosProyectos }) => {
         {Deployment && (
           <a href={Deployment} target="_blank" rel="noreferrer">
             <img
-              className="p-1 hover:shadow hover:shadow-cyan-400 hover:bg-cyan-400"
+              className={`p-1 hover:theme-${theme}:bg-${theme}-color-4`}
               src={deploySVG}
               alt="deploy"
               width="40px"
@@ -115,7 +119,7 @@ const ModalProyectos = ({ id, datosProyectos }) => {
         {Github && (
           <a href={Github} target="_blank" rel="noreferrer">
             <img
-              className="p-1 hover:shadow hover:shadow-cyan-400 hover:bg-cyan-400"
+              className={`p-1 hover:theme-${theme}:bg-${theme}-color-4`}
               src={githubSVG}
               alt="github"
               width="40px"

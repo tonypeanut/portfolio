@@ -3,7 +3,8 @@ import emailjs from 'emailjs-com';
 import Alerta from './Alerta';  // Asegúrate de importar correctamente tu componente Alerta
 import useContexto from "../hook/useContexto";
 import { useTranslation } from "react-i18next";
-import RedesSociales from "./RedesSociales"
+import RedesSociales from "./RedesSociales";
+import { useTheme } from '../context/ThemeProvider';
 
 const ContactForm = () => {
   const [nombre, setNombre] = useState('');
@@ -14,6 +15,7 @@ const ContactForm = () => {
   const [isValid, setIsValid] = useState(false); // Estado para controlar si el formulario es válido
   const { closeModal } = useContexto();
   const { t } = useTranslation(); 
+  const { theme } = useTheme(); 
 
   // Función para validar el formulario
   const validateForm = () => {
@@ -119,7 +121,9 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className={`p-2 rounded-xl w-full mt-3 ${isValid ? 'bg-gray-400 hover:bg-gray-500' : 'bg-gray-200 cursor-not-allowed'}`}
+            className={`p-2 rounded-xl w-full mt-3 ${isValid 
+              ? `theme-${theme}:bg-${theme}-color-5 hover:theme-${theme}:bg-${theme}-color-6 theme-${theme}:text-${theme}-text-2`
+              : `theme-${theme}:bg-${theme}-color-2 cursor-not-allowed`}`}
             disabled={!isValid}  // Deshabilitar el botón si el formulario no es válido
           >
             {t('contact.submit')}

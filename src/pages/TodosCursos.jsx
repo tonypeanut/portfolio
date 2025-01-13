@@ -1,59 +1,57 @@
 import { useEffect, useState } from "react";
-import Proyectos from "../components/Proyectos";
-import useContexto from "../hook/useContexto";
-import { useTranslation } from "react-i18next";
+import Cursos from "../components/Cursos";
 
-const TodosProyectos = () => {
+import useContexto from "../hook/useContexto";
+import { useTranslation } from 'react-i18next';
+import { useTheme } from '../context/ThemeProvider';
+
+const Inicio = () => {
   const { setMenu } = useContexto();
   const { i18n } = useTranslation();
+  const { theme } = useTheme(); 
 
   const [datos, setDatos] = useState({
-      datosProyectos: null,
-    });
-
+    datosCursos: null,
+  });
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect( () => {setMenu(["inicio", "cursos", "contacto"])}, []);
+  useEffect( () => {setMenu(["inicio", "contacto"])}, []);
 
   useEffect(() => {
     const loadTranslations = () => {
-      // Idioma actual
       const currentLanguage = i18n.language;
       const currentResources = i18n?.services?.resourceStore?.data?.[currentLanguage];
 
       if (currentResources) {
         const translation = currentResources.translation;
-        const { datosProyectos } = translation;
+        const { datosCursos } = translation;
 
-        // Guardar los datos en el estado
         setDatos({
-          datosProyectos: datosProyectos || [],
+          datosCursos: datosCursos || [],
         });
-        setIsLoading(false); 
+        setIsLoading(false); // Los datos se cargaron con éxito
       } else {
         console.warn("No se encontraron recursos para el idioma:", currentLanguage);
-        setIsLoading(false); 
+        setIsLoading(false); // Evitar bloqueo por falta de recursos
       }
     };
 
     loadTranslations();
   }, [i18n.language]);
-  
+
   if (isLoading) {
     return <div className="flex items-center justify-center min-h-screen">Cargando...</div>;
   }
 
-  const { datosProyectos } = datos;
+  const { datosCursos } = datos;
 
   return (
-    <>
-        <div className="flex flex-col items-center">
-          <div className="flex flex-col items-center md:mt-[60px]">
-            <Proyectos datosProyectos={datosProyectos} />
-          </div>
-        </div>
-    </>
-  )
-}
+    <div className="flex flex-col items-center w-full">
+      <div className="flex flex-col items-center md:mt-[60px] w-full">
+        <Cursos datosCursos={ datosCursos }/>
+      </div>
+    </div>
+  );
+};
 
-export default TodosProyectos
+export default Inicio;

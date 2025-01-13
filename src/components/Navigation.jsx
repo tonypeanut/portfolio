@@ -25,6 +25,7 @@ const Navigation = () => {
             {mostrarMenu.skills && <a href="#skills" className={`p-4 hover:theme-${theme}:bg-${theme}-color-6`}>{t('navigation.skills')}</a>}
             {mostrarMenu.experiencia && <a href="#experiencia" className={`p-4 hover:theme-${theme}:bg-${theme}-color-6`}>{t('navigation.experiencia')}</a>}
             {mostrarMenu.proyectos && <a href="#proyectos" className={`p-4 hover:theme-${theme}:bg-${theme}-color-6`}>{t('navigation.proyectos')}</a>}
+            {mostrarMenu.cursos && <Link to="/cursos" className={`p-4 hover:theme-${theme}:bg-${theme}-color-6`}>{t('navigation.cursos')}</Link>}
             {mostrarMenu.contacto && <button className={`p-4 hover:theme-${theme}:bg-${theme}-color-6`} onClick={()=>openModal("formulario")}>{t('navigation.contacto')}</button>}
         </nav>
     </>

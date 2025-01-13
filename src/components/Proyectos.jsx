@@ -41,6 +41,7 @@ const Proyectos = ({ limit, datosProyectos }) => {
   return (
     <>
       {isOpen && <Modal datosProyectos={datosProyectos} />}
+      
       <h1 id="proyectos" className={`text-2xl font-bold text-center mb-6 theme-${theme}:text-${theme}-text-1`}>
         {t('projects.title')}
       </h1>

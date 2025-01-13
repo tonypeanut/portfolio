@@ -4,11 +4,12 @@ import ModalExperiencia from "./ModalExperiencia";
 import ModalFormulario from "./ModalFormulario";
 import ModalProyectos from "./ModalProyectos";
 import ModalSkills from "./ModalSkills";
+import ModalCursos from "./ModalCursos"
 
 import closeIcon from "../assets/icons/close.svg";
 import { useTheme } from '../context/ThemeProvider';
 
-const Modal = ({ datosSkills, datosExperiencia, datosProyectos }) => {
+const Modal = ({ datosSkills, datosExperiencia, datosProyectos, datosCursos }) => {
   const { closeModal, tipo, id } = useContexto();
   const { theme } = useTheme(); 
 
@@ -51,6 +52,8 @@ const Modal = ({ datosSkills, datosExperiencia, datosProyectos }) => {
       case "skill":
         // Solo renderizar si 'id' y 'datosSkills' son válidos
         return datosSkills?.[id] !== undefined;
+      case "cursos":
+        return datosCursos?.[id] !== undefined;
       default:
         return false; // En caso de un tipo no soportado, no se renderiza nada.
     }
@@ -66,6 +69,8 @@ const Modal = ({ datosSkills, datosExperiencia, datosProyectos }) => {
         return <ModalProyectos id={id} datosProyectos={datosProyectos} />;
       case "skill":
         return <ModalSkills id={id} datosSkills={datosSkills} />;
+      case "cursos":
+        return <ModalCursos id={id} datosCursos={datosCursos} />;
       default:
         return null;
     }

@@ -41,6 +41,7 @@ const MenuDesplegable = () => {
                 {mostrarMenu.skills && <li><div className=" text-center p-1 w-full" ><a href="#skills">{t('navigation.skills')}</a></div></li>}
                 {mostrarMenu.experiencia && <li><div className=" text-center p-1 w-full"><a href="#experiencia">{t('navigation.experiencia')}</a></div></li>}
                 {mostrarMenu.proyectos && <li><div className=" text-center p-1 w-full"><a href="#proyectos">{t('navigation.proyectos')}</a></div></li>}
+                {mostrarMenu.proyectos && <li><div className=" text-center p-1 w-full"><Link to="/cursos">{t('navigation.cursos')}</Link></div></li>}
                 {mostrarMenu.contacto && <li><div className=" text-center p-1 w-full"><button onClick={()=>openModal("formulario")}>{t('navigation.contacto')}</button></div></li>}
             </ul>
         </details>

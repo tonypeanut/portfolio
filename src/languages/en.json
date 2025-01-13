@@ -28,6 +28,12 @@
         "button-1": "More information...",
         "button-2": "More projects"
       },
+      "cursos": {
+        "title": "Courses",
+        "formacion": "Training",
+        "proveedor": "Provider",
+        "horas": "Hours"
+      },
       "navigation": {
         "inicio": "Home",
         "presentacion": "Presentation",
@@ -35,6 +41,7 @@
         "skills": "Skills",
         "experiencia": "Experience",
         "proyectos": "Projects",
+        "cursos": "Courses",
         "contacto": "Contact"
       },
       "contact": {
@@ -102,20 +109,6 @@
             "3D modeling and blueprint generation."
           ]
         }
-      ],
-      "datosCursos":[
-        {"Nombre":"Create a Modern Web Page from Scratch with HTML and CSS", "Fecha":"2023", "Instructor":"UDEMY"},
-        {"Nombre":"Python Without Borders: HTML, CSS, Flask, and MySQL", "Fecha":"2023", "Instructor":"UDEMY"},
-        {"Nombre":"Industrial Ultrasonics Level II Limited for Measuring Thicknesses", "Fecha":"2018", "Instructor":"Training and NDT of Mexico"},
-        {"Nombre":"Mold Tools", "Fecha":"2018", "Instructor":"SolidServicios"},
-        {"Nombre":"CNC Machine Programming with G and M Codes", "Fecha":"2017", "Instructor":"Polytechnic University of Sinaloa"},
-        {"Nombre":"Basic IRC5 Programming", "Fecha":"2017", "Instructor":"ABB Robotics Mexico"},
-        {"Nombre":"RobotStudio Basic", "Fecha":"2017", "Instructor":"ABB Robotics Mexico"},
-        {"Nombre":"Advanced IRC5 Programming", "Fecha":"2017", "Instructor":"ABB Robotics Mexico"},
-        {"Nombre":"Introduction to Copper Alloy Metallurgy for Foundry", "Fecha":"2017", "Instructor":"Engineering and Industrial Development Center"},
-        {"Nombre":"Development of Managerial Talent", "Fecha":"2017", "Instructor":"Mazatlán Business Center"},
-        {"Nombre":"Fundamentals of Feeding System Design and Casting System for Copper and its Alloys", "Fecha":"2017", "Instructor":"Mexican Foundry Society"},
-        {"Nombre":"Interpretation of ISO 9001:2015 Standard", "Fecha":"2017", "Instructor":"Calidad de Verdad"}
       ],
       "datosSkills":[
         {
@@ -674,6 +667,557 @@
           "visible": "false"
       }
         
+      ],
+      "datosCursos": [
+        {
+          "programa": "Business english",
+          "total_horas":"16",
+          "proveedor": "Santander Open Academy",
+          "cursos": [
+              {
+                  "nombre": "Business English, Part 2",
+                  "fecha": "2024-12-08",
+                  "certificado": "https://drive.google.com/file/d/1QgxTz3w6oqkv7aTpfSzdK7t3FncDDeBa/view?usp=sharing",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "Business English, Part 1",
+                  "fecha": "2024-08-12",
+                  "certificado": "https://drive.google.com/file/d/1MYkrkAHLDTPTRvKgXdRuR3NmerGnqCgM/view?usp=sharing",
+                  "horas": "8"
+              }
+          ]
+        },
+        {
+          "programa": "Google Data Analyst",
+          "total_horas": "",
+          "proveedor": "Google - Coursera",
+          "cursos": [
+              {
+                  "nombre": "Analyze Data to Answer Questions",
+                  "fecha": "2024-12-06",
+                  "certificado": "https://coursera.org/verify/NM8AS3XP7ECC",
+                  "horas": ""
+              },
+              {
+                  "nombre": "Process Dirty Data to Clean Data",
+                  "fecha": "2024-12-02",
+                  "certificado": "https://coursera.org/verify/OTG21SLXO5Z4",
+                  "horas": ""
+              },
+              {
+                  "nombre": "Prepare Data for Exploration",
+                  "fecha": "2024-10-28",
+                  "certificado": "https://coursera.org/verify/P9FQCA8AR4DO",
+                  "horas": ""
+              },
+              {
+                  "nombre": "Ask Questions to Make Data-Driven Decisions",
+                  "fecha": "2024-10-08",
+                  "certificado": "https://coursera.org/verify/CK5Q7FB8K8UB",
+                  "horas": ""
+              },
+              {
+                  "nombre": "Foundations: Data, Data, Everywhere",
+                  "fecha": "2024-09-19",
+                  "certificado": "https://coursera.org/verify/DI0T4G1N1FM9",
+                  "horas": ""
+              }
+          ]
+        },
+        {
+          "programa": "Dev Immersions",
+          "total_horas": "20",
+          "proveedor": "Alura Latam",
+          "cursos": [
+              {
+                  "nombre": "Business Intelligence",
+                  "fecha": "2024-11-23",
+                  "certificado": "https://drive.google.com/file/d/1WzI1WT-WI5KIPjYINmBoBWkWwEWLjIaQ/view?usp=sharing",
+                  "horas": "12"
+              },
+              {
+                  "nombre": "Web Development with Javascript",
+                  "fecha": "2024-09-24",
+                  "certificado": "https://drive.google.com/file/d/1Hlds5mWMQMKOXnGyCF0tTe_hXTqS3pKK/view?usp=sharing",
+                  "horas": "4"
+              },
+              {
+                  "nombre": "Data Analysis with Python",
+                  "fecha": "2024-07",
+                  "certificado": "https://drive.google.com/file/d/1IInZctcs_RgNDPUSHSf3fdJrbBNgCm7Q/view?usp=sharing",
+                  "horas": "4"
+              }
+          ]
+        },
+        {
+          "programa": "Generative AI",
+          "total_horas": "24",
+          "proveedor": "Alura Latam - Oracle Next Education G6",
+          "cursos": [
+              {
+                  "nombre": "ChatGPT and Programming: Boost Your Productivity",
+                  "fecha": "2024-10-18",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/a24c474c-50ff-48ba-8285-89267df57fe9",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "ChatGPT and JavaScript: Building the Pong Game",
+                  "fecha": "2024-10-17",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/c94945f0-2a60-4071-8f50-2e84482fc6d5",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "ChatGPT: Optimizing the Quality of Results",
+                  "fecha": "2024-10-15",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/f39fbf5f-4841-4b69-b750-056d1ad4d78c",
+                  "horas": "8"
+              }
+          ]
+        },
+        {
+          "programa": "Oracle Cloud Infrastructure",
+          "total_horas": "16",
+          "proveedor": "Alura Latam - Oracle Next Education G6",
+          "cursos": [
+              {
+                  "nombre": "Oracle Cloud Infrastructure: Database and Infrastructure as Code",
+                  "fecha": "2024-10-13",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/cbe0df11-c6cb-4571-921f-24153ab73af5",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "Oracle Cloud Infrastructure: Deploying an Application in the Cloud",
+                  "fecha": "2024-10-07",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/59f0b162-63bf-4ade-b955-57b209203a74",
+                  "horas": "8"
+              }
+          ]
+        },
+        {
+          "programa": "SQL with MySQL",
+          "total_horas": "76",
+          "proveedor": "Alura Latam - Oracle Next Education G6",
+          "cursos": [
+              {
+                  "nombre": "MySQL Administration: Database Security and Optimization – Part 2",
+                  "fecha": "2024-10-03",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/2947eba7-cdc1-46d5-9ae7-1119e9a0d1a3",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "MySQL Administration: Database Security and Optimization – Part 1",
+                  "fecha": "2024-09-29",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/dd9e8871-e850-420d-831c-55382b0abf0b",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "SQL with MySQL: Final Project",
+                  "fecha": "2024-09-23",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/a940f7c7-e95a-464d-a1e0-1b0fad70ee56",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "SQL Procedures: Running Code in MySQL",
+                  "fecha": "2024-09-12",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/6364163b-4c54-41d5-8e38-5b1a31a604f5",
+                  "horas": "10"
+              },
+              {
+                  "nombre": "DML Commands: Data Manipulation with MySQL",
+                  "fecha": "2024-09-05",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/a7287b3d-6c35-4b52-8e98-1f89a6eec9b6",
+                  "horas": "14"
+              },
+              {
+                  "nombre": "SQL Queries: Advancing in SQL with MySQL",
+                  "fecha": "2024-09-02",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/9e54926a-405d-4096-8121-1b1693a097a8",
+                  "horas": "16"
+              },
+              {
+                  "nombre": "Introduction to SQL with MySQL: Manipulate and Query Data",
+                  "fecha": "2024-08-07",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/f60b6c63-f04d-4a8d-9168-cc2fbb3c8fa7",
+                  "horas": "12"
+              }
+          ]
+        },  
+        {
+          "programa": "Artificial Intelligence and Machine Learning - AI of the Future",
+          "total_horas": "87",
+          "proveedor": "BEDU & Santander Open Academy",
+          "cursos": [
+              {
+                  "nombre": "Prototype Day – Artificial Intelligence and Machine Learning",
+                  "fecha": "2024-08-27",
+                  "certificado": "https://www.acreditta.com/credential/a4b5c128-6133-4490-bbf1-971d6ac26be2",
+                  "horas": ""
+              },
+              {
+                  "nombre": "Artificial Intelligence and Machine Learning",
+                  "fecha": "2024-08-27",
+                  "certificado": "https://www.acreditta.com/credential/bc81d36a-8ea7-4eab-8804-e822e16e4ce1",
+                  "horas": "87"
+              }
+          ]
+        },
+        {
+          "programa": "Java and Spring Boot",
+          "total_horas": "54",
+          "proveedor": "Alura Latam - Oracle Next Education G6",
+          "cursos": [
+              {
+                  "nombre": "Practicing Spring Framework: Challenge Foro Hub",
+                  "fecha": "2024-07-05",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/e17ec573-88f5-4aaa-a09b-0a12f140811d",
+                  "horas": "20"
+              },
+              {
+                  "nombre": "Spring Boot 3: Document, test, and prepare an API for deployment",
+                  "fecha": "2024-06-18",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/d7cf92c4-8e72-4c50-8002-d9f8fa0a04de",
+                  "horas": "12"
+              },
+              {
+                  "nombre": "Spring Boot 3: Apply best practices and secure a REST API",
+                  "fecha": "2024-06-11",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/d049e3db-db86-4bdf-8f09-e8e292c82e53",
+                  "horas": "12"
+              },
+              {
+                  "nombre": "Spring Boot 3: Develop a REST API in Java",
+                  "fecha": "2024-06-05",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/bc8636be-be41-4d88-96db-761a696f0c98",
+                  "horas": "10"
+              }
+            ]
+        },
+        {
+          "programa": "Java Web: Create Applications Using Spring Boot",
+          "total_horas": "49",
+          "proveedor": "Alura Latam - Oracle Next Education G6",
+          "cursos": [
+              {
+                  "nombre": "Practicing Spring Boot: Challenge Literalura",
+                  "fecha": "2024-05-29",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/179a6d41-7572-4f07-9e1c-b2f6b4124e5b",
+                  "horas": "15"
+              },
+              {
+                  "nombre": "Java: Creating Your First API and Connecting it to the Frontend",
+                  "fecha": "2024-05-20",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/4e6a8bf0-9117-467d-8141-30870dff01ed",
+                  "horas": "10"
+              },
+              {
+                  "nombre": "Java: Data Persistence and Queries with Spring Data JPA",
+                  "fecha": "2024-05-16",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/93e518d9-1a68-491b-a779-d47c57789b9b",
+                  "horas": "12"
+              },
+              {
+                  "nombre": "Java: Working with Lambdas, Streams, and Spring Framework",
+                  "fecha": "2024-05-11",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/5d4c692c-26db-4fbd-83ef-32f38823d823",
+                  "horas": "12"
+              }
+          ]
+        },
+        {
+          "programa": "Object-oriented Java",
+          "total_horas": "44",
+          "proveedor": "Alura Latam - Oracle Next Education G6",
+          "cursos": [
+            {
+              "nombre": "Practicing with Java: Currency Converter Challenge",
+              "fecha": "2024-05-06",
+              "certificado": "https://app.aluracursos.com/formalCertificate/d627118b-38ef-4b5c-aead-ade2f493b124",
+              "horas": "10"
+            },
+            {
+              "nombre": "Java: Consume API, Write Files, and Handle Errors",
+              "fecha": "2024-05-02",
+              "certificado": "https://app.aluracursos.com/formalCertificate/d34dc0c3-e982-42ab-939a-e44c8cc630df",
+              "horas": "8"
+            },
+            {
+              "nombre": "Java: Working with Lists and Data Collections",
+              "fecha": "2024-04-30",
+              "certificado": "https://app.aluracursos.com/formalCertificate/d116702c-2e7a-4e09-ac53-5601a524b021",
+              "horas": "8"
+            },
+            {
+              "nombre": "Java: Applying Object Orientation",
+              "fecha": "2024-04-28",
+              "certificado": "https://app.aluracursos.com/formalCertificate/c2fd72d3-d458-46e7-844d-109e990bcbf1",
+              "horas": "10"
+            },
+            {
+              "nombre": "Java: Creating Your First Application",
+              "fecha": "2024-04-27",
+              "certificado": "https://app.aluracursos.com/formalCertificate/0f66d370-c2d3-4ee4-9079-aa8ebe272591",
+              "horas": "8"
+            }
+          ]
+        },   
+        {
+          "programa": "Entrepreneurship, Agility, and Professional Leadership",
+          "total_horas": "36",
+          "proveedor": "Alura Latam - Oracle Next Education G6",
+          "cursos": [
+            {
+              "nombre": "Agility Fundamentals: First Steps to Agile Transformation",
+              "fecha": "2024-05-31",
+              "certificado": "https://app.aluracursos.com/formalCertificate/04ad2438-d26a-4917-bdd5-92e4a423af1b",
+              "horas": "6"
+            },
+            {
+              "nombre": "Entrepreneurship: From Idea to Business Plan",
+              "fecha": "2024-05-31",
+              "certificado": "https://app.aluracursos.com/formalCertificate/3b19662e-731f-4547-985f-ef4ad7b7f87b",
+              "horas": "6"
+            },
+            {
+              "nombre": "Career Transition: A Guide to the Tech Field",
+              "fecha": "2024-05-30",
+              "certificado": "https://app.aluracursos.com/formalCertificate/33a9332e-3701-4d56-afe1-93c216b280f0",
+              "horas": "6"
+            },
+            {
+              "nombre": "Professional Purpose: Be the Protagonist of Your Career",
+              "fecha": "2024-05-30",
+              "certificado": "https://app.aluracursos.com/formalCertificate/1bade192-f7fb-4be5-9ce9-f5ea147907b5",
+              "horas": "6"
+            },
+            {
+              "nombre": "Career Development: How to Reach the Desired Position",
+              "fecha": "2024-04-24",
+              "certificado": "https://app.aluracursos.com/formalCertificate/e8ae8534-b7ca-4c27-afee-aa38c34729b4",
+              "horas": "6"
+            },
+            {
+              "nombre": "Career Development: Market Demand",
+              "fecha": "2024-04-10",
+              "certificado": "https://app.aluracursos.com/formalCertificate/6843d376-ee80-4259-a757-b52632e6e505",
+              "horas": "6"
+            }
+          ]
+        },
+        {
+          "programa": "Personal Development",
+          "total_horas": "35",
+          "proveedor": "Alura Latam - Oracle Next Education G6",
+          "cursos": [
+            {
+              "nombre": "Habits: Being productive to achieve your personal goals",
+              "fecha": "2024-01-31",
+              "certificado": "https://app.aluracursos.com/formalCertificate/20b7a73d-2d8e-427f-bd78-14299469788e",
+              "horas": "8"
+            },
+            {
+              "nombre": "Focus: Focusing brings more results for everyday life",
+              "fecha": "2024-01-30",
+              "certificado": "https://app.aluracursos.com/formalCertificate/09d0c91b-7440-43b6-8330-6ce9d415b6e9",
+              "horas": "8"
+            },
+            {
+              "nombre": "LinkedIn: How to make your profile work for you",
+              "fecha": "2024-01-29",
+              "certificado": "https://app.aluracursos.com/formalCertificate/859cbb58-8187-44f6-85ea-f9633fe34e17",
+              "horas": "6"
+            },
+            {
+              "nombre": "Learn to Learn: Techniques for self-development",
+              "fecha": "2024-01-20",
+              "certificado": "https://app.aluracursos.com/formalCertificate/711b0666-63f2-46dc-ae97-d5c3ea7d5099",
+              "horas": "8"
+            }
+          ]
+        },  
+        {
+          "programa": "Beginner in Programming",
+          "total_horas": "56",
+          "proveedor": "Alura Latam - Oracle Next Education G6",
+          "cursos": [
+              {
+                  "nombre": "Git and Github: Repository, Commit, and Versions",
+                  "fecha": "2024-01-26",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/e19d758e-01cc-4f6d-bd81-1bc27670bf21",
+                  "horas": "6"
+              },
+              {
+                  "nombre": "HTML5 and CSS3 Part 4: Advancing in CSS",
+                  "fecha": "2024-01-24",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/1a1bb51d-e311-4288-9991-6d23673def3a",
+                  "horas": "10"
+              },
+              {
+                  "nombre": "HTML5 and CSS3 Part 3: Working with Forms and Tables",
+                  "fecha": "2024-01-24",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/08d5ef1d-51c1-4392-ad32-cf670a452948",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "HTML5 and CSS3 Part 2: Positioning, Lists, and Navigation",
+                  "fecha": "2024-01-23",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/4b539e17-7642-4d9a-83d7-8e2450f40e1b",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "HTML5 and CSS3 Part 1: My First Web Page",
+                  "fecha": "2024-01-23",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/fb6827d8-8a3e-4da2-90df-33aa80e46215",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "Programming Logic: Exploring Functions and Lists",
+                  "fecha": "2024-01-21",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/b8124e2e-32f4-4e3f-b5a4-f49146bc7c71",
+                  "horas": "8"
+              },
+              {
+                  "nombre": "Programming Logic: Dive into Programming with JavaScript",
+                  "fecha": "2024-01-19",
+                  "certificado": "https://app.aluracursos.com/formalCertificate/416a41a1-08ba-4673-b415-dbc2c051a16b",
+                  "horas": "8"
+              }
+          ]
+        },
+        {
+          "programa": "UDEMY",
+          "total_horas": "83",
+          "proveedor": "UDEMY",
+          "cursos": [
+              {
+                  "nombre": "Modern JavaScript Complete Guide Build +20 Projects",
+                  "fecha": "2024-03-17",
+                  "certificado": "https://www.udemy.com/certificate/UC-9bdac842-d98f-4dc3-8ea9-954da8ee6c76/",
+                  "hours": "50.5"
+              },
+              {
+                  "nombre": "Learn JavaScript from Zero to Expert",
+                  "fecha": "2023-10-06",
+                  "certificado": "https://www.udemy.com/certificate/UC-4f816557-03bb-4c80-ab01-fc7e2a05d5db/",
+                  "horas": "3.5"
+              },
+              {
+                  "nombre": "ISO 19011:2018 Auditing Management Systems",
+                  "fecha": "2023-09-06",
+                  "certificado": "https://www.udemy.com/certificate/UC-137649c8-1134-4c54-914b-fea9f2d3e684/",
+                  "horas": "1"
+              },
+              {
+                  "nombre": "Create a Modern Website from Scratch with HTML and CSS",
+                  "fecha": "2023-03-29",
+                  "certificado": "https://www.udemy.com/certificate/UC-5e1cbebf-3ba0-44fd-97a7-e4338c3870b8/",
+                  "horas": "3.5"
+              },
+              {
+                  "nombre": "Python without Borders: HTML, CSS, Flask, and MySQL",
+                  "fecha": "2023-02-19",
+                  "certificado": "https://www.udemy.com/certificate/UC-08725edd-1117-4cf9-94e2-6c5a77bcd198/",
+                  "horas": "24.5"
+              }
+          ]
+        },
+        {
+          "programa": "Other training",
+          "proveedor": "Various",
+          "total_horas": "547",
+          "cursos": [
+            {
+              "nombre": "CNC Machine Programming with G and M Codes",
+              "fecha": "2018-10-27",
+              "certificado": "https://drive.google.com/file/d/1ed27dMbZKsdJ35H4HkTVeq_Np5dGnJuj/view?usp=sharing",
+              "horas": "40"
+            },
+            {
+              "nombre": "Industrial Ultrasonics Level II Limited for Thickness Measurement",
+              "fecha": "2018-10-05",
+              "certificado": "https://drive.google.com/file/d/1TnRx9cqDfMb6jO66RUPb1XjNKK-2GCw3/view?usp=sharing",
+              "horas": "40"
+            },
+            {
+              "nombre": "Solidworks Mold Tools Course",
+              "fecha": "2018-09-12",
+              "certificado": "https://drive.google.com/file/d/1H8Y7cudSoxyXZBu3AEynJCGvy-kCM1Wj/view?usp=sharing",
+              "horas": "40"
+            },
+            {
+              "nombre": "Advanced Programming IRC5",
+              "fecha": "2017-08-18",
+              "certificado": "https://drive.google.com/file/d/1sKbeE0zIdmWzrjV-Oze46EfIdedXbtZn/view?usp=sharing",
+              "horas": "40"
+            },
+            {
+              "nombre": "RobotStudio Basic",
+              "fecha": "2017-07-28",
+              "certificado": "https://drive.google.com/file/d/1D1CmEeOh2qZUpZ-jFYBN00ZA3WDyVVfC/view?usp=sharing",
+              "horas": "40"
+            },
+            {
+              "nombre": "Fundamentals of Feeding System Design and Casting Systems for Copper and its Alloys",
+              "fecha": "2017-07-07",
+              "certificado": "https://drive.google.com/file/d/1bMKlCaMHUQNuqwd2Ojs9G-6Yh-b_iof_/view?usp=sharing",
+              "horas": "40"
+            },
+            {
+              "nombre": "Interpretation of ISO 9001:2015 Standard",
+              "fecha": "2017-06-24",
+              "certificado": "https://drive.google.com/file/d/1RXO4D1fGnZB6Px8V-7LzhlNVTn_R4hU5/view?usp=sharing",
+              "horas": "15"
+            },
+            {
+              "nombre": "Basic Programming IRC5",
+              "fecha": "2017-06-09",
+              "certificado": "https://drive.google.com/file/d/1Qf5rFjOAXnoEqiXuj1EtOXIP89GZfMsm/view?usp=sharing",
+              "horas": "40"
+            },
+            {
+              "nombre": "Diploma in Managerial Talent Development",
+              "fecha": "2017-06-03",
+              "certificado": "https://drive.google.com/file/d/1HRxNzrJbOxGtYnwHQceYQSiV8fqhWCJG/view?usp=sharing",
+              "horas": "40"
+            },
+            {
+              "nombre": "Introduction to Metallurgy of Copper Alloys for Casting",
+              "fecha": "2017-04-28",
+              "certificado": "https://drive.google.com/file/d/1eJoRwT7TVUjiDTqmbLIAdghExEWQYF9x/view?usp=sharing",
+              "horas": "35"
+            },
+            {
+              "nombre": "Diploma in Managerial Skills",
+              "fecha": "2016-06-30",
+              "certificado": "https://drive.google.com/file/d/1t9TTMSo_tx6tIFn-W5huPG_YKgUwoMv3/view?usp=sharing",
+              "horas": "65"
+            },
+            {
+              "nombre": "BobCAD-CAM Software Operator",
+              "fecha": "2016-04-07",
+              "certificado": "https://drive.google.com/file/d/1p5iP52k5Dzqfy4DiAKd5GrJ4Z9-4Wn0M/view?usp=sharing",
+              "horas": "40"
+            },
+            {
+              "nombre": "Geomagic Control",
+              "fecha": "2016-02-27",
+              "certificado": "https://drive.google.com/file/d/1hjWuEH-P851JbAqrzeoP0OiWg9el9zLn/view?usp=sharing",
+              "horas": "27"
+            },
+            {
+              "nombre": "Geomagic Design X",
+              "fecha": "2016-02-25",
+              "certificado": "https://drive.google.com/file/d/1_ZWv42-72yEsvibRX_UeMtZuO1HBIcmW/view?usp=sharing",
+              "horas": "27"
+            },
+            {
+              "nombre": "Business Session: From Creativity to Innovation in Companies",
+              "fecha": "2015-10-22",
+              "certificado": "https://drive.google.com/file/d/1X4WggGcBSE9_JDOpbCpKel33Mxe1qNqQ/view?usp=sharing",
+              "horas": "18"
+            }
+          ]
+        } 
       ]
     }
   }

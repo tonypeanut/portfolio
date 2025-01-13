@@ -23,7 +23,7 @@ const Inicio = () => {
 
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect( () => {setMenu(["presentacion", "acerca", "skills", "experiencia", "proyectos", "contacto"])}, []);
+  useEffect( () => {setMenu(["presentacion", "acerca", "skills", "experiencia", "proyectos", "cursos", "contacto"])}, []);
 
   useEffect(() => {
     const loadTranslations = () => {
@@ -52,9 +52,6 @@ const Inicio = () => {
     loadTranslations();
   }, [i18n.language]);
 
-
-
-  // Renderizar estado de carga
   if (isLoading) {
     return <div className="flex items-center justify-center min-h-screen">Cargando...</div>;
   }

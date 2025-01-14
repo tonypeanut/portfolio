@@ -715,6 +715,19 @@
       ],
       "datosCursos": [
             {
+                "programa": "Certificados",
+                "total_horas": "N/A",
+                "proveedor" : "Varios",
+                "cursos" : [
+                    {
+                        "nombre": "EF SET English Test Results",
+                        "fecha":"2025-01-14",
+                        "certificado" : "https://cert.efset.org/en/aASw8L",
+                        "horas" : "N/A"
+                    }
+                ]
+            },
+            {
                 "programa": "Business english",
                 "total_horas":"16",
                 "proveedor": "Santander Open Academy",

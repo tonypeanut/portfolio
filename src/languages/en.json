@@ -301,6 +301,36 @@
       ],
       "datosProyectos": [
         {
+          "Id": "28",
+          "Nombre": "Welding workshop",
+          "Descripcion": "One-page website for a welding workshop.",
+          "Deployment": "https://tallerhg.netlify.app/",
+          "Github": "",
+          "Etiquetas": [
+            "Nextjs", "Javascript"
+          ],
+          "Imagenes": [
+            "28-01.png",
+            "28-02.png",
+            "28-03.png"
+          ],
+          "visible": "true"
+        },
+        {
+          "Id": "27",
+          "Nombre": "JobSearcher tool",
+          "Descripcion": "Python application designed to streamline the job search process by leveraging web scraping, data storage, and AI analysis.",
+          "Deployment": "",
+          "Github": "https://github.com/tonypeanut/jobSearcher.git",
+          "Etiquetas": [
+            "Python", "sqlalchemy", "Ollama", "Tkinter"
+          ],
+          "Imagenes": [
+            "27-01.png"
+          ],
+          "visible": "true"
+        },
+        {
           "Id": "26",
           "Nombre": "FullStack Notes",
           "Descripcion": "Full-stack project with a Flask (Python) backend and a React (Javascript) frontend, allowing users to register and take personal notes. Notes can be created, edited, deleted, archived, unarchived, and categories can be added or removed. Includes functionality to filter notes by category.",
@@ -384,7 +414,7 @@
           "Descripcion": "Developed with Node.js. A travel agency site that shows information about vacation destinations. Allows users to add testimonials and store them in a database.",
           "Deployment": "https://agenciaviajesnode-2em1.onrender.com/",
           "Github": "https://github.com/tonypeanut/agenciaViajesNode.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Express", "Pug", "Sequelize", "Javascript"],
           "Imagenes": [
             "21-01.png",
             "21-02.png",
@@ -401,7 +431,7 @@
           "Descripcion": "A small veterinary patient appointment manager. Uses IndexedDB.",
           "Deployment": "https://main--tonypeanut-gestorveterinaria.netlify.app/",
           "Github": "https://github.com/tonypeanut/administrarPacientes.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
             "20-01.png",
             "20-02.png",
@@ -430,7 +460,7 @@
           "Descripcion": "A cryptocurrency price comparator that consumes data from the cryptocompare API.",
           "Deployment": "https://tonypeanut-criptomonedas.netlify.app/",
           "Github": "https://github.com/tonypeanut/criptomonedas.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
             "18-01.png",
             "18-02.png",
@@ -444,7 +474,7 @@
           "Descripcion": "Image search tool that consumes data from the Pixabay API.",
           "Deployment": "https://tonypeanut-buscadorimagenes.netlify.app/",
           "Github": "https://github.com/tonypeanut/buscadorImagenes.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
             "17-01.png",
             "17-02.png",
@@ -472,7 +502,7 @@
           "Descripcion": "Recipe finder that consumes data from the themealdb API.",
           "Deployment": "https://tonypeanut-buscador-recetas.netlify.app/",
           "Github": "https://github.com/tonypeanut/buscadorRecetas.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
             "15-01.png",
             "15-02.png",
@@ -488,7 +518,7 @@
           "Descripcion": "Check the weather in different cities around the world by consuming data from the openweathermap API.",
           "Deployment": "https://tonypeanut-clima.netlify.app/",
           "Github": "https://github.com/tonypeanut/climaFetchAPI.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
               "14-01.png",
               "14-02.png",
@@ -516,7 +546,7 @@
           "Descripcion": "Allows you to manage a budget and record expenses.",
           "Deployment": "https://tonypeanut-administrdor-presupuesto.netlify.app/",
           "Github": "https://github.com/tonypeanut/administrarPresupuesto.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
               "12-01.png",
               "12-02.png",
@@ -531,7 +561,7 @@
           "Descripcion": "Allows you to quote car insurance based on year, brand, and type of insurance.",
           "Deployment": "https://tonypeanut-cotizador-prototypes.netlify.app/",
           "Github": "https://github.com/tonypeanut/cotizadorPrototypes.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
               "11-01.png",
               "11-02.png",
@@ -546,7 +576,7 @@
           "Descripcion": "Simulates a course shopping page, allowing you to add items to a shopping cart using the DOM.",
           "Deployment": "https://tonypeanut-carrito-compras.netlify.app/",
           "Github": "https://github.com/tonypeanut/carritoCompras.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
               "10-01.png",
               "10-02.png",
@@ -560,7 +590,7 @@
           "Descripcion": "Allows you to store texts using local storage.",
           "Deployment": "https://tonypeanut-almacenar-textos.netlify.app/",
           "Github": "https://github.com/tonypeanut/almacenarTextos.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
               "9-01.png",
               "9-02.png"
@@ -573,7 +603,7 @@
           "Descripcion": "Filter cars from a list based on their characteristics.",
           "Deployment": "https://tonypeanut-buscador.netlify.app/",
           "Github": "https://github.com/tonypeanut/buscador.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
               "8-01.png",
               "8-02.png",
@@ -593,7 +623,7 @@
               "7-02.png",
               "7-03.png"
           ],
-          "visible": "true"
+          "visible": "false"
       },
       {
           "Id": "6",
@@ -601,7 +631,7 @@
           "Descripcion": "Text encryptor as part of the challenges in the Oracle Next Education G6 program.",
           "Deployment": "https://tonypeanut.github.io/encriptador/",
           "Github": "https://github.com/tonypeanut/encriptador.git",
-          "Etiquetas": [],
+          "Etiquetas": ["Javascript"],
           "Imagenes": [
               "6-01.png",
               "6-02.png",
@@ -631,7 +661,7 @@
               "4-02.png",
               "4-03.png"
           ],
-          "visible": "true"
+          "visible": "false"
       },
       {
           "Id": "3",
@@ -654,7 +684,7 @@
               "2-01.png",
               "2-02.png"
           ],
-          "visible": "true"
+          "visible": "false"
       },
       {
           "Id": "1",
@@ -669,6 +699,25 @@
         
       ],
       "datosCursos": [
+          {
+            "programa": "Fundamental Coding Interview Prep with Python",
+            "total_horas": "N/A",
+            "proveedor" : "CodeSignal",
+            "cursos" : [
+                {
+                    "nombre": "Applying Simple Looping in Practice with Python",
+                    "fecha":"2025-02-16",
+                    "certificado" : "https://codesignal.com/learn/certificates/cm6munack000cfezvbkiz6tjm/courses/91",
+                    "horas" : "N/A"
+                },
+                {
+                    "nombre": "Revisiting Python Essentials",
+                    "fecha":"2025-02-07",
+                    "certificado" : "https://codesignal.com/learn/certificates/cm6munack000cfezvbkiz6tjm/courses/90",
+                    "horas" : "N/A"
+                }
+            ]
+        },
         {
           "programa": "Certificates",
           "total_horas": "N/A",
@@ -676,8 +725,8 @@
           "cursos" : [
               {
                   "nombre": "EF SET English Test Results",
-                  "fecha":"2025-01-14",
-                  "certificado" : "https://cert.efset.org/en/aASw8L",
+                  "fecha":"2025-02-25",
+                  "certificado" : "https://cert.efset.org/es/THu7Lf",
                   "horas" : "N/A"
               }
           ]
@@ -706,6 +755,30 @@
           "total_horas": "",
           "proveedor": "Google - Coursera",
           "cursos": [
+              {
+                  "nombre": "Google Data Analytics Professional Certificate",
+                  "fecha": "2025-01-26",
+                  "certificado": "https://coursera.org/verify/professional-cert/2A7M5FGPYGLI",
+                  "horas": ""
+              },
+              {
+                  "nombre": "Google Computational Data Analysis Capstone Course: Complete a Case Study",
+                  "fecha": "2025-01-26",
+                  "certificado": "https://coursera.org/verify/ULPYS23KO1TZ",
+                  "horas": ""
+              },
+              {
+                  "nombre": "Data analysis with R programming",
+                  "fecha": "2025-01-23",
+                  "certificado": "https://coursera.org/verify/S252OKW5WA7B",
+                  "horas": ""
+              },
+              {
+                  "nombre": "Sharing data through the art of visualization",
+                  "fecha": "2025-01-18",
+                  "certificado": "https://coursera.org/verify/DEBU7EW3742R",
+                  "horas": ""
+              },
               {
                   "nombre": "Analyze Data to Answer Questions",
                   "fecha": "2024-12-06",

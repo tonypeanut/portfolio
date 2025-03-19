@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
-import Presentacion from "../components/Presentacion";
-import Acerca from "../components/Acerca";
-import Skills from "../components/Skills";
-import Experiencia from "../components/Experiencia";
-import Proyectos from "../components/Proyectos";
-import Contacto from "../components/Contacto"
+import { useEffect, useState } from "react"; 
+import Presentacion from "../components/Sections/Presentacion";
+import Acerca from "../components/Sections/Acerca";
+import Skills from "../components/Sections/Skills";
+import Experiencia from "../components/Sections/Experiencia";
+import Proyectos from "../components/Sections/Proyectos";
+import Contacto from "../components/Sections/Contacto"
 
 import { useTranslation } from "react-i18next";
 import useContexto from "../hook/useContexto";
@@ -56,7 +56,6 @@ const Inicio = () => {
     return <div className="flex items-center justify-center min-h-screen">Cargando...</div>;
   }
 
-  // Desestructuración de los datos
   const { datosSkills, datosSoftskills, datosExperiencia, datosProyectos } = datos;
 
   return (

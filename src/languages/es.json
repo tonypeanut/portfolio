@@ -301,6 +301,36 @@
       ],
       "datosProyectos": [
             {
+                "Id": "28",
+                "Nombre": "Taller de soldadura",
+                "Descripcion": "Sitio web de una sola página para un taller de soldadura.",
+                "Deployment": "https://tallerhg.netlify.app/",
+                "Github": "",
+                "Etiquetas": [
+                "Nextjs", "Javascript"
+                ],
+                "Imagenes": [
+                "28-01.png",
+                "28-02.png",
+                "28-03.png"
+                ],
+                "visible": "true"
+            },
+            {
+                "Id": "27",
+                "Nombre": "JobSearcher tool",
+                "Descripcion": "Aplicación Python diseñada para agilizar el proceso de búsqueda de empleo, aprovechando scraping web, almacenamiento de datos y análisis con IA.",
+                "Deployment": "",
+                "Github": "https://github.com/tonypeanut/jobSearcher.git",
+                "Etiquetas": [
+                "Python", "sqlalchemy", "Ollama", "Tkinter"
+                ],
+                "Imagenes": [
+                "27-01.png"
+                ],
+                "visible": "true"
+            },
+            {
                 "Id": "26",
                 "Nombre": "FullStack Notes",
                 "Descripcion": "Proyecto fullstack con backend en Flask (Python) y frontend en React (Javascript), permite al usuario registrarse y tomar notas personales. Las notas pueden ser creadas, editadas, eliminadas, se pueden archivar, desarchivar y también se les puede añadir o remover categorias. Cuenta con funcionalidad para filtrado de notas por categoria.",
@@ -387,7 +417,7 @@
                 "Deployment": "https://agenciaviajesnode-2em1.onrender.com/",
                 "Github": "https://github.com/tonypeanut/agenciaViajesNode.git",
                 "Etiquetas": [
-    
+                    "Express", "Pug", "Sequelize", "Javascript"
                 ],
                 "Imagenes": [
                     "21-01.png",
@@ -406,7 +436,7 @@
                 "Deployment": "https://main--tonypeanut-gestorveterinaria.netlify.app/",
                 "Github": "https://github.com/tonypeanut/administrarPacientes.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "20-01.png",
@@ -439,7 +469,7 @@
                 "Deployment": "https://tonypeanut-criptomonedas.netlify.app/",
                 "Github": "https://github.com/tonypeanut/criptomonedas.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "18-01.png",
@@ -455,7 +485,7 @@
                 "Deployment": "https://tonypeanut-buscadorimagenes.netlify.app/",
                 "Github": "https://github.com/tonypeanut/buscadorImagenes.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "17-01.png",
@@ -487,7 +517,7 @@
                 "Deployment": "https://tonypeanut-buscador-recetas.netlify.app/",
                 "Github": "https://github.com/tonypeanut/buscadorRecetas.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "15-01.png",
@@ -505,7 +535,7 @@
                 "Deployment": "https://tonypeanut-clima.netlify.app/",
                 "Github": "https://github.com/tonypeanut/climaFetchAPI.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "14-01.png",
@@ -537,7 +567,7 @@
                 "Deployment": "https://tonypeanut-administrdor-presupuesto.netlify.app/",
                 "Github": "https://github.com/tonypeanut/administrarPresupuesto.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "12-01.png",
@@ -554,7 +584,7 @@
                 "Deployment": "https://tonypeanut-cotizador-prototypes.netlify.app/",
                 "Github": "https://github.com/tonypeanut/cotizadorPrototypes.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "11-01.png",
@@ -571,7 +601,7 @@
                 "Deployment": "https://tonypeanut-carrito-compras.netlify.app/",
                 "Github": "https://github.com/tonypeanut/carritoCompras.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "10-01.png",
@@ -587,7 +617,7 @@
                 "Deployment": "https://tonypeanut-almacenar-textos.netlify.app/",
                 "Github": "https://github.com/tonypeanut/almacenarTextos.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "9-01.png",
@@ -602,7 +632,7 @@
                 "Deployment": "https://tonypeanut-buscador.netlify.app/",
                 "Github": "https://github.com/tonypeanut/buscador.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "8-01.png",
@@ -625,7 +655,7 @@
                     "7-02.png",
                     "7-03.png"
                 ],
-                "visible":"true"
+                "visible":"false"
             },
             {
                 "Id": "6",
@@ -634,7 +664,7 @@
                 "Deployment": "https://tonypeanut.github.io/encriptador/",
                 "Github": "https://github.com/tonypeanut/encriptador.git",
                 "Etiquetas": [
-    
+                    "Javascript"
                 ],
                 "Imagenes": [
                     "6-01.png",
@@ -671,7 +701,7 @@
                     "4-02.png",
                     "4-03.png"
                 ],
-                "visible":"true"
+                "visible":"false"
             },
             {
                 "Id": "3",
@@ -698,7 +728,7 @@
                     "2-01.png",
                     "2-02.png"
                 ],
-                "visible":"true"
+                "visible":"false"
             },
             {
                 "Id": "1",
@@ -715,14 +745,33 @@
       ],
       "datosCursos": [
             {
+                "programa": "Preparación para la entrevista de codificación básica con Python",
+                "total_horas": "N/A",
+                "proveedor" : "CodeSignal",
+                "cursos" : [
+                    {
+                        "nombre": "Aplicación de bucles simples en la práctica con Python",
+                        "fecha":"2025-02-16",
+                        "certificado" : "https://codesignal.com/learn/certificates/cm6munack000cfezvbkiz6tjm/courses/91",
+                        "horas" : "N/A"
+                    },
+                    {
+                        "nombre": "Revisando los fundamentos de Python",
+                        "fecha":"2025-02-07",
+                        "certificado" : "https://codesignal.com/learn/certificates/cm6munack000cfezvbkiz6tjm/courses/90",
+                        "horas" : "N/A"
+                    }
+                ]
+            },
+            {
                 "programa": "Certificados",
                 "total_horas": "N/A",
                 "proveedor" : "Varios",
                 "cursos" : [
                     {
                         "nombre": "EF SET English Test Results",
-                        "fecha":"2025-01-14",
-                        "certificado" : "https://cert.efset.org/en/aASw8L",
+                        "fecha":"2025-02-25",
+                        "certificado" : "https://cert.efset.org/es/THu7Lf",
                         "horas" : "N/A"
                     }
                 ]
@@ -751,6 +800,30 @@
                 "total_horas":"",
                 "proveedor": "Google - Coursera",
                 "cursos": [
+                    {
+                        "nombre": "Certificado profesional de Google Análisis de Datos de Google",
+                        "fecha": "2025-01-26",
+                        "certificado": "https://coursera.org/verify/professional-cert/2A7M5FGPYGLI",
+                        "horas": ""
+                    },
+                    {
+                        "nombre": "Curso final de análisis computacional de datos de Google: completa un caso práctico",
+                        "fecha": "2025-01-26",
+                        "certificado": "https://coursera.org/verify/ULPYS23KO1TZ",
+                        "horas": ""
+                    },
+                    {
+                        "nombre": "Análisis de datos con programación en R",
+                        "fecha": "2025-01-23",
+                        "certificado": "https://coursera.org/verify/S252OKW5WA7B",
+                        "horas": ""
+                    },
+                    {
+                        "nombre": "Compartir datos a través del arte de la visualización",
+                        "fecha": "2025-01-18",
+                        "certificado": "https://coursera.org/verify/DEBU7EW3742R",
+                        "horas": ""
+                    },
                     {
                         "nombre": "Analizar datos para responder preguntas",
                         "fecha": "2024-12-06",

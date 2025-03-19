@@ -1,7 +1,7 @@
-import Modal from "./Modal";
-import useContexto from '../hook/useContexto';
+import Modal from "../Modal";
+import useContexto from '../../hook/useContexto';
 import { useTranslation } from 'react-i18next';
-import { useTheme } from '../context/ThemeProvider';
+import { useTheme } from "../../context/ThemeProvider";
 
 const Contacto = () => {
   const { isOpen, openModal } = useContexto();

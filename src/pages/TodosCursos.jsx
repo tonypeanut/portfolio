@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Cursos from "../components/Cursos";
+import Cursos from "../components/Sections/Cursos";
 
 import useContexto from "../hook/useContexto";
 import { useTranslation } from 'react-i18next';
@@ -52,6 +52,6 @@ const Inicio = () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default Inicio;

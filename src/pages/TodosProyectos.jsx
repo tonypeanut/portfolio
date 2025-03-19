@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Proyectos from "../components/Proyectos";
+import Proyectos from "../components/Sections/Proyectos";
 import useContexto from "../hook/useContexto";
 import { useTranslation } from "react-i18next";
 

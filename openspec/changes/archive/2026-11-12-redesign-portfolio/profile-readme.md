@@ -1,4 +1,4 @@
-# Draft — README for `tonypeanut/tonypeanut` (NOT published)
+# README for `tonypeanut/tonypeanut` (published 2026-11-12, with the public e-mail added)
 
 Everything below the line is the file content. It goes live only after the owner approves creating the public repo.
 

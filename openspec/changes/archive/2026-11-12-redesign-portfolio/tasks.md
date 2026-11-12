@@ -23,7 +23,7 @@
 - [x] 4.4 `openspec validate redesign-portfolio`
 
 ## 5. Publication (needs owner approval)
-- [ ] 5.1 Owner reviews the result
-- [ ] 5.2 Commit and push portfolio
-- [ ] 5.3 Create public `tonypeanut/tonypeanut` with the profile README
+- [x] 5.1 Owner reviews the result
+- [x] 5.2 Commit and push portfolio
+- [x] 5.3 Create public `tonypeanut/tonypeanut` with the profile README
 - [ ] 5.4 Archive the change

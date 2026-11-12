@@ -1,15 +1,12 @@
-import RedesSociales from "./RedesSociales";
-import { useTheme } from '../context/ThemeProvider';
+import { useTranslation } from 'react-i18next';
 
-const Footer = () => {
-  const { theme } = useTheme();
-
+export default function Footer() {
+  const { t } = useTranslation();
   return (
-    <footer className={`text-black text-center py-3 theme-${theme}:bg-${theme}-color-5`}>
-        <h1 className="text-xs text-black">Antonio Valdez Aguayo</h1>
-        <RedesSociales />
+    <footer className="border-t border-line py-8 text-center text-sm text-muted">
+      <p>
+        © {new Date().getFullYear()} Antonio Valdez Aguayo · {t('footer.built')}
+      </p>
     </footer>
-  )
+  );
 }
-
-export default Footer

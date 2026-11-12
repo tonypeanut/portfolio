@@ -2,6 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    scroll-padding-top: 70px; /* Ajusta el valor según la altura de tu header */
+:root,
+:root[data-theme='dark'] {
+  --bg: 11 13 16;
+  --surface: 18 22 27;
+  --line: 35 42 51;
+  --ink: 230 233 238;
+  --muted: 154 164 178;
+  --accent: 45 212 191;
+  --on-accent: 6 20 18;
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: 250 250 249;
+  --surface: 255 255 255;
+  --line: 229 231 235;
+  --ink: 17 24 39;
+  --muted: 75 85 99;
+  --accent: 15 118 110;
+  --on-accent: 255 255 255;
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4.5rem;
+  }
+  body {
+    @apply font-sans antialiased;
+  }
+  :focus-visible {
+    @apply outline outline-2 outline-offset-2 outline-accent;
+  }
+  ::selection {
+    @apply bg-accent/30;
+  }
+}
+
+@layer components {
+  .section {
+    @apply mx-auto w-full max-w-4xl px-4 py-16 sm:px-6;
+  }
+  .section-title {
+    @apply mb-8 font-mono text-sm uppercase tracking-widest text-accent;
+  }
+  .card {
+    @apply rounded-xl border border-line bg-surface p-5;
+  }
+  .chip {
+    @apply rounded-md border border-line px-2 py-0.5 font-mono text-xs text-muted;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 rounded-lg border border-line px-4 py-2 text-sm font-medium transition-colors hover:border-accent hover:text-accent;
+  }
+  .btn-primary {
+    @apply border-accent bg-accent text-on-accent hover:bg-accent/90 hover:text-on-accent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
 }

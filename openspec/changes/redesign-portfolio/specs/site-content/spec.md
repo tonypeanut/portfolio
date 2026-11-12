@@ -1,0 +1,50 @@
+## ADDED Requirements
+
+### Requirement: Accurate professional profile
+The site SHALL present the owner (Antonio Valdez Aguayo) as a Full-Stack Python developer at Pyansa since June 2025, previously functional QA at A1QA and manufacturing/quality engineering, with a Mechatronics Engineering degree (UPSIN, 2011-2014), Oracle Next Education (Back-end), BEDU AI/ML (2024) and English C1.
+
+#### Scenario: Role shown
+- **WHEN** a visitor opens the page
+- **THEN** the hero and experience sections state the Full-Stack developer role at Pyansa from June 2025
+
+### Requirement: Approved figures only
+Years of experience SHALL be limited to Python 3, React 1 and TypeScript 1. The site MUST NOT contain "5+ years" or any larger figure for software experience.
+
+#### Scenario: No inflated claims
+- **WHEN** the text and translations are searched for "5+" years claims
+- **THEN** none are found
+
+### Requirement: Work confidentiality
+The site MUST NOT link to or name private employer repositories, client names or internal system names, and MUST describe work only in general impact terms (for example an integration service handling about 160,000 calls per week from 6 internal apps).
+
+#### Scenario: No employer code links
+- **WHEN** all outbound links are listed
+- **THEN** each points only to the owner's LinkedIn, the owner's GitHub profile or public repositories
+
+### Requirement: Verified project links
+Every project card SHALL link only to a repository that was public when verified, and SHALL NOT link to demo URLs that do not respond.
+
+#### Scenario: Private project absent
+- **WHEN** the projects section is rendered
+- **THEN** `media-library-manager`, `duplicate-audio-desktop`, `dev-dock` and `ratio-manager` are not linked
+
+### Requirement: Backed leadership claims
+Leadership statements SHALL be limited to what the owner's notes support (directing external developers without a stated headcount, supervising a molding team, quality system management) and MUST NOT include team sizes or release percentages until the owner confirms them as publishable.
+
+#### Scenario: No headcount
+- **WHEN** the leadership section is rendered
+- **THEN** it mentions external developers without a number
+
+### Requirement: Private projects unlinked
+Projects whose repositories are private SHALL be shown only in a clearly labelled "private" group, without links.
+
+#### Scenario: Private card
+- **WHEN** a private project card is rendered
+- **THEN** it carries a "Private" tag and has no anchor element
+
+### Requirement: Bilingual text
+All visible prose SHALL exist in Spanish and English with identical keys.
+
+#### Scenario: Key parity
+- **WHEN** the keys of `es.json` and `en.json` are compared
+- **THEN** the sets are equal

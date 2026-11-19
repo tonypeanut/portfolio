@@ -51,11 +51,18 @@ export const projects = [
   },
 ];
 
+// Self-hosted videos live in public/videos/: <key>-loop.mp4 (muted preview), <key>-full.mp4 (with sound), <key>-poster.jpg.
+const videoFiles = (key) => ({
+  loop: `/videos/${key}-loop.mp4`,
+  full: `/videos/${key}-full.mp4`,
+  poster: `/videos/${key}-poster.jpg`,
+});
+
 // Private projects: shown WITHOUT a link until the owner publishes them.
 export const wip = [
-  { id: 'media', name: 'media-library-manager', tech: ['Python', 'SQLite', 'ffprobe'] },
-  { id: 'audio', name: 'duplicate-audio-desktop', tech: ['Rust', 'Tauri', 'Svelte'] },
-  { id: 'dock', name: 'dev-dock', tech: ['Python', 'FastAPI', 'WebSocket'] },
+  { id: 'media', name: 'media-library-manager', tech: ['Python', 'SQLite', 'FastAPI'], video: videoFiles('mlm') },
+  { id: 'audio', name: 'duplicate-audio-desktop', tech: ['Rust', 'Tauri', 'Svelte'], video: videoFiles('dad') },
+  { id: 'dock', name: 'dev-dock', tech: ['Python', 'FastAPI', 'WebSocket'], video: videoFiles('dock') },
 ];
 
 export const leadershipIds = ['dev', 'plant', 'method'];

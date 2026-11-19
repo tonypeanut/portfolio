@@ -85,12 +85,17 @@
       "title": "También en construcción",
       "intro": "El código es privado por ahora; lo publicaré cuando estén listos.",
       "items": {
-        "media": "Gestor local de una biblioteca de video y anime: escaneo con ffprobe, candidatos a recomprimir, conciliación con metadatos de series, CLI, interfaz web y app de escritorio con bandeja. 230 pruebas.",
+        "media": "Gestor local de una biblioteca de video y anime: se conecta con MyAnimeList, sincroniza y fusiona metadatos de series, da seguimiento a lo que ves, con interfaz web y app de escritorio con bandeja. 230 pruebas.",
         "audio": "App de escritorio (Tauri/Rust + Svelte) que encuentra audio duplicado o acústicamente similar con el motor de huellas Panako.",
         "dock": "Lanzador local de proyectos con interfaz web: iniciar, detener y reiniciar servidores de desarrollo, con logs en vivo y detección de puertos."
       }
     },
-    "private": "Privado"
+    "private": "Privado",
+    "video": {
+      "watch": "Ver con sonido",
+      "close": "Cerrar",
+      "preview": "Video de vista previa de {{name}}"
+    }
   },
   "education": {
     "title": "Formación",

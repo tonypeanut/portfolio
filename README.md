@@ -38,13 +38,30 @@ openspec/       design history: proposals, decisions and specs for each change
 - Colors: CSS variables in `src/index.css` (`dark` and `light`).
 - E-mail button: `links.email` in `src/data/profile.js` (empty hides it).
 
+## Project videos
+
+Each private project card can show a muted looping preview and a "watch with sound" player. Files live in `public/videos/` and are self-hosted (no YouTube or other third parties):
+
+- `<key>-loop.mp4`: muted preview, 1280x720, H.264, no audio.
+- `<key>-full.mp4`: full version with music and effects.
+- `<key>-poster.jpg`: still frame shown before playing and when the visitor prefers reduced motion.
+
+To add or replace one, re-encode it and point the project's `video` field in `src/data/profile.js` at the key:
+
+```bash
+ffmpeg -i source.mp4 -an -vf scale=1280:720 -c:v libx264 -preset slow -crf 28 -pix_fmt yuv420p -movflags +faststart public/videos/<key>-loop.mp4
+ffmpeg -i source-with-audio.mp4 -vf scale=1280:720 -c:v libx264 -preset slow -crf 28 -pix_fmt yuv420p -c:a aac -b:a 96k -movflags +faststart public/videos/<key>-full.mp4
+```
+
+Videos use fictitious data and no company material.
+
 ## Contact
 
 [tonypeanut93@gmail.com](mailto:tonypeanut93@gmail.com) · [LinkedIn](https://www.linkedin.com/in/antonio-valdez-84b4549b) · [GitHub](https://github.com/tonypeanut)
 
 ## Deploy
 
-The build is static (`dist/`) and uses no client-side routes, so any static host works (GitHub Pages, Netlify, Vercel, Cloudflare Pages). No deployment is configured yet.
+The build is static (`dist/`) and uses no client-side routes, so any static host works (GitHub Pages, Netlify, Vercel, Cloudflare Pages). No deployment is configured yet. With Cloudflare Pages: build command `npm run build`, output directory `dist`, Node 18+; videos are a few MB each, below its 25 MiB per-file limit.
 
 ## Method
 

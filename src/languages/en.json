@@ -85,12 +85,17 @@
       "title": "Also building",
       "intro": "Code is private for now; I will publish these when they are ready.",
       "items": {
-        "media": "Local-first manager for a video and anime library: ffprobe scanning, re-compression candidates, series metadata reconciliation, CLI, web UI and desktop tray app. 230 tests.",
+        "media": "Local-first manager for a video and anime library: connects to MyAnimeList, syncs and merges series metadata, tracks what you are watching, with a web UI and a desktop tray app. 230 tests.",
         "audio": "Desktop app (Tauri/Rust + Svelte) that finds duplicate and acoustically similar audio using the Panako fingerprinting engine.",
         "dock": "Local project launcher with a web UI: start, stop and restart dev servers, with live logs and port detection."
       }
     },
-    "private": "Private"
+    "private": "Private",
+    "video": {
+      "watch": "Watch with sound",
+      "close": "Close",
+      "preview": "Preview video of {{name}}"
+    }
   },
   "education": {
     "title": "Education",

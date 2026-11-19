@@ -1,8 +1,12 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { projects, wip } from '../data/profile';
+import VideoPreview from './VideoPreview';
+import VideoModal from './VideoModal';
 
 export default function Projects() {
   const { t } = useTranslation();
+  const [open, setOpen] = useState(null);
   return (
     <section id="projects" className="section">
       <h2 className="section-title">{t('projects.title')}</h2>
@@ -36,6 +40,7 @@ export default function Projects() {
       <div className="grid gap-4 sm:grid-cols-3">
         {wip.map((p) => (
           <article key={p.id} className="card flex flex-col">
+            {p.video && <VideoPreview video={p.video} name={p.name} onOpen={() => setOpen(p)} />}
             <h4 className="font-mono text-sm font-semibold">{p.name}</h4>
             <p className="mt-2 flex-1 text-sm text-muted">{t(`projects.wip.items.${p.id}`)}</p>
             <ul className="mt-4 flex flex-wrap gap-2">
@@ -49,6 +54,7 @@ export default function Projects() {
           </article>
         ))}
       </div>
+      {open && <VideoModal project={open} onClose={() => setOpen(null)} />}
     </section>
   );
 }

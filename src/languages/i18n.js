@@ -1,26 +1,25 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import enTranslation from './en.json'
-import esTranslation from './es.json'
-
+import en from './en.json';
+import es from './es.json';
 
 i18n
-  .use(LanguageDetector) // Detecta automáticamente el idioma del navegador
-  .use(initReactI18next) // Pasamos i18n al react-i18next
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
-    resources: {
-      en: enTranslation,
-      es: esTranslation,
-    },
-    lng: 'en',
-    fallbackLng: "en", // Idioma predeterminado si no se detecta
-    interpolation: {
-      escapeValue: false, // React ya maneja la seguridad contra XSS
-    },
-    react: {
-      useSuspense: true, // Activar Suspense
-    },
+    resources: { en: { translation: en }, es: { translation: es } },
+    supportedLngs: ['en', 'es'],
+    nonExplicitSupportedLngs: true, // es-MX -> es
+    fallbackLng: 'en',
+    detection: { order: ['localStorage', 'navigator'], caches: ['localStorage'] },
+    interpolation: { escapeValue: false },
   });
+
+const syncHtmlLang = (lng) => {
+  document.documentElement.lang = (lng || 'en').slice(0, 2);
+};
+syncHtmlLang(i18n.resolvedLanguage);
+i18n.on('languageChanged', syncHtmlLang);
 
 export default i18n;

@@ -1,1354 +1,160 @@
 {
-    "translation": {
-      "about": {
-        "title": "Acerca de mí",
-        "description":
-          "Soy una mente flexible y adaptable, siempre listo para enfrentar nuevos desafíos. Cuando no estoy inmerso en proyectos, me encontrarás sumergido en el emocionante universo de los videojuegos y las cautivadoras historias del anime. Soy un apasionado de la resolución de problemas, siempre buscando caminos innovadores para superar obstáculos."
+  "nav": {
+    "about": "Acerca",
+    "experience": "Experiencia",
+    "stack": "Stack",
+    "projects": "Proyectos",
+    "education": "Formación",
+    "contact": "Contacto",
+    "theme": "Cambiar tema claro/oscuro",
+    "language": "Idioma",
+    "leadership": "Liderazgo"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "role": "Desarrollador Full-Stack · Python",
+    "tagline": "Construyo y opero servicios backend, integraciones y aplicaciones de negocio con Python, React y Angular. Hoy entrego sistemas en producción en Pyansa.",
+    "projects": "Ver proyectos",
+    "years": "Años con"
+  },
+  "about": {
+    "title": "Acerca",
+    "p1": "Soy desarrollador Full-Stack enfocado en Python. En Pyansa trabajo en un servicio de integración que conecta más de 6 ERPs y sistemas internos, un sistema de facturación electrónica (CFDI 4.0) y el backend de un sistema de administración de almacenes.",
+    "p2": "Llegué al software desde la ingeniería de manufactura y el QA, así que me importa lo que mantiene confiable a un sistema: pruebas, contratos claros, despliegues repetibles y decisiones documentadas.",
+    "p3": "Documento el razonamiento de mis cambios con desarrollo guiado por especificaciones (OpenSpec) y uso flujos asistidos por IA, pero el diseño y la revisión son míos."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "items": {
+      "pyansa": {
+        "role": "Desarrollador Full-Stack",
+        "company": "Pyansa",
+        "period": "jun 2025 – Presente · Remoto",
+        "bullets": [
+          "Servicio de integración en FastAPI + Celery con conectores a más de 6 ERPs y sistemas internos; atiende unas 160,000 llamadas por semana desde 6 aplicaciones internas.",
+          "Diseñé y construí un sistema de facturación electrónica CFDI 4.0 (cumplimiento fiscal en México): drivers de PAC intercambiables, complemento de pagos y contabilización automática; suite de pruebas de 1,500 a 3,000 tests en tres semanas.",
+          "Sistema de administración de almacenes: backend en Django / DRF y front end en Angular 19, incluido el ciclo de auditoría de inventario del conteo con escáner al ajuste en el ERP.",
+          "Inicio de sesión único corporativo con Keycloak (OIDC) y roles por alcance.",
+          "Tres cortes de producción (SSO, plataforma de datos y WMS) en cuatro días, con ensayo, plan de reversa y respaldos, sin pérdida de datos.",
+          "Modernicé dos aplicaciones heredadas de PHP 5.6 a PHP 8.3+ sin detener la operación.",
+          "Despliegue en GCP con Docker y CI/CD en GitLab; pruebas automatizadas con pytest."
+        ]
       },
-      "presentation": {
-        "title": "Presentación",
-        "content-p1": "Cuento con 8 años de experiencia en el sector metalmecánico y de fundición, poseo habilidades destacadas en diseño y fabricación de componentes mecánicos, además de ser un solucionador de problemas eficaz y un colaborador efectivo en equipo.",
-        "content-p2": "Recientemente, he dirigido mi carrera hacia el emocionante mundo del desarrollo web y las tecnologías de la información, he invertido tiempo en dominar lenguajes como Javascript, Python, HTML, CSS, y bases de datos como MySQL y MongoDB.",
-        "content-p3": "Mi capacidad para aprender rápido y enfrentar nuevos desafíos me hace un activo valioso para empresas que valoran el trabajo en equipo y la innovación tecnológica. Estoy emocionado por las oportunidades que se presenten y ansioso por contribuir al éxito de proyectos innovadores."
+      "a1qa": {
+        "role": "Functional Manual Testing Trainee",
+        "company": "A1QA",
+        "period": "abr – jun 2025 · Prácticas, remoto",
+        "bullets": [
+          "Pruebas funcionales manuales, reporte de defectos en Jira, inspección de tráfico con Fiddler y Charles, trabajo en equipos Scrum."
+        ]
       },
-      "skills":{
-        "title-1": "Habilidades técnicas",
-        "title-2": "Habilidades interpersonales"
+      "rice": {
+        "role": "Ingeniería de Manufactura y Calidad",
+        "company": "Fundiciones Rice",
+        "period": "2015 – 2024",
+        "bullets": [
+          "Roles de ingeniero de proyecto, coordinador de innovación, de moldeo y del sistema de calidad; lideré la certificación ISO 9001:2015 y la aprobación de fundición de ABS.",
+          "Supervisé al equipo de moldeo e introduje un nuevo método de moldeo que elevó la calidad y la capacidad de producción.",
+          "Construí un sistema de cotización (React, Flask, MySQL) y tableros de KPI (Python, SQL) para la planta."
+        ]
+      }
+    }
+  },
+  "stack": {
+    "title": "Stack",
+    "groups": {
+      "backend": "Backend",
+      "frontend": "Frontend",
+      "data": "Datos",
+      "cloud": "Nube y DevOps",
+      "quality": "Pruebas",
+      "practices": "Prácticas"
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "intro": "Proyectos personales con código público. Los proyectos del trabajo son privados y no se muestran.",
+    "code": "Ver código",
+    "items": {
+      "cfdi": "Aplicación web para cargar, filtrar e inspeccionar XML de facturas CFDI: resúmenes, impuestos, conceptos, búsqueda y rangos de fecha o monto.",
+      "viajes": "Dashboard en Angular que carga un CSV de viajes y ofrece gráficas interactivas, filtros y una tabla paginada.",
+      "notes": "App de notas con categorías y archivo: front end React de una sola página y API en Flask con migraciones.",
+      "qa": "Suite de automatización de pruebas para la API de Rick and Morty: códigos de estado, JSON schema y headers, con reportes en Allure."
+    },
+    "wip": {
+      "title": "También en construcción",
+      "intro": "El código es privado por ahora; lo publicaré cuando estén listos.",
+      "items": {
+        "media": "Gestor local de una biblioteca de video y anime: se conecta con MyAnimeList, sincroniza y fusiona metadatos de series, da seguimiento a lo que ves, con interfaz web y app de escritorio con bandeja. 230 pruebas.",
+        "audio": "App de escritorio (Tauri/Rust + Svelte) que encuentra audio duplicado o acústicamente similar con el motor de huellas Panako.",
+        "dock": "Lanzador local de proyectos con interfaz web: iniciar, detener y reiniciar servidores de desarrollo, con logs en vivo y detección de puertos."
+      }
+    },
+    "private": "Privado",
+    "video": {
+      "watch": "Ver con sonido",
+      "close": "Cerrar",
+      "preview": "Video de vista previa de {{name}}"
+    }
+  },
+  "education": {
+    "title": "Formación",
+    "items": {
+      "upsin": {
+        "name": "Ingeniería en Mecatrónica",
+        "place": "Universidad Politécnica de Sinaloa",
+        "period": "2011 – 2014"
       },
-      "experience": {
-        "title": "Experiencia laboral",
-        "field-1": "Puesto:",
-        "field-2": "Fecha de Inicio:",
-        "field-3": "Fecha de Fin:",
-        "field-4": "Empresa:",
-        "button": "Más información..."
+      "one": {
+        "name": "Oracle Next Education — Back-end",
+        "place": "Oracle + Alura Latam",
+        "period": "2024"
       },
-      "projects": {
-        "title": "Proyectos",
-        "button-1": "Más información...",
-        "button-2": "Más proyectos"
+      "bedu": {
+        "name": "Inteligencia Artificial y Machine Learning",
+        "place": "BEDU",
+        "period": "2024"
       },
-      "cursos": {
-        "title": "Cursos",
-        "formacion": "Formación",
-        "proveedor": "Proveedor",
-        "horas": "Horas"
+      "english": {
+        "name": "Inglés C1",
+        "place": "Certificado EF SET",
+        "period": "2025"
       },
-      "navigation": {
-        "inicio": "Inicio",
-        "presentacion": "Presentacion",
-        "acerca": "Acerca",
-        "skills": "Skills",
-        "experiencia": "Experiencia",
-        "proyectos": "Proyectos",
-        "cursos": "Cursos",
-        "contacto": "Contacto"
+      "gda": {
+        "name": "Google Data Analytics",
+        "place": "Google / Coursera",
+        "period": "2025"
       },
-      "contact": {
-        "button": "¡Contáctame!",
-        "title": "¡Contáctame!",
-        "input-1": "Nombre",
-        "input-2": "Correo",
-        "input-3": "Asunto",
-        "input-4": "Mensaje",
-        "submit": "Enviar",
-        "msg": "Mensaje enviado correctamente."
+      "paper": {
+        "name": "Artículo: Robotic Manufacturing of Naval Propellers",
+        "place": "Int. J. of Advanced Manufacturing Technology",
+        "period": "2021"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "text": "Estoy abierto a puestos Full-Stack / Python, en remoto. La forma más rápida de contactarme es LinkedIn.",
+    "email": "Correo"
+  },
+  "footer": {
+    "built": "Hecho con React, Vite y Tailwind CSS."
+  },
+  "leadership": {
+    "title": "Liderazgo y método",
+    "items": {
+      "dev": {
+        "title": "Dirección técnica",
+        "text": "En Pyansa dirijo a desarrolladores externos: escribo los requerimientos y criterios de aceptación y verifico cada entrega antes de liberarla. También participo en entrevistas técnicas."
       },
-      "temas":{
-        "descripcion": "Temas"
+      "plant": {
+        "title": "Liderar personas en manufactura",
+        "text": "Antes del software supervisé a un equipo de moldeo y operé un sistema de gestión de calidad, con reportes a la dirección."
       },
-      "cv": "https://drive.google.com/file/d/1m6Iduw2RB6Kol1V2bOz3H_drUoFokVKU/view?usp=sharing",
-      "progress-bar":{
-        "title": "Nivel de dominio:",
-        "level-1": "Principiante",
-        "level-2": "Básico",
-        "level-3": "Intermedio",
-        "level-4": "Avanzado"
-      },
-      "datosExperiencia": [
-        {
-            "Empresa" : "Fundiciones Rice",
-            "Puesto" : "Gerente de Gestion de Calidad",
-            "FechaInicio" : "Marzo 2022",
-            "FechaFin": "Actualidad",
-            "Funciones": [
-                "Creación, implementación y mantenimiento del sistema de gestión de calidad.",
-                "Planificación y ejecución de audiorías y evaluaciones internas y externas para verificar el cumplimiento de estándares y procedimientos de calidad.",
-                "Identificación de problemas y desarrollo de soluciones efectivas.",
-                "Desarrollo de programas de formación y capacitación para los empleados.",
-                "Recopilación, análisis de datos y diseño de KPIs para monitorear el desempeño de procesos y productos",
-                "Fomento del trabajo en equipo con otros departamentos, junto con una comunicación clara y efectiva de las expectativas y requisitos de calidad.",
-                "Automatizar la generación informes."
-            ]
-        },
-        {
-            "Empresa" : "Fundiciones Rice",
-            "Puesto" : "Gerente de Investigación y Desarrollo",
-            "FechaInicio" : "Junio 2017",
-            "FechaFin": "Marzo 2022",
-            "Funciones": [
-                "Identificar oportunidades de mejora e innovación en procesos.",
-                "Preparación de Proyectos Tecnológicos acorde a NMX-GT-002-IMNC-2008.",
-                "Elaboracion de presupuestos y planeación de proyectos de mejora.",
-                "Gestión de plataformas de apoyo gubernamentales para la ejecución de proyectos.",
-                "Modelado tridimensional y generación de planos.",
-                "Gestión de la ejecución de proyectos de mejora en coordinación con equipos multidisciplinarios.",
-                "Monitoreo tecnológico."
-            ]
-        },
-        {
-            "Empresa" : "Fundiciones Rice",
-            "Puesto" : "Ingeniero de Proyectos",
-            "FechaInicio" : "Junio 2015",
-            "FechaFin": "Junio 2017",
-            "Funciones": [
-                "Identificar oportunidades de mejora e innovció en procesos.",
-                "Preparación de Proyectos Tecnológicos acorde a NMX-GT-002-IMNC-2008.",
-                "Elaboracion de presupuestos y planeación de proyectos de mejora.",
-                "Gestión de plataformas de apoyo gubernamentales para la ejecución de proyectos.",
-                "Modelado tridimensional y generación de planos."
-            ]
-        }
-      ],
-      "datosSkills":[
-            {
-                "Skill": "Solidworks",
-                "Logo": "solidworks.svg",
-                "Descripcion": "Solidworks es un software de diseño asistido por computadora (CAD) utilizado principalmente para el diseño y modelado de piezas y ensamblajes en 3D.",
-                "Dominio": "4"
-            },
-            {
-                "Skill": "Excel",
-                "Logo": "excel.svg",
-                "Descripcion": "Excel es una aplicación de hojas de cálculo desarrollada por Microsoft que se utiliza para realizar cálculos, análisis de datos, gráficos y más.",
-                "Dominio": "4"
-            },
-            {
-                "Skill": "VBA",
-                "Logo": "vba.svg",
-                "Descripcion": "VBA (Visual Basic for Applications) es un lenguaje de programación utilizado para automatizar tareas y manipular datos en aplicaciones de Microsoft Office, como Excel.",
-                "Dominio": "3"
-            },
-            {
-                "Skill": "MySQL",
-                "Logo": "mysql.svg",
-                "Descripcion": "MySQL es un sistema de gestión de bases de datos relacional de código abierto ampliamente utilizado para el desarrollo de aplicaciones web y empresariales.",
-                "Dominio": "3"
-            },
-            {
-                "Skill": "HTML",
-                "Logo": "html.svg",
-                "Descripcion": "HTML (HyperText Markup Language) es el lenguaje estándar utilizado para crear y diseñar páginas web.",
-                "Dominio": "3"
-            },
-            {
-                "Skill": "CSS",
-                "Logo": "css.svg",
-                "Descripcion": "CSS (Cascading Style Sheets) es un lenguaje de hojas de estilo utilizado para definir el diseño y la presentación de documentos HTML.",
-                "Dominio": "3"
-            },
-            {
-                "Skill": "Python",
-                "Logo": "python.svg",
-                "Descripcion": "Python es un lenguaje de programación de alto nivel, interpretado y de propósito general, conocido por su sintaxis sencilla y legible.",
-                "Dominio": "3"
-            },
-            {
-                "Skill": "Flask",
-                "Logo": "flask.svg",
-                "Descripcion": "Flask es un micro-framework de Python utilizado para construir aplicaciones web rápidas y escalables.",
-                "Dominio": "3"
-            },
-            {
-                "Skill": "Solidcast",
-                "Logo": "solidcast.svg",
-                "Descripcion": "Solidcast es un software de simulación de fundición utilizado para predecir y optimizar el proceso de fabricación de piezas fundidas.",
-                "Dominio": "4"
-            },
-            {
-                "Skill": "SprutCAM",
-                "Logo": "sprutcam.svg",
-                "Descripcion": "SprutCAM es un software de fabricación asistida por computadora (CAM) utilizado para generar rutas de herramientas y programas de mecanizado para máquinas CNC.",
-                "Dominio": "3"
-            },
-            {
-                "Skill": "AutoCAD",
-                "Logo": "autocad.svg",
-                "Descripcion": "AutoCAD es un software de diseño asistido por computadora (CAD) utilizado para la creación de dibujos técnicos en 2D y modelos en 3D.",
-                "Dominio": "3"
-            },
-            {
-                "Skill": "Office",
-                "Logo": "office.svg",
-                "Descripcion": "Office es un conjunto de aplicaciones de productividad de Microsoft que incluye programas como Word, Excel, PowerPoint y Outlook.",
-                "Dominio": "4"
-            },
-            {
-                "Skill": "LabView",
-                "Logo": "labview.svg",
-                "Descripcion": "LabView es un entorno de desarrollo de software y hardware utilizado para la adquisición de datos, control de instrumentos y automatización de pruebas.",
-                "Dominio": "2"
-            },
-            {
-                "Skill": "Matlab",
-                "Logo": "matlab.svg",
-                "Descripcion": "Matlab es un entorno de computación numérica y programación utilizado para el análisis de datos, modelado matemático y desarrollo de algoritmos.",
-                "Dominio": "2"
-            },
-            {
-                "Skill": "NodeJs",
-                "Logo": "nodejs.svg",
-                "Descripcion": "Node.js es un entorno de ejecución de JavaScript en el lado del servidor, diseñado para desarrollar aplicaciones web escalables y rápidas.",
-                "Dominio": "2"
-            },
-            {
-                "Skill": "ReactJs",
-                "Logo": "reactjs.svg",
-                "Descripcion": "React es una biblioteca de JavaScript utilizada para construir interfaces de usuario interactivas y reutilizables. Se destaca por su enfoque declarativo y su capacidad para renderizar eficientemente el DOM a través de su Virtual DOM.",
-                "Dominio": "3"
-            },
-            {
-                "Skill": "VueJs",
-                "Logo": "vuejs.svg",
-                "Descripcion": "Vue.js es un marco progresivo de JavaScript para construir interfaces de usuario interactivas y reactivas. Se centra en la creación de componentes reutilizables y la gestión eficiente del estado de la aplicación, con una curva de aprendizaje suave y flexibilidad.",
-                "Dominio": "1"
-            },
-            {
-                "Skill": "PugJs",
-                "Logo": "pugjs.svg",
-                "Descripcion": "Pug.js es un motor de plantillas HTML basado en JavaScript, diseñado para simplificar la escritura de código HTML mediante una sintaxis más limpia y concisa. Se enfoca en permitir la creación de estructuras de HTML de manera eficiente utilizando sangrías y abreviaturas, lo que facilita la creación de vistas en aplicaciones web.",
-                "Dominio": "1"
-            },
-            {
-                "Skill": "tailwindCSS",
-                "Logo": "tailwindcss.svg",
-                "Descripcion": "Tailwind CSS es un marco de trabajo (framework) de desarrollo front-end para la creación de interfaces de usuario en aplicaciones web.",
-                "Dominio": "3"
-            },
-            {
-                "Skill": "bootstrap",
-                "Logo": "bootstrap.svg",
-                "Descripcion": "Bootstrap CSS es un popular marco de trabajo (framework) front-end diseñado para facilitar el desarrollo web. ",
-                "Dominio": "1"
-            }
-      ],
-      "datosSoftskills": [
-            { 
-                "Softskill": "Comunicación efectiva", 
-                "Logo": "comunicacionEfectiva.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Trabajo en equipo", 
-                "Logo": "trabajoEquipo.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Flexibilidad", 
-                "Logo": "flexibilidad.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Adaptabilidad", 
-                "Logo": "adaptabilidad.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Resolución de problemas", 
-                "Logo": "resolucionProblemas.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Liderazgo", 
-                "Logo": "liderazgo.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Gestión del tiempo", 
-                "Logo": "gestionTiempo.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Pensamiento crítico", 
-                "Logo": "pensamientoCritico.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Creatividad", 
-                "Logo": "creatividad.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Innovación", 
-                "Logo": "innovacion.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Empatía", 
-                "Logo": "empatia.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Respeto", 
-                "Logo": "respeto.svg", 
-                "Descripcion": "" 
-            },
-            { 
-                "Softskill": "Aprendizaje continuo", 
-                "Logo": "aprendizaje.svg", 
-                "Descripcion": "" 
-            }
-      ],
-      "datosProyectos": [
-            {
-                "Id": "28",
-                "Nombre": "Taller de soldadura",
-                "Descripcion": "Sitio web de una sola página para un taller de soldadura.",
-                "Deployment": "https://tallerhg.netlify.app/",
-                "Github": "",
-                "Etiquetas": [
-                "Nextjs", "Javascript"
-                ],
-                "Imagenes": [
-                "28-01.png",
-                "28-02.png",
-                "28-03.png"
-                ],
-                "visible": "true"
-            },
-            {
-                "Id": "27",
-                "Nombre": "JobSearcher tool",
-                "Descripcion": "Aplicación Python diseñada para agilizar el proceso de búsqueda de empleo, aprovechando scraping web, almacenamiento de datos y análisis con IA.",
-                "Deployment": "",
-                "Github": "https://github.com/tonypeanut/jobSearcher.git",
-                "Etiquetas": [
-                "Python", "sqlalchemy", "Ollama", "Tkinter"
-                ],
-                "Imagenes": [
-                "27-01.png"
-                ],
-                "visible": "true"
-            },
-            {
-                "Id": "26",
-                "Nombre": "FullStack Notes",
-                "Descripcion": "Proyecto fullstack con backend en Flask (Python) y frontend en React (Javascript), permite al usuario registrarse y tomar notas personales. Las notas pueden ser creadas, editadas, eliminadas, se pueden archivar, desarchivar y también se les puede añadir o remover categorias. Cuenta con funcionalidad para filtrado de notas por categoria.",
-                "Deployment": "https://fullstack-notes-frontend-5yxa.onrender.com/",
-                "Github": "https://github.com/tonypeanut/fullstack-notes-full.git",
-                "Etiquetas": [
-                    "React", "Javascript", "Flask", "Python", "Fullstack"
-                ],
-                "Imagenes": [
-                    "26-01.png",
-                    "26-02.png",
-                    "26-03.png",
-                    "26-04.png",
-                    "26-05.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "25",
-                "Nombre":"Portafolio",
-                "Descripcion":"Es mi portafolio desarrollado en React que recopila información acerca de mi y algunos de los proyectos que he desarrollado.",
-                "Deployment": "https://tonypeanut-portafolio.netlify.app/",
-                "Github": "https://github.com/tonypeanut/portfolio.git",
-                "Etiquetas": [
-                    "React", "Javascript", "tailwind"
-                ],
-                "Imagenes": [
-                    "25-01.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "24",
-                "Nombre":"Administrador de Veterinaria FullStack",
-                "Descripcion":"Sistema fullstack cuyo frontend está en React y backend con Nodejs. Es un gestor de pacientes de un veterinaria, donde el veterinario se puede registrar y dar de alta sus pacientes.",
-                "Deployment": "https://apv-frontend-psi-ten.vercel.app/",
-                "Github": "https://github.com/tonypeanut/administradorPacientesVeterinariaFullStack.git",
-                "Etiquetas": [
-                    "React", "Javascript", "TailwindCSS"
-                ],
-                "Imagenes": [
-                    "24-01.png",
-                    "24-02.png",
-                    "24-03.png"
-                ],
-                "visible":"true",
-                "backend":"https://apv-backend-ijug.onrender.com/"
-            },
-            {
-                "Id": "23",
-                "Nombre":"Cotizador de Préstamos Vue",
-                "Descripcion":"Desarrollado con Vuejs. Cotizador de préstamos.",
-                "Deployment": "https://tonypeanut-cotizador-prestamos-vue.netlify.app/",
-                "Github": "https://github.com/tonypeanut/cotizadorPrestamosVue",
-                "Etiquetas": [
-                    "Javascript", "Vue"
-                ],
-                "Imagenes": [
-                    "23-01.png",
-                    "23-02.png",
-                    "23-03.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "22",
-                "Nombre":"Cotizador de Préstamos React",
-                "Descripcion":"Un pequeño cotizador de prestamos realizado con Reactjs",
-                "Deployment": "https://tonypeanut-cotizador-prestamos-react.netlify.app/",
-                "Github": "https://github.com/tonypeanut/cotizadorPrestamosReact.git",
-                "Etiquetas": [
-    
-                ],
-                "Imagenes": [
-                    "22-01.png",
-                    "22-02.png"
-                ],
-                "visible":"false"
-            },
-            {
-                "Id": "21",
-                "Nombre":"Agencia de Viajes",
-                "Descripcion":"Desarrollado con Nodejs. Agencia de viajes, que muestra información sobre destinos vacacionales. Permite agregar testimonios y almacenarlos en base de datos.",
-                "Deployment": "https://agenciaviajesnode-2em1.onrender.com/",
-                "Github": "https://github.com/tonypeanut/agenciaViajesNode.git",
-                "Etiquetas": [
-                    "Express", "Pug", "Sequelize", "Javascript"
-                ],
-                "Imagenes": [
-                    "21-01.png",
-                    "21-02.png",
-                    "21-03.png",
-                    "21-04.png",
-                    "21-05.png",
-                    "21-06.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "20",
-                "Nombre":"Administrador de Pacientes de Veterinaria",
-                "Descripcion":"Un pequeño gestor de citas de pacientes de veterinaria. Emplea IndexedDB.",
-                "Deployment": "https://main--tonypeanut-gestorveterinaria.netlify.app/",
-                "Github": "https://github.com/tonypeanut/administrarPacientes.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "20-01.png",
-                    "20-02.png",
-                    "20-03.png",
-                    "20-04.png",
-                    "20-05.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "19",
-                "Nombre":"Gestor de clientes CRM",
-                "Descripcion":"Un gestor de clientes.",
-                "Deployment": "https://tonypeanut-crmrestasync.netlify.app/",
-                "Github": "https://github.com/tonypeanut/crmRestAsync.git",
-                "Etiquetas": [
-    
-                ],
-                "Imagenes": [
-                    "19-01.png",
-                    "19-02.png"
-                ],
-                "visible":"false"
-            },
-            {
-                "Id": "18",
-                "Nombre":"Comparador de precios de criptomonedas",
-                "Descripcion":"Un cotizador de precios de criptomonedas que consume datos de la API cryptocompare.",
-                "Deployment": "https://tonypeanut-criptomonedas.netlify.app/",
-                "Github": "https://github.com/tonypeanut/criptomonedas.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "18-01.png",
-                    "18-02.png",
-                    "18-03.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "17",
-                "Nombre":"Buscador de Imagenes",
-                "Descripcion":"Buscador de Imagenes que consume datos de la API Pixabay.",
-                "Deployment": "https://tonypeanut-buscadorimagenes.netlify.app/",
-                "Github": "https://github.com/tonypeanut/buscadorImagenes.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "17-01.png",
-                    "17-02.png",
-                    "17-03.png",
-                    "17-04.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "16",
-                "Nombre":"Restaurante",
-                "Descripcion":"Restaurante",
-                "Deployment": "https://tonypeanut-restaurante.netlify.app/",
-                "Github": "https://github.com/tonypeanut/restaurante.git",
-                "Etiquetas": [
-    
-                ],
-                "Imagenes": [
-                    "16-01.png",
-                    "16-02.png"
-                ],
-                "visible":"false"
-            },
-            {
-                "Id": "15",
-                "Nombre":"Buscador de Recetas",
-                "Descripcion":"Buscador de Recetas que consume datos de la API themealdb.",
-                "Deployment": "https://tonypeanut-buscador-recetas.netlify.app/",
-                "Github": "https://github.com/tonypeanut/buscadorRecetas.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "15-01.png",
-                    "15-02.png",
-                    "15-03.png",
-                    "15-04.png",
-                    "15-05.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "14",
-                "Nombre":"ClimaFetchAPI",
-                "Descripcion":"Consulta clima de diferentes ciudades del mundo consumiendo datos de la API openweathermap.",
-                "Deployment": "https://tonypeanut-clima.netlify.app/",
-                "Github": "https://github.com/tonypeanut/climaFetchAPI.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "14-01.png",
-                    "14-02.png",
-                    "14-03.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "13",
-                "Nombre":"CRM Indexed DB",
-                "Descripcion":"crm indexed db",
-                "Deployment": "https://tonypeanut-crm-indexed-db.netlify.app/",
-                "Github": "https://github.com/tonypeanut/crmIndexedDB.git",
-                "Etiquetas": [
-    
-                ],
-                "Imagenes": [
-                    "13-01.png",
-                    "13-02.png",
-                    "13-03.png"
-                ],
-                "visible":"false"
-            },
-            {
-                "Id": "12",
-                "Nombre":"Administrador de presupuesto",
-                "Descripcion":"Permite administrar un presupuesto y registrar gastos.",
-                "Deployment": "https://tonypeanut-administrdor-presupuesto.netlify.app/",
-                "Github": "https://github.com/tonypeanut/administrarPresupuesto.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "12-01.png",
-                    "12-02.png",
-                    "12-03.png",
-                    "12-04.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "11",
-                "Nombre":"Cotizador Seguros de Auto",
-                "Descripcion":"Permite cotizar seguros de autos en base a año, marca y tipo de seguro.",
-                "Deployment": "https://tonypeanut-cotizador-prototypes.netlify.app/",
-                "Github": "https://github.com/tonypeanut/cotizadorPrototypes.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "11-01.png",
-                    "11-02.png",
-                    "11-03.png",
-                    "11-04.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "10",
-                "Nombre":"Carrito de compras",
-                "Descripcion":"Simula una pagina de compra de cursos, permite agregar elementos a un carrito de compras utilizando el DOM.",
-                "Deployment": "https://tonypeanut-carrito-compras.netlify.app/",
-                "Github": "https://github.com/tonypeanut/carritoCompras.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "10-01.png",
-                    "10-02.png",
-                    "10-03.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "9",
-                "Nombre":"Almacenar textos",
-                "Descripcion":"Permite almacenar textos utilizando localstorage.",
-                "Deployment": "https://tonypeanut-almacenar-textos.netlify.app/",
-                "Github": "https://github.com/tonypeanut/almacenarTextos.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "9-01.png",
-                    "9-02.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "8",
-                "Nombre":"Buscador de autos",
-                "Descripcion":"Filtrar autos de una lista en base a sus caracteristicas.",
-                "Deployment": "https://tonypeanut-buscador.netlify.app/",
-                "Github": "https://github.com/tonypeanut/buscador.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "8-01.png",
-                    "8-02.png",
-                    "8-03.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "7",
-                "Nombre":"Enviar email",
-                "Descripcion":"Validación de un formulario para el envío de un email.",
-                "Deployment": "https://tonypenaut-enviar-email.netlify.app/",
-                "Github": "https://github.com/tonypeanut/enviarEmail.git",
-                "Etiquetas": [
-    
-                ],
-                "Imagenes": [
-                    "7-01.png",
-                    "7-02.png",
-                    "7-03.png"
-                ],
-                "visible":"false"
-            },
-            {
-                "Id": "6",
-                "Nombre":"Encriptador",
-                "Descripcion":"Encriptador de textos como parte de los desafios del programa Oracle Next Educatio G6.",
-                "Deployment": "https://tonypeanut.github.io/encriptador/",
-                "Github": "https://github.com/tonypeanut/encriptador.git",
-                "Etiquetas": [
-                    "Javascript"
-                ],
-                "Imagenes": [
-                    "6-01.png",
-                    "6-02.png",
-                    "6-03.png"
-                ],
-                "visible":"true"
-            },
-            {
-                "Id": "5",
-                "Nombre":"Gestor clientes",
-                "Descripcion":"Gestor clientes python",
-                "Deployment": "",
-                "Github": "https://github.com/tonypeanut/gestorClientes.git",
-                "Etiquetas": [
-    
-                ],
-                "Imagenes": [
-                    ""
-                ],
-                "visible":"false"
-            },
-            {
-                "Id": "4",
-                "Nombre":"Barberia Alura",
-                "Descripcion":"Página Web estática de una barbería llamada Barbería Alura.",
-                "Deployment": "https://tonypeanut-barberia.netlify.app/",
-                "Github": "https://github.com/tonypeanut/barberia.git",
-                "Etiquetas": [
-    
-                ],
-                "Imagenes": [
-                    "4-01.png",
-                    "4-02.png",
-                    "4-03.png"
-                ],
-                "visible":"false"
-            },
-            {
-                "Id": "3",
-                "Nombre":"Mailer App",
-                "Descripcion":"Mailer App",
-                "Deployment": "",
-                "Github": "https://github.com/tonypeanut/mailerApp.git",
-                "Etiquetas": [
-    
-                ],
-                "Imagenes": [""],
-                "visible":"false"
-            },
-            {
-                "Id": "2",
-                "Nombre":"Número Secreto",
-                "Descripcion":"Juego del número secreto. Tienes que adivinar un número aleatorio secreto en base a las pistas.",
-                "Deployment": "https://tonypeanut-numero-secreto.netlify.app/",
-                "Github": "https://github.com/tonypeanut/numeroSecreto.git",
-                "Etiquetas": [
-    
-                ],
-                "Imagenes": [
-                    "2-01.png",
-                    "2-02.png"
-                ],
-                "visible":"false"
-            },
-            {
-                "Id": "1",
-                "Nombre":"Lista de tareas",
-                "Descripcion":"lista de tareas",
-                "Deployment": "",
-                "Github": "https://github.com/tonypeanut/toDoList.git",
-                "Etiquetas": [
-    
-                ],
-                "Imagenes": [""],
-                "visible":"false"
-            }
-      ],
-      "datosCursos": [
-            {
-                "programa": "Preparación para la entrevista de codificación básica con Python",
-                "total_horas": "N/A",
-                "proveedor" : "CodeSignal",
-                "cursos" : [
-                    {
-                        "nombre": "Aplicación de bucles simples en la práctica con Python",
-                        "fecha":"2025-02-16",
-                        "certificado" : "https://codesignal.com/learn/certificates/cm6munack000cfezvbkiz6tjm/courses/91",
-                        "horas" : "N/A"
-                    },
-                    {
-                        "nombre": "Revisando los fundamentos de Python",
-                        "fecha":"2025-02-07",
-                        "certificado" : "https://codesignal.com/learn/certificates/cm6munack000cfezvbkiz6tjm/courses/90",
-                        "horas" : "N/A"
-                    }
-                ]
-            },
-            {
-                "programa": "Certificados",
-                "total_horas": "N/A",
-                "proveedor" : "Varios",
-                "cursos" : [
-                    {
-                        "nombre": "EF SET English Test Results",
-                        "fecha":"2025-02-25",
-                        "certificado" : "https://cert.efset.org/es/THu7Lf",
-                        "horas" : "N/A"
-                    }
-                ]
-            },
-            {
-                "programa": "Business english",
-                "total_horas":"16",
-                "proveedor": "Santander Open Academy",
-                "cursos": [
-                    {
-                        "nombre": "Business English, Part 2",
-                        "fecha": "2024-12-08",
-                        "certificado": "https://drive.google.com/file/d/1QgxTz3w6oqkv7aTpfSzdK7t3FncDDeBa/view?usp=sharing",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "Business English, Part 1",
-                        "fecha": "2024-08-12",
-                        "certificado": "https://drive.google.com/file/d/1MYkrkAHLDTPTRvKgXdRuR3NmerGnqCgM/view?usp=sharing",
-                        "horas": "8"
-                    }
-                ]
-            },
-            {
-                "programa": "Análista de datos de google",
-                "total_horas":"",
-                "proveedor": "Google - Coursera",
-                "cursos": [
-                    {
-                        "nombre": "Certificado profesional de Google Análisis de Datos de Google",
-                        "fecha": "2025-01-26",
-                        "certificado": "https://coursera.org/verify/professional-cert/2A7M5FGPYGLI",
-                        "horas": ""
-                    },
-                    {
-                        "nombre": "Curso final de análisis computacional de datos de Google: completa un caso práctico",
-                        "fecha": "2025-01-26",
-                        "certificado": "https://coursera.org/verify/ULPYS23KO1TZ",
-                        "horas": ""
-                    },
-                    {
-                        "nombre": "Análisis de datos con programación en R",
-                        "fecha": "2025-01-23",
-                        "certificado": "https://coursera.org/verify/S252OKW5WA7B",
-                        "horas": ""
-                    },
-                    {
-                        "nombre": "Compartir datos a través del arte de la visualización",
-                        "fecha": "2025-01-18",
-                        "certificado": "https://coursera.org/verify/DEBU7EW3742R",
-                        "horas": ""
-                    },
-                    {
-                        "nombre": "Analizar datos para responder preguntas",
-                        "fecha": "2024-12-06",
-                        "certificado": "https://coursera.org/verify/NM8AS3XP7ECC",
-                        "horas": ""
-                    },
-                    {
-                        "nombre": "Proceso de datos sucios a datos limpios",
-                        "fecha": "2024-12-02",
-                        "certificado": "https://coursera.org/verify/OTG21SLXO5Z4",
-                        "horas": ""
-                    },
-                    {
-                        "nombre": "Preparar datos para la exploración",
-                        "fecha": "2024-10-28",
-                        "certificado": "https://coursera.org/verify/P9FQCA8AR4DO",
-                        "horas": ""
-                    },
-                    {
-                        "nombre": "Formula preguntas para tomar decisiones basadas en datos",
-                        "fecha": "2024-10-08",
-                        "certificado": "https://coursera.org/verify/CK5Q7FB8K8UB",
-                        "horas": ""
-                    },
-                    {
-                        "nombre": "Aspectos básicos: Datos, datos, en todas partes",
-                        "fecha": "2024-09-19",
-                        "certificado": "https://coursera.org/verify/DI0T4G1N1FM9",
-                        "horas": ""
-                    }
-                ]
-            },
-            {
-                "programa": "Inmersiones dev",
-                "total_horas":"20",
-                "proveedor" : "Alura Latam",
-                "cursos": [
-                    {
-                        "nombre": "Business intelligence",
-                        "fecha": "2024-11-23",
-                        "certificado": "https://drive.google.com/file/d/1WzI1WT-WI5KIPjYINmBoBWkWwEWLjIaQ/view?usp=sharing",
-                        "horas": "12"
-                    },
-                    {
-                        "nombre": "Desarrollo Web con Javascript",
-                        "fecha": "2024-09-24",
-                        "certificado": "https://drive.google.com/file/d/1Hlds5mWMQMKOXnGyCF0tTe_hXTqS3pKK/view?usp=sharing",
-                        "horas": "4"
-                    },
-                    {
-                        "nombre": "Análisis de datos con Python",
-                        "fecha": "2024-07",
-                        "certificado": "https://drive.google.com/file/d/1IInZctcs_RgNDPUSHSf3fdJrbBNgCm7Q/view?usp=sharing",
-                        "horas": "4"
-                    }
-                ]
-            },
-            {
-                "programa": "IA generativa",
-                "total_horas": "24",
-                "proveedor": "Alura Latam - Oracle Next Education G6",
-                "cursos": [
-                    {
-                        "nombre": "ChatGPT y programación: Aumenta tu productividad",
-                        "fecha": "2024-10-18",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/a24c474c-50ff-48ba-8285-89267df57fe9",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "ChatGPT y JavaScript: Construyendo el Juego Pong",
-                        "fecha": "2024-10-17",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/c94945f0-2a60-4071-8f50-2e84482fc6d5",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "ChatGPT: Optimizando la calidad de los resultados",
-                        "fecha": "2024-10-15",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/f39fbf5f-4841-4b69-b750-056d1ad4d78c",
-                        "horas": "8"
-                    }
-                ]
-            },
-            {
-                "programa": "Oracle Cloud Infrastructure",
-                "total_horas": "16",
-                "proveedor": "Alura Latam - Oracle Next Education G6",
-                "cursos": [
-                    {
-                        "nombre": "Oracle Cloud Infrastructure: Base de datos e infraestructura como código",
-                        "fecha": "2024-10-13",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/cbe0df11-c6cb-4571-921f-24153ab73af5",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "Oracle Cloud Infrastructure: Implementación de una aplicación en la nube",
-                        "fecha": "2024-10-07",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/59f0b162-63bf-4ade-b955-57b209203a74",
-                        "horas": "8"
-                    }
-                ]
-            },
-            {
-                "programa": "SQL con MySQL",
-                "total_horas": "76",
-                "proveedor":"Alura Latam - Oracle Next Education G6",
-                "cursos": [
-                    {
-                        "nombre": "Administración de MySQL: Seguridad y optimización de la base de datos – Parte 2",
-                        "fecha": "2024-10-03",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/2947eba7-cdc1-46d5-9ae7-1119e9a0d1a3",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "Administración de MySQL: Seguridad y optimización de la base de datos – Parte 1",
-                        "fecha": "2024-09-29",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/dd9e8871-e850-420d-831c-55382b0abf0b",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "SQL con MySQL: Proyecto Final",
-                        "fecha": "2024-09-23",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/a940f7c7-e95a-464d-a1e0-1b0fad70ee56",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "Procedures SQL: Ejecutando código en MySQL",
-                        "fecha": "2024-09-12",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/6364163b-4c54-41d5-8e38-5b1a31a604f5",
-                        "horas": "10"
-                    },
-                    {
-                        "nombre": "Comandos DML: Manipulación de datos con MySQL",
-                        "fecha": "2024-09-05",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/a7287b3d-6c35-4b52-8e98-1f89a6eec9b6",
-                        "horas": "14"
-                    },
-                    {
-                        "nombre": "Consultas SQL: Avanzando en SQL con MySQL",
-                        "fecha": "2024-09-02",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/9e54926a-405d-4096-8121-1b1693a097a8",
-                        "horas": "16"
-                    },
-                    {
-                        "nombre": "Introducción a SQL con MySQL: Manipule y consulte datos",
-                        "fecha": "2024-08-07",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/f60b6c63-f04d-4a8d-9168-cc2fbb3c8fa7",
-                        "horas": "12"
-                    }
-                ]
-            },
-            {
-                "programa": "Inteligencia artificial y machine learning - IA del futuro",
-                "total_horas": "87",
-                "proveedor" : "BEDU y Santander Open Academy",
-                "cursos": [
-                    {
-                        "nombre": "Prototype Day – Inteligencia Artificial y Machine Learning",
-                        "fecha": "2024-08-27",
-                        "certificado": "https://www.acreditta.com/credential/a4b5c128-6133-4490-bbf1-971d6ac26be2",
-                        "horas": ""
-                    },
-                    {
-                        "nombre": "Inteligencia Artificial y Machine Learning",
-                        "fecha": "2024-08-27",
-                        "certificado": "https://www.acreditta.com/credential/bc81d36a-8ea7-4eab-8804-e822e16e4ce1",
-                        "horas": "87"
-                    }
-                ]
-            },
-            {
-                "programa": "Java y Spring Boot",
-                "total_horas": "54",
-                "proveedor":"Alura Latam - Oracle Next Education G6",
-                "cursos": [
-                  {
-                    "nombre": "Practicando Spring Framework: Challenge Foro Hub",
-                    "fecha": "2024-07-05",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/e17ec573-88f5-4aaa-a09b-0a12f140811d",
-                    "horas": "20"
-                  },
-                  {
-                    "nombre": "Spring Boot 3: Documentar, probar y preparar una API para su implementación",
-                    "fecha": "2024-06-18",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/d7cf92c4-8e72-4c50-8002-d9f8fa0a04de",
-                    "horas": "12"
-                  },
-                  {
-                    "nombre": "Spring Boot 3: Aplique las mejoras prácticas y proteja una API REST",
-                    "fecha": "2024-06-11",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/d049e3db-db86-4bdf-8f09-e8e292c82e53",
-                    "horas": "12"
-                  },
-                  {
-                    "nombre": "Spring Boot 3: Desarrollar una API REST en Java",
-                    "fecha": "2024-06-05",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/bc8636be-be41-4d88-96db-761a696f0c98",
-                    "horas": "10"
-                  }
-                ]
-            },
-            {
-                "programa": "Java web: Crea aplicaciones utilizando Spring Boot",
-                "total_horas": "49",
-                "proveedor":"Alura Latam - Oracle Next Education G6",
-                "cursos": [
-                  {
-                    "nombre": "Practicando Spring Boot: Challenge Literalura",
-                    "fecha": "2024-05-29",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/179a6d41-7572-4f07-9e1c-b2f6b4124e5b",
-                    "horas": "15"
-                  },
-                  {
-                    "nombre": "Java: Creando tu primera API y conectándola al Frontend",
-                    "fecha": "2024-05-20",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/4e6a8bf0-9117-467d-8141-30870dff01ed",
-                    "horas": "10"
-                  },
-                  {
-                    "nombre": "Java: Persistencia de datos y consultas con spring data JPA",
-                    "fecha": "2024-05-16",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/93e518d9-1a68-491b-a779-d47c57789b9b",
-                    "horas": "12"
-                  },
-                  {
-                    "nombre": "Java: Trabajando con lambdas, streams y spring framework",
-                    "fecha": "2024-05-11",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/5d4c692c-26db-4fbd-83ef-32f38823d823",
-                    "horas": "12"
-                  }
-                ]
-            },
-            {
-                "programa": "Java orientado a objetos",
-                "total_horas": "44",
-                "proveedor":"Alura Latam - Oracle Next Education G6",
-                "cursos": [
-                  {
-                    "nombre": "Practicando con Java: Challenge conversor de monedas",
-                    "fecha": "2024-05-06",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/d627118b-38ef-4b5c-aead-ade2f493b124",
-                    "horas": "10"
-                  },
-                  {
-                    "nombre": "Java: Consumir API, escribir archivos y manejar errores",
-                    "fecha": "2024-05-02",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/d34dc0c3-e982-42ab-939a-e44c8cc630df",
-                    "horas": "8"
-                  },
-                  {
-                    "nombre": "Java: Trabajar con listas y colecciones de datos",
-                    "fecha": "2024-04-30",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/d116702c-2e7a-4e09-ac53-5601a524b021",
-                    "horas": "8"
-                  },
-                  {
-                    "nombre": "Java: Aplicando la orientación a objetos",
-                    "fecha": "2024-04-28",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/c2fd72d3-d458-46e7-844d-109e990bcbf1",
-                    "horas": "10"
-                  },
-                  {
-                    "nombre": "Java: Creando tu primera aplicación",
-                    "fecha": "2024-04-27",
-                    "certificado": "https://app.aluracursos.com/formalCertificate/0f66d370-c2d3-4ee4-9079-aa8ebe272591",
-                    "horas": "8"
-                  }
-                ]
-            },
-            {
-            "programa": "Emprendimiento, agilidad y protagonismo profesional",
-            "total_horas": "36",
-            "proveedor":"Alura Latam - Oracle Next Education G6",
-            "cursos": [
-                {
-                "nombre": "Fundamentos de agilidad: Primeros pasos para la transformación ágil",
-                "fecha": "2024-05-31",
-                "certificado": "https://app.aluracursos.com/formalCertificate/04ad2438-d26a-4917-bdd5-92e4a423af1b",
-                "horas": "6"
-                },
-                {
-                "nombre": "Emprendimiento: De la idea al plan de negocios",
-                "fecha": "2024-05-31",
-                "certificado": "https://app.aluracursos.com/formalCertificate/3b19662e-731f-4547-985f-ef4ad7b7f87b",
-                "horas": "6"
-                },
-                {
-                "nombre": "Transición de carrera: Una guía al campo de tecnología",
-                "fecha": "2024-05-30",
-                "certificado": "https://app.aluracursos.com/formalCertificate/33a9332e-3701-4d56-afe1-93c216b280f0",
-                "horas": "6"
-                },
-                {
-                "nombre": "Propósito Profesional: Ser el protagonista de tu carrera",
-                "fecha": "2024-05-30",
-                "certificado": "https://app.aluracursos.com/formalCertificate/1bade192-f7fb-4be5-9ce9-f5ea147907b5",
-                "horas": "6"
-                },
-                {
-                "nombre": "Desarrollo de carrera: Cómo llegar a la posición deseada",
-                "fecha": "2024-04-24",
-                "certificado": "https://app.aluracursos.com/formalCertificate/e8ae8534-b7ca-4c27-afee-aa38c34729b4",
-                "horas": "6"
-                },
-                {
-                "nombre": "Desarrollo de carrera: Demanda del mercado",
-                "fecha": "2024-04-10",
-                "certificado": "https://app.aluracursos.com/formalCertificate/6843d376-ee80-4259-a757-b52632e6e505",
-                "horas": "6"
-                }
-            ]
-            },
-            {
-            "programa": "Desarrollo personal",
-            "total_horas": "35",
-            "proveedor": "Alura Latam - Oracle Next Education G6",
-            "cursos": [
-                {
-                "nombre": "Hábitos: Ser productivo para cumplir sus metas personales",
-                "fecha": "2024-01-31",
-                "certificado": "https://app.aluracursos.com/formalCertificate/20b7a73d-2d8e-427f-bd78-14299469788e",
-                "horas": "8"
-                },
-                {
-                "nombre": "Foco: Enfocarse trae más resultados para el día a día",
-                "fecha": "2024-01-30",
-                "certificado": "https://app.aluracursos.com/formalCertificate/09d0c91b-7440-43b6-8330-6ce9d415b6e9",
-                "horas": "8"
-                },
-                {
-                "nombre": "Linkedin: Como hacer que tu perfil trabaje por ti",
-                "fecha": "2024-01-29",
-                "certificado": "https://app.aluracursos.com/formalCertificate/859cbb58-8187-44f6-85ea-f9633fe34e17",
-                "horas": "6"
-                },
-                {
-                "nombre": "Aprende a aprender: Técnicas para tu autodesarrollo",
-                "fecha": "2024-01-20",
-                "certificado": "https://app.aluracursos.com/formalCertificate/711b0666-63f2-46dc-ae97-d5c3ea7d5099",
-                "horas": "8"
-                }
-            ]
-            },
-            {
-                "programa": "Principiante en programación",
-                "total_horas": "56",
-                "proveedor":"Alura Latam - Oracle Next Education G6",
-                "cursos": [
-                    {
-                        "nombre": "Git y Github: Repositorio, Commit y Versiones",
-                        "fecha": "2024-01-26",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/e19d758e-01cc-4f6d-bd81-1bc27670bf21",
-                        "horas": "6"
-                    },
-                    {
-                        "nombre": "HTML5 y CSS3 Parte 4: Avanzando en CSS",
-                        "fecha": "2024-01-24",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/1a1bb51d-e311-4288-9991-6d23673def3a",
-                        "horas": "10"
-                    },
-                    {
-                        "nombre": "HTML5 y CSS3 Parte 3: Trabajando con formularios y tablas",
-                        "fecha": "2024-01-24",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/08d5ef1d-51c1-4392-ad32-cf670a452948",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "HTML5 y CSS3 Parte 2: Posicionamiento, listas y navegación",
-                        "fecha": "2024-01-23",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/4b539e17-7642-4d9a-83d7-8e2450f40e1b",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "HTML5 y CSS3 Parte 1: Mi primera página web",
-                        "fecha": "2024-01-23",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/fb6827d8-8a3e-4da2-90df-33aa80e46215",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "Lógica de programación: explorar funciones y listas",
-                        "fecha": "2024-01-21",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/b8124e2e-32f4-4e3f-b5a4-f49146bc7c71",
-                        "horas": "8"
-                    },
-                    {
-                        "nombre": "Lógica de programación: sumérgete en la programación con JavaScript",
-                        "fecha": "2024-01-19",
-                        "certificado": "https://app.aluracursos.com/formalCertificate/416a41a1-08ba-4673-b415-dbc2c051a16b",
-                        "horas": "8"
-                    }
-                ]
-            },
-            {
-                "programa": "UDEMY",
-                "total_horas": "83",
-                "proveedor":"UDEMY",
-                "cursos": [
-                    {
-                        "nombre": "JavaScript Moderno Guía Deefinitiva Construye +20 Proyectos",
-                        "fecha": "2024-03-17",
-                        "certificado": "https://www.udemy.com/certificate/UC-9bdac842-d98f-4dc3-8ea9-954da8ee6c76/",
-                        "horas": "50.5"
-                    },
-                    {
-                        "nombre": "Aprende JavaScript de Cero a Experto",
-                        "fecha": "2023-10-06",
-                        "certificado": "https://www.udemy.com/certificate/UC-4f816557-03bb-4c80-ab01-fc7e2a05d5db/",
-                        "horas": "3.5"
-                    },
-                    {
-                        "nombre": "ISO 19011:2018 Auditoría de los sistemas de Gestión",
-                        "fecha": "2023-09-06",
-                        "certificado": "https://www.udemy.com/certificate/UC-137649c8-1134-4c54-914b-fea9f2d3e684/",
-                        "horas": "1"
-                    },
-                    {
-                        "nombre": "Crear una página web moderna desde cero con HTML y CSS",
-                        "fecha": "2023-03-29",
-                        "certificado": "https://www.udemy.com/certificate/UC-5e1cbebf-3ba0-44fd-97a7-e4338c3870b8/",
-                        "horas": "3.5"
-                    },
-                    {
-                        "nombre": "Python sin fronteras: HTML, CSS, Flask y MySQL",
-                        "fecha": "2023-02-19",
-                        "certificado": "https://www.udemy.com/certificate/UC-08725edd-1117-4cf9-94e2-6c5a77bcd198/",
-                        "horas": "24.5"
-                    }
-                ]
-            },
-            {
-                "programa": "Otras formaciones",
-                "proveedor": "Diversos",
-                "total_horas": "547",
-                "cursos": [
-                  {
-                    "nombre": "Programación de máquinas CNC con códigos G y M",
-                    "fecha": "2018-10-27",
-                    "certificado": "https://drive.google.com/file/d/1ed27dMbZKsdJ35H4HkTVeq_Np5dGnJuj/view?usp=sharing",
-                    "horas": "40"
-                  },
-                  {
-                    "nombre": "Ultrasonido Industrial Nivel II Limitado para Medir Espesores",
-                    "fecha": "2018-10-05",
-                    "certificado": "https://drive.google.com/file/d/1TnRx9cqDfMb6jO66RUPb1XjNKK-2GCw3/view?usp=sharing",
-                    "horas": "40"
-                  },
-                  {
-                    "nombre": "Curso Herramientas de Molde Solidworks",
-                    "fecha": "2018-09-12",
-                    "certificado": "https://drive.google.com/file/d/1H8Y7cudSoxyXZBu3AEynJCGvy-kCM1Wj/view?usp=sharing",
-                    "horas": "40"
-                  },
-                  {
-                    "nombre": "Programación Avanzada IRC5",
-                    "fecha": "2017-08-18",
-                    "certificado": "https://drive.google.com/file/d/1sKbeE0zIdmWzrjV-Oze46EfIdedXbtZn/view?usp=sharing",
-                    "horas": "40"
-                  },
-                  {
-                    "nombre": "RobotStudio Basic",
-                    "fecha": "2017-07-28",
-                    "certificado": "https://drive.google.com/file/d/1D1CmEeOh2qZUpZ-jFYBN00ZA3WDyVVfC/view?usp=sharing",
-                    "horas": "40"
-                  },
-                  {
-                    "nombre": "Fundamentos de diseño de sistemas de alimentación y sistemas de colada para Cu y sus aleaciones",
-                    "fecha": "2017-07-07",
-                    "certificado": "https://drive.google.com/file/d/1bMKlCaMHUQNuqwd2Ojs9G-6Yh-b_iof_/view?usp=sharing",
-                    "horas": "40"
-                  },
-                  {
-                    "nombre": "Interpretación de la Norma ISO 9001:2015",
-                    "fecha": "2017-06-24",
-                    "certificado": "https://drive.google.com/file/d/1RXO4D1fGnZB6Px8V-7LzhlNVTn_R4hU5/view?usp=sharing",
-                    "horas": "15"
-                  },
-                  {
-                    "nombre": "Programación Básica IRC5",
-                    "fecha": "2017-06-09",
-                    "certificado": "https://drive.google.com/file/d/1Qf5rFjOAXnoEqiXuj1EtOXIP89GZfMsm/view?usp=sharing",
-                    "horas": "40"
-                  },
-                  {
-                    "nombre": "Diplomado en desarrollo de talento gerencial",
-                    "fecha": "2017-06-03",
-                    "certificado": "https://drive.google.com/file/d/1HRxNzrJbOxGtYnwHQceYQSiV8fqhWCJG/view?usp=sharing",
-                    "horas": "40"
-                  },
-                  {
-                    "nombre": "Introducción a la metalurgia de aleaciones de cobre para fundición",
-                    "fecha": "2017-04-28",
-                    "certificado": "https://drive.google.com/file/d/1eJoRwT7TVUjiDTqmbLIAdghExEWQYF9x/view?usp=sharing",
-                    "horas": "35"
-                  },
-                  {
-                    "nombre": "Diplomado de habilidades gerenciales",
-                    "fecha": "2016-06-30",
-                    "certificado": "https://drive.google.com/file/d/1t9TTMSo_tx6tIFn-W5huPG_YKgUwoMv3/view?usp=sharing",
-                    "horas": "65"
-                  },
-                  {
-                    "nombre": "BobCAD-CAM Software Operator",
-                    "fecha": "2016-04-07",
-                    "certificado": "https://drive.google.com/file/d/1p5iP52k5Dzqfy4DiAKd5GrJ4Z9-4Wn0M/view?usp=sharing",
-                    "horas": "40"
-                  },
-                  {
-                    "nombre": "Geomagic Control",
-                    "fecha": "2016-02-27",
-                    "certificado": "https://drive.google.com/file/d/1hjWuEH-P851JbAqrzeoP0OiWg9el9zLn/view?usp=sharing",
-                    "horas": "27"
-                  },
-                  {
-                    "nombre": "Geomagic Design X",
-                    "fecha": "2016-02-25",
-                    "certificado": "https://drive.google.com/file/d/1_ZWv42-72yEsvibRX_UeMtZuO1HBIcmW/view?usp=sharing",
-                    "horas": "27"
-                  },
-                  {
-                    "nombre": "Sesion empresarial: De la creatividad a la innovación en las empresas",
-                    "fecha": "2015-10-22",
-                    "certificado": "https://drive.google.com/file/d/1X4WggGcBSE9_JDOpbCpKel33Mxe1qNqQ/view?usp=sharing",
-                    "horas": "18"
-                  }
-                ]
-            }
-      ]
+      "method": {
+        "title": "Decisiones documentadas",
+        "text": "Cada cambio se especifica con OpenSpec: propuesta, diseño con las alternativas que descarté y tareas. También construí un servidor MCP que conecta Claude Code con OpenProject."
+      }
     }
   }
+}

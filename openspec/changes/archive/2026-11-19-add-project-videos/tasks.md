@@ -13,4 +13,4 @@
 - [x] 3.1 `npm run lint` and `npm run build` pass
 - [x] 3.2 Check in the browser: desktop and 360 px, dark and light, both languages, no third-party requests
 - [x] 3.3 README: add/replace videos and deployment instructions
-- [ ] 3.4 Archive the change after the owner approves
+- [x] 3.4 Archive the change after the owner approves

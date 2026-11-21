@@ -61,7 +61,7 @@ Videos use fictitious data and no company material.
 
 ## Deploy
 
-The build is static (`dist/`) and uses no client-side routes, so any static host works (GitHub Pages, Netlify, Vercel, Cloudflare Pages). No deployment is configured yet. With Cloudflare Pages: build command `npm run build`, output directory `dist`, Node 18+; videos are a few MB each, below its 25 MiB per-file limit.
+The build is static (`dist/`) and uses no client-side routes, so any static host works (GitHub Pages, Netlify, Vercel, Cloudflare Pages). Target: Cloudflare (Workers with static assets): build command `npm run build`, deploy command `npx wrangler deploy`; `wrangler.jsonc` serves `dist/`. Videos are a few MB each, below the 25 MiB per-file limit.
 
 ## Method
 

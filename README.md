@@ -10,7 +10,7 @@ React 18 · Vite 5 · Tailwind CSS 3 · i18next (with browser language detection
 
 ## Run it
 
-Requires Node.js 18+.
+Requires Node.js 20.19+ (or 22.12+).
 
 ```bash
 npm install

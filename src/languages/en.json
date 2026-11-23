@@ -21,7 +21,7 @@
     "title": "About",
     "p1": "I'm a Full-Stack developer focused on Python. At Pyansa I work on an integration service that connects 6+ ERPs and internal systems, an electronic invoicing system (CFDI 4.0) and the backend of a warehouse management system.",
     "p2": "I came to software from manufacturing engineering and QA, so I care about things that keep a system dependable: tests, clear contracts, repeatable deployments and documented decisions.",
-    "p3": "I write the reasoning behind my changes with spec-driven development (OpenSpec) and use AI-assisted workflows, but I own the design and the review."
+    "p3": "I work spec-first (OpenSpec): I define each change and its acceptance criteria before coding, and keep the decisions documented. I use AI as part of the workflow and review every change before it ships."
   },
   "experience": {
     "title": "Experience",

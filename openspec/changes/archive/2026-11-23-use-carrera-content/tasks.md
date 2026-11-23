@@ -11,4 +11,4 @@
 - [x] 2.3 Both languages render every section with the generated content (checked on a local preview build: text of each section, videos present, no console errors; layout not inspected visually)
 
 ## 3. Closing
-- [ ] 3.1 Merge the PR and archive the change
+- [x] 3.1 Merge the PR and archive the change

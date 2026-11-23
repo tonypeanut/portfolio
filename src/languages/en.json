@@ -31,7 +31,7 @@
         "company": "Pyansa",
         "period": "Jun 2025 – Present · Remote",
         "bullets": [
-          "Integration service in FastAPI + Celery with connectors to 6+ ERPs and internal systems, serving about 160,000 calls per week from 6 internal apps.",
+          "Integration service in FastAPI + Celery with connectors to 6+ ERPs and internal systems unified into one model, consumed by the internal apps.",
           "Designed and built a CFDI 4.0 electronic invoicing system (Mexican tax compliance): swappable PAC drivers, payment complements, automatic accounting; test suite grown from 1,500 to 3,000 tests in three weeks.",
           "Warehouse management system: Django / DRF backend and Angular 19 front end, including the inventory audit cycle from scanner count to ERP adjustment.",
           "Corporate single sign-on with Keycloak (OIDC) and scoped roles.",

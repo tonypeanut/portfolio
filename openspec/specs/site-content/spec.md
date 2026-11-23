@@ -18,11 +18,15 @@ Years of experience SHALL be limited to Python 3, React 1 and TypeScript 1. The 
 - **THEN** none are found
 
 ### Requirement: Work confidentiality
-The site MUST NOT link to or name private employer repositories, client names or internal system names, and MUST describe work only in general impact terms (for example an integration service handling about 160,000 calls per week from 6 internal apps).
+The site MUST NOT link to or name private employer repositories, client names or internal system names, and MUST describe work only in general impact terms, without internal usage volumes or financial figures (for example an integration service that unifies several ERPs into one model).
 
 #### Scenario: No employer code links
 - **WHEN** all outbound links are listed
 - **THEN** each points only to the owner's LinkedIn, the owner's GitHub profile or public repositories
+
+#### Scenario: No internal volumes
+- **WHEN** the experience text and translations are searched for call counts or monetary amounts of the employer
+- **THEN** none are found
 
 ### Requirement: Verified project links
 Every project card SHALL link only to a repository that was public when verified, and SHALL NOT link to demo URLs that do not respond.
@@ -58,4 +62,11 @@ Project videos SHALL use fictitious data, SHALL NOT include company material or 
 #### Scenario: Review a video
 - **WHEN** a video is added or replaced
 - **THEN** it shows only fictitious data and describes benefits instead of counts
+
+### Requirement: Working method and AI use statement
+The About section SHALL describe the working method (specifying each change and its acceptance criteria before coding, and documenting decisions) and SHALL state that AI is part of the workflow and that every change is reviewed before it ships. It SHALL NOT use defensive or apologetic wording about AI use.
+
+#### Scenario: Read the About section
+- **WHEN** a visitor reads the About section in either language
+- **THEN** the method and the use of AI appear as one working practice, with review stated as part of it
 

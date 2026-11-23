@@ -19,51 +19,18 @@
   },
   "about": {
     "title": "About",
-    "p1": "I'm a Full-Stack developer focused on Python. At Pyansa I work on an integration service that connects 6+ ERPs and internal systems, an electronic invoicing system (CFDI 4.0) and the backend of a warehouse management system.",
+    "p1": "I'm a Full-Stack developer focused on integrations, deployments and architecture. At Pyansa I build and run a data integration platform that connects 6+ ERPs and internal systems, an electronic invoicing system (CFDI 4.0) and a warehouse management system, front end to back end.",
     "p2": "I came to software from manufacturing engineering and QA, so I care about things that keep a system dependable: tests, clear contracts, repeatable deployments and documented decisions.",
     "p3": "I work spec-first (OpenSpec): I define each change and its acceptance criteria before coding, and keep the decisions documented. I use AI as part of the workflow and review every change before it ships."
   },
   "experience": {
-    "title": "Experience",
-    "items": {
-      "pyansa": {
-        "role": "Full-Stack Developer",
-        "company": "Pyansa",
-        "period": "Jun 2025 – Present · Remote",
-        "bullets": [
-          "Integration service in FastAPI + Celery with connectors to 6+ ERPs and internal systems unified into one model, consumed by the internal apps.",
-          "Designed and built a CFDI 4.0 electronic invoicing system (Mexican tax compliance): swappable PAC drivers, payment complements, automatic accounting; test suite grown from 1,500 to 3,000 tests in three weeks.",
-          "Warehouse management system: Django / DRF backend and Angular 19 front end, including the inventory audit cycle from scanner count to ERP adjustment.",
-          "Corporate single sign-on with Keycloak (OIDC) and scoped roles.",
-          "Three production cutovers (SSO, data platform, WMS) in four days, with rehearsal, rollback plan and backups, and no data loss.",
-          "Modernized two legacy PHP 5.6 applications to PHP 8.3+ without stopping operations.",
-          "Deployed on GCP with Docker and GitLab CI/CD; automated tests with pytest."
-        ]
-      },
-      "a1qa": {
-        "role": "Functional Manual Testing Trainee",
-        "company": "A1QA",
-        "period": "Apr – Jun 2025 · Internship, remote",
-        "bullets": [
-          "Manual functional testing, bug reporting in Jira, traffic inspection with Fiddler and Charles, work in Scrum teams."
-        ]
-      },
-      "rice": {
-        "role": "Manufacturing & Quality Engineering",
-        "company": "Fundiciones Rice",
-        "period": "2015 – 2024",
-        "bullets": [
-          "Project engineer, innovation, molding and quality system coordinator roles; led the ISO 9001:2015 certification and the ABS foundry approval.",
-          "Supervised the molding team and introduced a new molding method that raised quality and production capacity.",
-          "Built a quoting system (React, Flask, MySQL) and KPI dashboards (Python, SQL) for the plant."
-        ]
-      }
-    }
+    "title": "Experience"
   },
   "stack": {
     "title": "Stack",
     "groups": {
       "backend": "Backend",
+      "architecture": "Architecture & integration",
       "frontend": "Frontend",
       "data": "Data",
       "cloud": "Cloud & DevOps",
@@ -83,12 +50,7 @@
     },
     "wip": {
       "title": "Also building",
-      "intro": "Code is private for now; I will publish these when they are ready.",
-      "items": {
-        "media": "Local-first manager for a video and anime library: connects to MyAnimeList, syncs and merges series metadata, tracks what you are watching, with a web UI and a desktop tray app. 230 tests.",
-        "audio": "Desktop app (Tauri/Rust + Svelte) that finds duplicate and acoustically similar audio using the Panako fingerprinting engine.",
-        "dock": "Local project launcher with a web UI: start, stop and restart dev servers, with live logs and port detection."
-      }
+      "intro": "Code is private for now; I will publish these when they are ready."
     },
     "private": "Private",
     "video": {
@@ -98,39 +60,7 @@
     }
   },
   "education": {
-    "title": "Education",
-    "items": {
-      "upsin": {
-        "name": "B.Eng. Mechatronics",
-        "place": "Universidad Politécnica de Sinaloa",
-        "period": "2011 – 2014"
-      },
-      "one": {
-        "name": "Oracle Next Education — Back-end",
-        "place": "Oracle + Alura Latam",
-        "period": "2024"
-      },
-      "bedu": {
-        "name": "Artificial Intelligence & Machine Learning",
-        "place": "BEDU",
-        "period": "2024"
-      },
-      "english": {
-        "name": "English C1",
-        "place": "EF SET certificate",
-        "period": "2025"
-      },
-      "gda": {
-        "name": "Google Data Analytics",
-        "place": "Google / Coursera",
-        "period": "2025"
-      },
-      "paper": {
-        "name": "Paper: Robotic Manufacturing of Naval Propellers",
-        "place": "Int. J. of Advanced Manufacturing Technology",
-        "period": "2021"
-      }
-    }
+    "title": "Education"
   },
   "contact": {
     "title": "Contact",
@@ -141,20 +71,6 @@
     "built": "Built with React, Vite and Tailwind CSS."
   },
   "leadership": {
-    "title": "Leadership & method",
-    "items": {
-      "dev": {
-        "title": "Technical direction",
-        "text": "At Pyansa I direct external developers: I write the requirements and acceptance criteria, then verify each delivery before it ships. I also take part in technical interviews."
-      },
-      "plant": {
-        "title": "Leading people in manufacturing",
-        "text": "Before software I supervised a molding team and ran a quality management system, reporting to executive leadership."
-      },
-      "method": {
-        "title": "Decisions on the record",
-        "text": "Every change is specified with OpenSpec: proposal, design with the alternatives I discarded, tasks. I also built an MCP server that connects Claude Code to OpenProject."
-      }
-    }
+    "title": "Leadership & method"
   }
 }

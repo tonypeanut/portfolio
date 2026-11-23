@@ -25,16 +25,22 @@ npm run lint
 ```
 src/
   components/   one file per section (Hero, About, Experience, Stack, Projects, Education, Contact)
-  data/         profile.js — links, years of experience, stack, projects (non-translated facts)
-  languages/    en.json, es.json — all visible prose; i18n.js — setup
+  data/         carrera.json — GENERATED career facts (years, stack, experience, leadership,
+                private projects, education) in en/es; carrera.js — helper; profile.js — links,
+                public repositories and video files
+  languages/    en.json, es.json — UI strings and prose (hero, about, contact); i18n.js — setup
   index.css     theme tokens (CSS variables) and small component classes
 openspec/       design history: proposals, decisions and specs for each change
 ```
 
 ## Editing content
 
-- Prose: edit `src/languages/en.json` and `src/languages/es.json`; keep both files with the same keys.
-- Links, projects, stack and years: edit `src/data/profile.js`. Only link public repositories.
+- **Career facts (years, stack, experience, leadership, private projects, education): do not edit here.**
+  They come from the owner's single career source (also used for his CV) through the `carrera` skill:
+  edit the source, run `carrera revisar`, then `carrera web --escribir` to regenerate `src/data/carrera.json`.
+- Other prose (hero, about, contact, section titles): edit `src/languages/en.json` and `src/languages/es.json`;
+  keep both files with the same keys.
+- Links and public projects: edit `src/data/profile.js`. Only link public repositories.
 - Colors: CSS variables in `src/index.css` (`dark` and `light`).
 - E-mail button: `links.email` in `src/data/profile.js` (empty hides it).
 

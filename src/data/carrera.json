@@ -1,0 +1,309 @@
+{
+  "anos": [
+    {
+      "nombre": "Python",
+      "anos": 3
+    },
+    {
+      "nombre": "Angular",
+      "anos": 2
+    },
+    {
+      "nombre": "React",
+      "anos": 1
+    },
+    {
+      "nombre": "TypeScript",
+      "anos": 1
+    }
+  ],
+  "stack": [
+    {
+      "id": "backend",
+      "items": [
+        "Python",
+        "FastAPI",
+        "Django / DRF",
+        "Celery",
+        "Redis",
+        "Flask",
+        "PHP / CakePHP"
+      ]
+    },
+    {
+      "id": "architecture",
+      "items": [
+        "REST APIs",
+        "Microservices",
+        "CDC",
+        "Outbox",
+        "Multi-tenant",
+        "Keycloak / OIDC"
+      ]
+    },
+    {
+      "id": "frontend",
+      "items": [
+        "Angular",
+        "TypeScript",
+        "React",
+        "Vue 3",
+        "JavaScript",
+        "Tailwind CSS"
+      ]
+    },
+    {
+      "id": "data",
+      "items": [
+        "MySQL / MariaDB",
+        "SQL Server",
+        "Pervasive SQL (ODBC)",
+        "SQLAlchemy"
+      ]
+    },
+    {
+      "id": "cloud",
+      "items": [
+        "GCP",
+        "Docker Compose",
+        "nginx",
+        "GitLab CI/CD",
+        "Linux"
+      ]
+    },
+    {
+      "id": "quality",
+      "items": [
+        "pytest",
+        "Jasmine / Karma",
+        "REST Assured"
+      ]
+    },
+    {
+      "id": "practices",
+      "items": [
+        "OpenSpec",
+        "Claude Code",
+        "MCP",
+        "Scrum",
+        "Jira",
+        "OpenProject"
+      ]
+    }
+  ],
+  "proyectos": [
+    {
+      "id": "media",
+      "nombre": "media-library-manager",
+      "tech": [
+        "Python",
+        "SQLite",
+        "FastAPI"
+      ]
+    },
+    {
+      "id": "audio",
+      "nombre": "duplicate-audio-desktop",
+      "tech": [
+        "Rust",
+        "Tauri",
+        "Svelte"
+      ]
+    },
+    {
+      "id": "dock",
+      "nombre": "dev-dock",
+      "tech": [
+        "Python",
+        "FastAPI",
+        "WebSocket"
+      ]
+    }
+  ],
+  "en": {
+    "experiencia": {
+      "pyansa": {
+        "puesto": "Full-Stack Developer",
+        "empresa": "Pyansa",
+        "periodo": "Jun 2025 – Present · Remote",
+        "logros": [
+          "Data integration platform in FastAPI + Celery with change data capture: connectors to 6+ ERPs and internal systems unified into one model and consumed by the internal apps.",
+          "Warehouse management system as main author, back end (Django / DRF) and front end (Angular 19): multi-tenant, with the inventory audit cycle from scanner count to ERP adjustment.",
+          "Designed and built a CFDI 4.0 electronic invoicing system (Mexican tax compliance): swappable PAC drivers, payment complements, automatic accounting through an outbox; test suite grown from 1,500 to 3,000 tests in three weeks.",
+          "Corporate single sign-on with Keycloak (OIDC) and Vue 3: scoped roles and self-service activation with a second factor.",
+          "Three production cutovers (SSO, data platform, WMS) in four days, with rehearsal, rollback plan and backups, and no data loss.",
+          "Run 10+ services on GCP with Docker Compose and nginx, separate QA and production environments and automated deploys; GitLab CI/CD and automated tests with pytest.",
+          "Modernized two legacy PHP 5.6 applications to PHP 8.3+ without stopping operations."
+        ]
+      },
+      "a1qa": {
+        "puesto": "Functional Manual Testing Trainee",
+        "empresa": "A1QA",
+        "periodo": "Apr – Jun 2025 · Internship",
+        "logros": [
+          "Manual functional testing, bug reporting in Jira, traffic inspection with Fiddler and Charles, work in Scrum teams."
+        ]
+      },
+      "rice": {
+        "puesto": "Manufacturing & Quality Engineering",
+        "empresa": "Fundiciones Rice",
+        "periodo": "2015 – 2024",
+        "logros": [
+          "Project engineer, innovation, molding and quality system coordinator roles; led the ISO 9001:2015 certification and the ABS foundry approval.",
+          "Built a quoting system (React, Flask, MySQL) that cut quotation time from days to minutes, and KPI dashboards (Python, SQL) for the plant.",
+          "Led grant-funded innovation projects: a robotic marine-propeller manufacturing cell, a sand-mold cell and hydraulic machines; commissioned an 8-meter CNC lathe.",
+          "Supervised the molding team and introduced a new molding method that raised quality and production capacity."
+        ]
+      }
+    },
+    "liderazgo": {
+      "dev": {
+        "titulo": "Technical direction",
+        "texto": "At Pyansa I direct external developers: I write the requirements and acceptance criteria, then verify each delivery before it ships. I also take part in technical interviews."
+      },
+      "plant": {
+        "titulo": "Leading people in manufacturing",
+        "texto": "Before software I supervised a molding team and ran a quality management system, reporting to executive leadership."
+      },
+      "method": {
+        "titulo": "Decisions on the record",
+        "texto": "Every change is specified with OpenSpec: proposal, design with the alternatives I discarded, tasks. I also built an MCP server that connects Claude Code to OpenProject, and my own agent skills."
+      }
+    },
+    "proyectos": {
+      "media": "Local-first manager for a video and anime library: connects to MyAnimeList, syncs and merges series metadata, tracks what you are watching, with a web UI and a desktop tray app.",
+      "audio": "Desktop app (Tauri/Rust + Svelte) that finds duplicate and acoustically similar audio using the Panako fingerprinting engine.",
+      "dock": "Local project launcher with a web UI: start, stop and restart dev servers, with live logs and port detection."
+    },
+    "formacion": {
+      "upsin": {
+        "titulo": "B.Eng. Mechatronics",
+        "lugar": "Universidad Politécnica de Sinaloa",
+        "periodo": "2011 – 2014"
+      },
+      "vlm": {
+        "titulo": "Vision Language Models (VLM) Bootcamp – grade 100%",
+        "lugar": "OpenCV University",
+        "periodo": "2025"
+      },
+      "gda": {
+        "titulo": "Google Data Analytics",
+        "lugar": "Google / Coursera",
+        "periodo": "2025"
+      },
+      "one": {
+        "titulo": "Oracle Next Education — Back-end",
+        "lugar": "Oracle + Alura Latam",
+        "periodo": "2024"
+      },
+      "bedu": {
+        "titulo": "Artificial Intelligence & Machine Learning",
+        "lugar": "BEDU",
+        "periodo": "2024"
+      },
+      "english": {
+        "titulo": "English C1",
+        "lugar": "EF SET certificate",
+        "periodo": "2025"
+      },
+      "paper": {
+        "titulo": "Paper: Robotic Manufacturing of Naval Propellers",
+        "lugar": "Int. J. of Advanced Manufacturing Technology",
+        "periodo": "2021"
+      }
+    }
+  },
+  "es": {
+    "experiencia": {
+      "pyansa": {
+        "puesto": "Desarrollador Full-Stack",
+        "empresa": "Pyansa",
+        "periodo": "jun 2025 – Presente · Remoto",
+        "logros": [
+          "Plataforma de integración de datos en FastAPI + Celery con captura de cambios (CDC): conectores a más de 6 ERPs y sistemas internos unificados en un solo modelo, que consumen las aplicaciones internas.",
+          "Sistema de administración de almacenes como autor principal, backend (Django / DRF) y front end (Angular 19): multiempresa, con el ciclo de auditoría de inventario del conteo con escáner al ajuste en el ERP.",
+          "Diseñé y construí un sistema de facturación electrónica CFDI 4.0 (cumplimiento fiscal en México): drivers de PAC intercambiables, complemento de pagos y contabilización automática mediante outbox; suite de pruebas de 1,500 a 3,000 tests en tres semanas.",
+          "Inicio de sesión único corporativo con Keycloak (OIDC) y Vue 3: roles por alcance y activación por autoservicio con segundo factor.",
+          "Tres cortes de producción (SSO, plataforma de datos y WMS) en cuatro días, con ensayo, plan de reversa y respaldos, sin pérdida de datos.",
+          "Opero más de 10 servicios en GCP con Docker Compose y nginx, ambientes de QA y producción separados y despliegues automáticos; CI/CD en GitLab y pruebas automatizadas con pytest.",
+          "Modernicé dos aplicaciones heredadas de PHP 5.6 a PHP 8.3+ sin detener la operación."
+        ]
+      },
+      "a1qa": {
+        "puesto": "Functional Manual Testing Trainee",
+        "empresa": "A1QA",
+        "periodo": "abr – jun 2025 · Prácticas",
+        "logros": [
+          "Pruebas funcionales manuales, reporte de defectos en Jira, inspección de tráfico con Fiddler y Charles, trabajo en equipos Scrum."
+        ]
+      },
+      "rice": {
+        "puesto": "Ingeniería de Manufactura y Calidad",
+        "empresa": "Fundiciones Rice",
+        "periodo": "2015 – 2024",
+        "logros": [
+          "Roles de ingeniero de proyecto, coordinador de innovación, de moldeo y del sistema de calidad; lideré la certificación ISO 9001:2015 y la aprobación de fundición de ABS.",
+          "Construí un sistema de cotización (React, Flask, MySQL) que redujo el tiempo de cotización de días a minutos, y tableros de KPI (Python, SQL) para la planta.",
+          "Dirigí proyectos de innovación con fondos concursables: una celda robótica de manufactura de propelas marinas, una celda de moldes de arena y máquinas hidráulicas; puse en marcha un torno CNC de 8 metros.",
+          "Supervisé al equipo de moldeo e introduje un nuevo método de moldeo que elevó la calidad y la capacidad de producción."
+        ]
+      }
+    },
+    "liderazgo": {
+      "dev": {
+        "titulo": "Dirección técnica",
+        "texto": "En Pyansa dirijo a desarrolladores externos: escribo los requerimientos y criterios de aceptación y verifico cada entrega antes de liberarla. También participo en entrevistas técnicas."
+      },
+      "plant": {
+        "titulo": "Liderar personas en manufactura",
+        "texto": "Antes del software supervisé a un equipo de moldeo y operé un sistema de gestión de calidad, con reportes a la dirección."
+      },
+      "method": {
+        "titulo": "Decisiones documentadas",
+        "texto": "Cada cambio se especifica con OpenSpec: propuesta, diseño con las alternativas que descarté y tareas. También construí un servidor MCP que conecta Claude Code con OpenProject, y mis propias skills de agentes."
+      }
+    },
+    "proyectos": {
+      "media": "Gestor local de una biblioteca de video y anime: se conecta con MyAnimeList, sincroniza y fusiona metadatos de series, da seguimiento a lo que ves, con interfaz web y app de escritorio con bandeja.",
+      "audio": "App de escritorio (Tauri/Rust + Svelte) que encuentra audio duplicado o acústicamente similar con el motor de huellas Panako.",
+      "dock": "Lanzador local de proyectos con interfaz web: iniciar, detener y reiniciar servidores de desarrollo, con logs en vivo y detección de puertos."
+    },
+    "formacion": {
+      "upsin": {
+        "titulo": "Ingeniería en Mecatrónica",
+        "lugar": "Universidad Politécnica de Sinaloa",
+        "periodo": "2011 – 2014"
+      },
+      "vlm": {
+        "titulo": "Vision Language Models (VLM) Bootcamp – calificación 100%",
+        "lugar": "OpenCV University",
+        "periodo": "2025"
+      },
+      "gda": {
+        "titulo": "Google Data Analytics",
+        "lugar": "Google / Coursera",
+        "periodo": "2025"
+      },
+      "one": {
+        "titulo": "Oracle Next Education — Back-end",
+        "lugar": "Oracle + Alura Latam",
+        "periodo": "2024"
+      },
+      "bedu": {
+        "titulo": "Inteligencia Artificial y Machine Learning",
+        "lugar": "BEDU",
+        "periodo": "2024"
+      },
+      "english": {
+        "titulo": "Inglés C1",
+        "lugar": "Certificado EF SET",
+        "periodo": "2025"
+      },
+      "paper": {
+        "titulo": "Artículo: Robotic Manufacturing of Naval Propellers",
+        "lugar": "Int. J. of Advanced Manufacturing Technology",
+        "periodo": "2021"
+      }
+    }
+  }
+}

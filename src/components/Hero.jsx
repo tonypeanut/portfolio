@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { links, years } from '../data/profile';
+import { links } from '../data/profile';
+import { years } from '../data/carrera';
 
 export default function Hero() {
   const { t } = useTranslation();

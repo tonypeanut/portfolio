@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { projects, wip } from '../data/profile';
+import { projects, videoFor } from '../data/profile';
+import { useCarrera, wipProjects } from '../data/carrera';
 import VideoPreview from './VideoPreview';
 import VideoModal from './VideoModal';
 
 export default function Projects() {
   const { t } = useTranslation();
+  const { proyectos } = useCarrera();
+  const wip = wipProjects.map((p) => ({ id: p.id, name: p.nombre, tech: p.tech, video: videoFor(p.id) }));
   const [open, setOpen] = useState(null);
   return (
     <section id="projects" className="section">
@@ -42,7 +45,7 @@ export default function Projects() {
           <article key={p.id} className="card flex flex-col">
             {p.video && <VideoPreview video={p.video} name={p.name} onOpen={() => setOpen(p)} />}
             <h4 className="font-mono text-sm font-semibold">{p.name}</h4>
-            <p className="mt-2 flex-1 text-sm text-muted">{t(`projects.wip.items.${p.id}`)}</p>
+            <p className="mt-2 flex-1 text-sm text-muted">{proyectos[p.id]}</p>
             <ul className="mt-4 flex flex-wrap gap-2">
               {p.tech.map((x) => (
                 <li key={x} className="chip">

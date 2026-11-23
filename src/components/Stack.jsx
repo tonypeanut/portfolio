@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { stack } from '../data/profile';
+import { stack } from '../data/carrera';
 
 export default function Stack() {
   const { t } = useTranslation();

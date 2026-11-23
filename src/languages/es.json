@@ -21,7 +21,7 @@
     "title": "Acerca",
     "p1": "Soy desarrollador Full-Stack enfocado en Python. En Pyansa trabajo en un servicio de integración que conecta más de 6 ERPs y sistemas internos, un sistema de facturación electrónica (CFDI 4.0) y el backend de un sistema de administración de almacenes.",
     "p2": "Llegué al software desde la ingeniería de manufactura y el QA, así que me importa lo que mantiene confiable a un sistema: pruebas, contratos claros, despliegues repetibles y decisiones documentadas.",
-    "p3": "Documento el razonamiento de mis cambios con desarrollo guiado por especificaciones (OpenSpec) y uso flujos asistidos por IA, pero el diseño y la revisión son míos."
+    "p3": "Trabajo con desarrollo guiado por especificaciones (OpenSpec): defino el cambio y sus criterios de aceptación antes de programar, y dejo documentadas las decisiones. Uso IA como parte del flujo y reviso cada cambio antes de integrarlo."
   },
   "experience": {
     "title": "Experiencia",

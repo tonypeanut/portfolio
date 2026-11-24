@@ -129,7 +129,7 @@
         "logros": [
           "Data integration platform in FastAPI + Celery with change data capture: connectors to 6+ ERPs and internal systems unified into one model and consumed by the internal apps.",
           "Warehouse management system as main author, back end (Django / DRF) and front end (Angular 19): multi-tenant, with the inventory audit cycle from scanner count to ERP adjustment.",
-          "Designed and built a CFDI 4.0 electronic invoicing system (Mexican tax compliance): swappable PAC drivers, payment complements, automatic accounting through an outbox; test suite grown from 1,500 to 3,000 tests in three weeks.",
+          "Designed and built a CFDI 4.0 electronic invoicing system (Mexican tax compliance): swappable PAC drivers, payment complements, automatic accounting through an outbox, backed by an automated test suite.",
           "Corporate single sign-on with Keycloak (OIDC) and Vue 3: scoped roles and self-service activation with a second factor.",
           "Three production cutovers (SSO, data platform, WMS) in four days, with rehearsal, rollback plan and backups, and no data loss.",
           "Run 10+ services on GCP with Docker Compose and nginx, separate QA and production environments and automated deploys; GitLab CI/CD and automated tests with pytest.",
@@ -192,8 +192,8 @@
         "periodo": "2025"
       },
       "one": {
-        "titulo": "Oracle Next Education — Back-end",
-        "lugar": "Oracle + Alura Latam",
+        "titulo": "Oracle Next Education G6 — Back-end",
+        "lugar": "Alura Latam",
         "periodo": "2024"
       },
       "bedu": {
@@ -222,7 +222,7 @@
         "logros": [
           "Plataforma de integración de datos en FastAPI + Celery con captura de cambios (CDC): conectores a más de 6 ERPs y sistemas internos unificados en un solo modelo, que consumen las aplicaciones internas.",
           "Sistema de administración de almacenes como autor principal, backend (Django / DRF) y front end (Angular 19): multiempresa, con el ciclo de auditoría de inventario del conteo con escáner al ajuste en el ERP.",
-          "Diseñé y construí un sistema de facturación electrónica CFDI 4.0 (cumplimiento fiscal en México): drivers de PAC intercambiables, complemento de pagos y contabilización automática mediante outbox; suite de pruebas de 1,500 a 3,000 tests en tres semanas.",
+          "Diseñé y construí un sistema de facturación electrónica CFDI 4.0 (cumplimiento fiscal en México): drivers de PAC intercambiables, complemento de pagos y contabilización automática mediante outbox, respaldado por una suite de pruebas automatizadas.",
           "Inicio de sesión único corporativo con Keycloak (OIDC) y Vue 3: roles por alcance y activación por autoservicio con segundo factor.",
           "Tres cortes de producción (SSO, plataforma de datos y WMS) en cuatro días, con ensayo, plan de reversa y respaldos, sin pérdida de datos.",
           "Opero más de 10 servicios en GCP con Docker Compose y nginx, ambientes de QA y producción separados y despliegues automáticos; CI/CD en GitLab y pruebas automatizadas con pytest.",
@@ -285,8 +285,8 @@
         "periodo": "2025"
       },
       "one": {
-        "titulo": "Oracle Next Education — Back-end",
-        "lugar": "Oracle + Alura Latam",
+        "titulo": "Oracle Next Education G6 — Back-end",
+        "lugar": "Alura Latam",
         "periodo": "2024"
       },
       "bedu": {

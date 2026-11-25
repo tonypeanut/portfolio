@@ -12,8 +12,8 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "role": "Full-Stack developer · Python",
-    "tagline": "I build and run backend services, integrations and business apps with Python, React and Angular. Currently shipping production systems at Pyansa.",
+    "role": "Full-Stack developer · Python · Angular · DevOps",
+    "tagline": "I build and run backend services, integrations and business apps with Python, Angular and React. Currently shipping production systems at Pyansa.",
     "projects": "See projects",
     "years": "Years with"
   },
@@ -64,7 +64,7 @@
   },
   "contact": {
     "title": "Contact",
-    "text": "I'm open to Full-Stack / Python roles, remote. The fastest way to reach me is LinkedIn.",
+    "text": "The fastest way to reach me is LinkedIn.",
     "email": "Email"
   },
   "footer": {

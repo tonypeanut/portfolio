@@ -5,6 +5,6 @@
 
 ## 2. Verification
 - [x] 2.1 `carrera revisar`, `npm run lint` and `npm run build` pass
-- [ ] 2.2 Hero checked at 375 px and desktop, in EN and ES, on the preview
-- [ ] 2.3 Production checked after merge
-- [ ] 2.4 Archive the change
+- [x] 2.2 Hero checked at 375 px and desktop, in EN and ES, on the preview
+- [x] 2.3 Production checked after merge
+- [x] 2.4 Archive the change

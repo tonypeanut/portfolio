@@ -4,6 +4,6 @@
 
 ## 2. Verification
 - [x] 2.1 `npm run build` and `npx wrangler deploy --dry-run` pass
-- [ ] 2.2 The Cloudflare check passes on the pull request
-- [ ] 2.3 Production still deploys after merge
-- [ ] 2.4 Archive the change
+- [x] 2.2 The Cloudflare check passes on the pull request
+- [x] 2.3 Production still deploys after merge
+- [x] 2.4 Archive the change

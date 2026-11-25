@@ -1,6 +1,6 @@
 # Portfolio — Antonio Valdez Aguayo
 
-Personal portfolio of a Full-Stack developer (Python, FastAPI, Django, React, Angular). Single page, dark by default with a light toggle, available in Spanish and English.
+Personal portfolio of a Full-Stack developer (Python, FastAPI, Django, Angular, React). Single page, dark by default with a light toggle, available in Spanish and English.
 
 > Sitio personal de Antonio Valdez Aguayo, en español e inglés. Contenido en `src/languages/` y datos en `src/data/profile.js`.
 
